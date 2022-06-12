@@ -19,9 +19,11 @@ layout: page
 - Pin Assignments : [DE0_TOP.qsf]({{site.baseurl}}/lab_pdfs/DE0_TOP.qsf)
 - DE0 FPGA Manual : [DEO User Manual](https://intel.com/content/dam/altera-www/global/en_US/portal/dsn/42/doc-us-dsnbk-42-5804152209-de0-user-manual.pdf)
 
+<!--
 # Prelabs
 
 - Prelab for Lab 5 : [Lab 5 Prelab]({{site.baseurl}}/lab_pdfs/ECE275_Lab5_Prelab.pdf)
+-->
 
 # Additional Resources
 

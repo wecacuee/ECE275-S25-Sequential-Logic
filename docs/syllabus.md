@@ -34,6 +34,8 @@ Office hours:  tba
 
 ### Grading:
 
+Grading is an unfortunate necessity. I prefer if you think about learning much more than grading in the course. If you do all your learn to design circuits and user verilog, I anticipate you will get a good grade.
+
 Grades are based on the following:
 
 - Homework 25%, and Labs 25% -- 50% total
@@ -42,7 +44,7 @@ Grades are based on the following:
 
 There will be no make-ups for missed exams.  Plan to be there.
 Late work -- generally not accepted without good reason.
-Grading will be absolute 90%/80%/70%/60% schedule.
+Grading will be based on absolute scale 90% (A)/80% (B)/70% (C)/60% (D).
 
 ### Approximate Course Outline:
 
