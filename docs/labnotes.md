@@ -3,7 +3,8 @@ layout: page
 ---
 # Lab notes
 
-- Aug 30, 2021 : [Quartus Setup]({{site.baseurl}}/lab_pdfs/ECE275_Lab1_Quartus_Setup.pdf)
+- Aug 29, 2022 : [Quartus Setup]({{site.baseurl}}/lab_pdfs/ECE275_Lab1_Quartus_Setup.pdf)
+<!-- 
 - Sep 13, 2021 : [Verilog and Multiplexers]({{site.baseurl}}/lab_pdfs/ECE275_Lab2_Multiplexers_Verilog_and_Schematics.pdf)
 - Sep 20, 2021 : [Verilog Modules]({{site.baseurl}}/lab_pdfs/ECE275_Lab3_Verilog_Modules.pdf)
 - Sep 27, 2021 : [Ripple Adder]({{site.baseurl}}/lab_pdfs/ECE275_Lab4.pdf)
@@ -11,6 +12,7 @@ layout: page
 - Oct 25, 2021 : [Procedural Verilog and Binary to BCD]({{site.baseurl}}/lab_pdfs/ECE275_Lab6.pdf)
 - Nov 1, 2021  : [Verilog Code Quality]({{site.baseurl}}/lab_pdfs/ECE275_Lab7.pdf)
 - Nov 15, 2021 : [HDL Simulation]({{site.baseurl}}/lab_pdfs/ECE275_Lab8.pdf)
+-->
 
 # Lab supporting documents
 
