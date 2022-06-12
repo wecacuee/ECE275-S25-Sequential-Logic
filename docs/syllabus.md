@@ -3,7 +3,7 @@ layout: page
 ---
 
 # ECE 275 --- Sequential Logic Systems
-## Fall 2021
+## Fall 2022
 
 
 Credits: 3 credits
@@ -11,6 +11,11 @@ Credits: 3 credits
 Web page: <https://vikasdhiman.info/ECE275-Sequential-Logic>
 
 Text: Fundamentals of Digital Logic with Verilog Design (3rd ed.) by Brown and Vranesic. [On a side note: In solidarity with Aaron Swartz, Library Genesis and Sci-Hub statement](https://custodians.online/)
+
+Additional books:
+
+- Charles Roth, Jr. - Fundamentals of Logic Design (6th Edition) -Cengage Learning (2009)
+- David M. Harris, Sarah L. Harris - Digital Design and Computer Architecture, (2012, Morgan Kaufmann)
 
 Prerequisite: ECE 177
 
@@ -20,12 +25,11 @@ Prerequisite: ECE 177
 
 Barrows Hall Rm 105, [`vikas.dhiman@maine.edu`](mailto:vikas.dhiman@maine.edu)
 
-Office Hours: 4-5:30pm Mondays and Thursdays. Otherwise, please send me an email proposing one of the free slots in my calendar: <https://calendar.google.com/calendar/u/0/embed?src=vikas.dhiman@maine.edu&ctz=America/New_York>
+Office Hours: 3-5:30pm Mondays and Thursdays. Otherwise, please send me an email proposing one of the free slots in my calendar: <https://calendar.google.com/calendar/u/0/embed?src=vikas.dhiman@maine.edu&ctz=America/New_York>
 
-### Pascal Francis-Mezger
+### Teaching assistant (TBD)
 
-13 Barrows, [`pascal.francismezger@maine.edu`](mailto:pascal.francismezger@maine.ed)
-Office hours: (via zoom) tba 
+Office hours:  tba 
 
 
 ### Grading:
@@ -33,11 +37,12 @@ Office hours: (via zoom) tba
 Grades are based on the following:
 
 - Homework 25%, and Labs 25% -- 50% total
-- Two mid term exams (about Oct. 6 and about Nov. 8) -- 20% 
+- Two mid-term exams (about Oct. 6, Nov. 8) -- 20% 
 - Project -- 30%
 
 There will be no make-ups for missed exams.  Plan to be there.
 Late work -- generally not accepted without good reason.
+Grading will be absolute 90%/80%/70%/60% schedule.
 
 ### Approximate Course Outline:
 

@@ -2,6 +2,11 @@
 layout: page
 ---
 # Related Courses
+
+## Norm's ENEL 353 Lecture Notes
+
++ <https://people.ucalgary.ca/~nbartley/Enel353/Lectures2019/>
+
 ## UMaine Fall2020 and before
 
  + Prof Richard Eason's last year [course](http://web.eece.maine.edu/eason/ece275/).
