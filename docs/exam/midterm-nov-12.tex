@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+
+\title{Midterm 2}
+\date{Nov 12th, 2021}
+\author{ECE 275}
+
+\begin{document}
+\maketitle
+\begin{tabular}{p{0.5\linewidth}p{0.5\linewidth}}
+(1) Your name:& Student ID: \\
+\end{tabular}
+\subsubsection*{About the exam}
+\begin{enumerate}
+  \item There are total 4 problems.
+  \item Problem 1 and Problem 2 are mandatory. You have the option of doing any one of Problem 3 and Problem 4. If
+    you do both, you will receive the best of the two.
+\end{enumerate}
+\subsubsection*{Problem description}
+Design a Mealy sequential circuit which investigates an input sequence X and which
+will produce an output of Z = 1 for any input sequence ending in 1010 provided that
+the sequence 001 has never occurred.\\
+
+\textit{Example:}
+\begin{align*}
+X &= 1\, 0\, 1\, 0\, 1\, 0\, 0\, 1\, 0\, 1\, 0
+    \\
+Z &= 0\, 0\, 0\, 1\, 0\, 1\, 0\, 0\, 0\, 0\, 0
+\end{align*}
+Notice that the circuit does not reset to the start state when an output of Z = 1
+occurs.
+\end{document}
