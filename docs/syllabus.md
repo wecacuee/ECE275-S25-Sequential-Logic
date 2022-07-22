@@ -31,6 +31,11 @@ Office Hours: 3-5:30pm Mondays and Thursdays. Otherwise, please send me an email
 
 Office hours:  tba 
 
+### Expected time commitment per week
+
+ - Classes: 3 hrs
+ - Review and homework: 3 hrs
+ - Labs: 3 hrs
 
 ### Grading:
 
@@ -38,9 +43,10 @@ Grading is an unfortunate necessity. I prefer if you think about learning much m
 
 Grades are based on the following:
 
-- Homework 25%, and Labs 25% -- 50% total
-- Two mid-term exams (about Oct. 6, Nov. 8) -- 20% 
-- Project -- 30%
+- Homework: 30%
+- 2 mid-terms and final (Oct. 7, Nov. 9, Dec 14): 30% total
+- Labs: 30% 
+- Project: 10%
 
 There will be no make-ups for missed exams.  Plan to be there.
 Late work -- generally not accepted without good reason.
@@ -48,19 +54,26 @@ Grading will be based on absolute scale 90% (A)/80% (B)/70% (C)/60% (D).
 
 ### Approximate Course Outline:
 
+#### Part 1a: Combinational logic design
 - The design process (digital systems, rapid prototyping, etc.)
 - Combinational logic (Boolean algebra, truth tables, logic gates, etc.).
-- Introduction to CAD tools, Verilog/VHDL.
-- Implementation technology (transistor switches, NMOS, CMOS, standard chips, PLD's, etc.)
+- Introduction to CAD tools, Verilog
 - Optimization (K-maps, minimization, incompletely specified functions, multiple output circuits, multilevel networks)
+#### Part 1b: Combinational logic design extended
 - Number representation and arithmetic circuits.
 - Combinational building blocks (multiplexers, demultiplexers, code converters, etc.)
+#### Part 2: Sequential logic design
 - Simple sequential circuits: flip-flops, registers and counters.
 - Synchronous sequential circuits (state diagrams, state tables, Mealy vs. Moore circuits).
 - Design of synchronous circuits using CAD tools.
 - Analysis of clocked sequential networks.
 - State tables (derivation, reduction, and state assignment).
 - Finite state machine optimization.
+
+#### Part 3: Finer details of leaky abstractions
+- Implementation technology (transistor switches, NMOS, CMOS, standard chips, PLD's, etc.)
+- Noise margins, clock skew, propagation delays, hazards
+
 
 ### Tests
 
@@ -69,6 +82,10 @@ Tests will be closed book, with one A4 size paper as cheat-sheet allowed. Calcul
 ### Labs
 
 We will have labs throughout the semester. Please attend in person on your assigned lab day. Each student will be provided hardware that can be taken home. By accepting this hardware, the student is agreeing to return the hardware at the end of the semester with shipping pre-paid by the department. University of Maine administrative policy statements
+
+### Mask policy
+
+Masks are required in the class so that people at risk feel safe and welcome to the class.
 
 ### Academic Honesty Statement
 
