@@ -10,12 +10,12 @@ Credits: 3 credits
 
 Web page: <https://vikasdhiman.info/ECE275-Sequential-Logic>
 
-Text: Fundamentals of Digital Logic with Verilog Design (3rd ed.) by Brown and Vranesic. [On a side note: In solidarity with Aaron Swartz, Library Genesis and Sci-Hub statement](https://custodians.online/)
+Text: David M. Harris, Sarah L. Harris - Digital Design and Computer Architecture, (Publisher: Morgan Kaufmann)
 
 Additional books:
 
+- Fundamentals of Digital Logic with Verilog Design (3rd ed.) by Brown and Vranesic. 
 - Charles Roth, Jr. - Fundamentals of Logic Design (6th Edition) -Cengage Learning (2009)
-- David M. Harris, Sarah L. Harris - Digital Design and Computer Architecture, (2012, Morgan Kaufmann)
 
 Prerequisite: ECE 177
 
@@ -25,7 +25,10 @@ Prerequisite: ECE 177
 
 Barrows Hall Rm 105, [`vikas.dhiman@maine.edu`](mailto:vikas.dhiman@maine.edu)
 
-Office Hours: 3-5:30pm Mondays and Thursdays. Otherwise, please send me an email proposing one of the free slots in my calendar: <https://calendar.google.com/calendar/u/0/embed?src=vikas.dhiman@maine.edu&ctz=America/New_York>
+Office Hours: 2-5pm Mondays and Thursdays. 
+<!-- Google Calendar Appointment Scheduling begin -->
+<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ28CahXgHZTVhZ-L3SmL7-V1KRYRdrp_D5HO5gu-a_1IcLMwGq1EOwVcUqyQBbjydlzQKJUWp5-?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+<!-- end Google Calendar Appointment Scheduling -->
 
 ### Teaching assistant (TBD)
 
