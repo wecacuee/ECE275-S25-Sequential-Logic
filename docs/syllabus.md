@@ -42,7 +42,7 @@ Office hours:  tba
 
 ### Grading:
 
-Grading is an unfortunate necessity. Grades are based on the following:
+Grading is an unfortunate necessity. Grades are based on the following split. Please note the emphasis on homeworks and labs. You can get 60% of the grades just by finishing homework and labs on time.
 
 - Homework: 30%
 - 2 mid-terms and final (Oct. 7, Nov. 9, Dec 14): 30% total (10% each).
