@@ -25,7 +25,7 @@ Prerequisite: ECE 177
 
 Barrows Hall Rm 105, [`vikas.dhiman@maine.edu`](mailto:vikas.dhiman@maine.edu)
 
-Office Hours: 2-5pm Mondays and Thursdays. 
+Office Hours: 2-5pm Mondays and Thursdays. You can book multiple slots for longer questions.
 <!-- Google Calendar Appointment Scheduling begin -->
 <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ28CahXgHZTVhZ-L3SmL7-V1KRYRdrp_D5HO5gu-a_1IcLMwGq1EOwVcUqyQBbjydlzQKJUWp5-?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
 <!-- end Google Calendar Appointment Scheduling -->
@@ -42,18 +42,26 @@ Office hours:  tba
 
 ### Grading:
 
-Grading is an unfortunate necessity. I prefer if you think about learning much more than grading in the course. If you do all your learn to design circuits and user verilog, I anticipate you will get a good grade.
-
-Grades are based on the following:
+Grading is an unfortunate necessity. Grades are based on the following:
 
 - Homework: 30%
-- 2 mid-terms and final (Oct. 7, Nov. 9, Dec 14): 30% total
+- 2 mid-terms and final (Oct. 7, Nov. 9, Dec 14): 30% total (10% each).
 - Labs: 30% 
 - Project: 10%
 
 There will be no make-ups for missed exams.  Plan to be there.
 Late work -- generally not accepted without good reason.
 Grading will be based on absolute scale 90% (A)/80% (B)/70% (C)/60% (D).
+
+### Project : Pong game in Verilog
+
+We will be learning Verilog throughout the course, less in the class, more in the labs. By the end of the course, you should know enough Verilog to implement a Pong game on the FPGA board. The labs are designed to help you implement a very basic version of Pong game step by step. Final project will be to add a fancier feature to the already implemented pong game.
+
+Here are some examples from what students did last year:
+
+1. [Ethan Demouro and David Peitz](https://drive.google.com/file/d/1hNH0FvAEvZEYFxmBjiHMDY2bqTrLoG0_/view?usp=sharing)
+2. [Landon and Stevens](https://drive.google.com/file/d/15gu_9qIwIY9hMMEUhPItKGjZNI-6_ZEh/view?usp=sharing)
+3. [Will and Henry](https://drive.google.com/file/d/10sGGaxoBvcE2jcW4ljgtTpaj7Q-TxSrO/view?usp=sharing)
 
 ### Approximate Course Outline:
 
