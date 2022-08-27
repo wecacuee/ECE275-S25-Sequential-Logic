@@ -10,7 +10,7 @@ Credits: 3 credits
 
 Web page: <https://vikasdhiman.info/ECE275-Sequential-Logic>
 
-Text: David M. Harris, Sarah L. Harris - Digital Design and Computer Architecture, (Publisher: Morgan Kaufmann)
+Text: David M. Harris, Sarah L. Harris - Digital Design and Computer Architecture, (Publisher: Morgan Kaufmann). [You can download textbooks from libgen.rs](libgen.rs)
 
 Additional books:
 
@@ -25,9 +25,9 @@ Prerequisite: ECE 177
 
 Barrows Hall Rm 105, [`vikas.dhiman@maine.edu`](mailto:vikas.dhiman@maine.edu)
 
-Office Hours: 2-5pm Mondays and Thursdays. You can book multiple slots for longer questions.
+Office Hours: 2-4pm Mondays and Thursdays. <!-- You can book multiple slots for longer questions. -->
 <!-- Google Calendar Appointment Scheduling begin -->
-<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ28CahXgHZTVhZ-L3SmL7-V1KRYRdrp_D5HO5gu-a_1IcLMwGq1EOwVcUqyQBbjydlzQKJUWp5-?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+<!-- iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ28CahXgHZTVhZ-L3SmL7-V1KRYRdrp_D5HO5gu-a_1IcLMwGq1EOwVcUqyQBbjydlzQKJUWp5-?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe -->
 <!-- end Google Calendar Appointment Scheduling -->
 
 ### Teaching assistant (TBD)
