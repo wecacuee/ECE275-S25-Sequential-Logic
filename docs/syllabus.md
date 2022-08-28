@@ -5,19 +5,26 @@ layout: page
 # ECE 275 --- Sequential Logic Systems
 ## Fall 2022
 
+### Learning objectives
 
-Credits: 3 credits
+* Design combinational circuits by hand: The student should be able to design optimal 2-level 5-input digital combinational circuits by hand.
+* Design sequential circuits by hand: The student should be able to design n-input, m-state (n+m <= 5) digital sequential circuits by hand.
+* Design digital circuits by Verilog: Be able to design arbitrary digital circuits by using System Verilog and CAD tools like Quartus.
 
-Web page: <https://vikasdhiman.info/ECE275-Sequential-Logic>
+### Details
 
-Text: David M. Harris, Sarah L. Harris - Digital Design and Computer Architecture, (Publisher: Morgan Kaufmann). [You can download textbooks from libgen.rs](libgen.rs)
+*Credits*: 3 credits
 
-Additional books:
+*Web page*: <https://vikasdhiman.info/ECE275-Sequential-Logic>
+
+*Text*: David M. Harris, Sarah L. Harris - Digital Design and Computer Architecture, (Publisher: Morgan Kaufmann). [You can download textbooks from libgen.rs](https://libgen.rs)
+
+*Additional books*:
 
 - Fundamentals of Digital Logic with Verilog Design (3rd ed.) by Brown and Vranesic. 
 - Charles Roth, Jr. - Fundamentals of Logic Design (6th Edition) -Cengage Learning (2009)
 
-Prerequisite: ECE 177
+*Prerequisite*: ECE 177
 
 ### Instructors
 
@@ -25,14 +32,16 @@ Prerequisite: ECE 177
 
 Barrows Hall Rm 105, [`vikas.dhiman@maine.edu`](mailto:vikas.dhiman@maine.edu)
 
-Office Hours: 2-4pm Mondays and Thursdays. <!-- You can book multiple slots for longer questions. -->
+Office Hours: 2-5pm Thursdays. <!-- You can book multiple slots for longer questions. -->
 <!-- Google Calendar Appointment Scheduling begin -->
 <!-- iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ28CahXgHZTVhZ-L3SmL7-V1KRYRdrp_D5HO5gu-a_1IcLMwGq1EOwVcUqyQBbjydlzQKJUWp5-?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe -->
 <!-- end Google Calendar Appointment Scheduling -->
 
-### Teaching assistant (TBD)
+### Teaching assistants 
 
-Office hours:  tba 
+*  Shihab Ahamad (Monday Lab) <shihab.ahamad@maine.edu>
+*  Zafaryab Haider (Tue/Wed Lab) <zafaryab.haider@maine.edu>
+*  Abhilash Durgam (Tue lab/Grading) <abhilash.durgam@maine.edu>
 
 ### Expected time commitment per week
 
@@ -45,13 +54,26 @@ Office hours:  tba
 Grading is an unfortunate necessity. Grades are based on the following split. Please note the emphasis on homeworks and labs. You can get 60% of the grades just by finishing homework and labs on time.
 
 - Homework: 30%
+  + Weekly; 9 homeworks; due at the beginning of the class.
 - 2 mid-terms and final (Oct. 7, Nov. 9, Dec 14): 30% total (10% each).
+  + Closed book.
 - Labs: 30% 
+  + 6-labs; expected to be finished in lab; the deliverable is expected next week.
 - Project: 10%
+  + Extensions to the pong-game
 
-There will be no make-ups for missed exams.  Plan to be there.
-Late work -- generally not accepted without good reason.
+There will be no make-ups for missed exams;  plan to be there.
+Late work -- one late homework; one late lab. Collaboration -- studying in groups is encouraged for understanding, but working the problems should be worked on your own. No collaboration when you are writing down the homework.
 Grading will be based on absolute scale 90% (A)/80% (B)/70% (C)/60% (D).
+
+### Tests
+
+Tests will be closed book, with one A4 size paper as cheat-sheet allowed. Calculators will neither be needed nor allowed.
+
+### Labs
+
+We will have labs throughout the semester. Please attend in person on your assigned lab day. Each student will be provided hardware that can be taken home. By accepting this hardware, the student is agreeing to return the hardware at the end of the semester with shipping pre-paid by the department. University of Maine administrative policy statements
+
 
 ### Project : Pong game in Verilog
 
@@ -63,17 +85,21 @@ Here are some examples from what students did last year:
 2. [Landon and Stevens](https://drive.google.com/file/d/15gu_9qIwIY9hMMEUhPItKGjZNI-6_ZEh/view?usp=sharing)
 3. [Will and Henry](https://drive.google.com/file/d/10sGGaxoBvcE2jcW4ljgtTpaj7Q-TxSrO/view?usp=sharing)
 
+4. [Tic tac toe sample project](https://drive.google.com/file/d/1z98ZqbGN8OS3mbkx82q6Q3UDjwhmnZqW/view?usp=sharing)
+
 ### Approximate Course Outline:
 
 #### Part 1a: Combinational logic design
+- Number representation 
 - The design process (digital systems, rapid prototyping, etc.)
 - Combinational logic (Boolean algebra, truth tables, logic gates, etc.).
 - Introduction to CAD tools, Verilog
 - Optimization (K-maps, minimization, incompletely specified functions, multiple output circuits, multilevel networks)
-#### Part 1b: Combinational logic design extended
-- Number representation and arithmetic circuits.
+- Arithmetic circuits.
 - Combinational building blocks (multiplexers, demultiplexers, code converters, etc.)
+
 #### Part 2: Sequential logic design
+
 - Simple sequential circuits: flip-flops, registers and counters.
 - Synchronous sequential circuits (state diagrams, state tables, Mealy vs. Moore circuits).
 - Design of synchronous circuits using CAD tools.
@@ -82,18 +108,9 @@ Here are some examples from what students did last year:
 - Finite state machine optimization.
 
 #### Part 3: Finer details of leaky abstractions
+
 - Implementation technology (transistor switches, NMOS, CMOS, standard chips, PLD's, etc.)
 - Noise margins, clock skew, propagation delays, hazards
-
-
-### Tests
-
-Tests will be closed book, with one A4 size paper as cheat-sheet allowed. Calculators will neither be needed nor allowed.
-
-### Labs
-
-We will have labs throughout the semester. Please attend in person on your assigned lab day. Each student will be provided hardware that can be taken home. By accepting this hardware, the student is agreeing to return the hardware at the end of the semester with shipping pre-paid by the department. University of Maine administrative policy statements
-
 ### Mask policy
 
 Masks are required in the class so that people at risk feel safe and welcome to the class.

@@ -7,7 +7,7 @@ layout: page
 |-------|---|-------------------------------------------------|----------------------------|-------------------------------|-----------------------|
 | 08/29 | M | Course syllabus. Analog vs Discrete. [Slides]({{site.baseurl}}/slides/2022-08-29-what-to-expect-from-the-course.html)        |                            |                               | [Quartus setup](https://docs.google.com/document/d/e/2PACX-1vTu9Mh_yVPw8p98s87sdUuNZQvzQCiLp-JOeA5CztaqIbeVBMHjXZH2mJHuGnQB2h2CYx6927aY_QHf/pub)         |
 | 08/31 | W | Place-value number system                       |                            |                               |                       |
-| 09/02 | F | Signed numbers                                  |                            | Homework 0 due                |                       |
+| 09/02 | F | Signed numbers                                  |                            |                               |                       |
 | 09/05 | M | Two's complement arithmetic                     |                            |                               |                       |
 | 09/07 | W | No class Labor Day                              |                            |                               |                       |
 | 09/09 | F | Gray code                                       |                            | Homework 1 due                |                       |
