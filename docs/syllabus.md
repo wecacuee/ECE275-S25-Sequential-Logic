@@ -3,7 +3,7 @@ layout: page
 ---
 
 # ECE 275 --- Sequential Logic Systems
-## Fall 2022
+## Fall 2022 (In-person)
 
 ### Learning objectives
 
@@ -32,7 +32,7 @@ layout: page
 
 Barrows Hall Rm 105, [`vikas.dhiman@maine.edu`](mailto:vikas.dhiman@maine.edu)
 
-Office Hours: 2-5pm Thursdays. <!-- You can book multiple slots for longer questions. -->
+Drop-in Hours: 2-5pm Thursdays. <!-- You can book multiple slots for longer questions. -->
 <!-- Google Calendar Appointment Scheduling begin -->
 <!-- iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ28CahXgHZTVhZ-L3SmL7-V1KRYRdrp_D5HO5gu-a_1IcLMwGq1EOwVcUqyQBbjydlzQKJUWp5-?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe -->
 <!-- end Google Calendar Appointment Scheduling -->
@@ -49,9 +49,11 @@ Office Hours: 2-5pm Thursdays. <!-- You can book multiple slots for longer quest
  - Review and homework: 3 hrs
  - Labs: 3 hrs
 
-### Grading:
+### Grading and expectations
 
-Grading is an unfortunate necessity. Grades are based on the following split. Please note the emphasis on homeworks and labs. You can get 60% of the grades just by finishing homework and labs on time.
+Expected time commitment per week: 9 hrs: Classes: 3 hrs, Review and homework: 3 hrs, Labs: 3 hrs.
+
+Grading is an unfortunate necessity. Grades are based on the following split. Please note the emphasis on homeworks and labs.
 
 - Homework: 30%
   + Weekly; 9 homeworks; due at the beginning of the class.
@@ -63,7 +65,7 @@ Grading is an unfortunate necessity. Grades are based on the following split. Pl
   + Extensions to the pong-game
 
 There will be no make-ups for missed exams;  plan to be there.
-Late work -- one late homework; one late lab. Collaboration -- studying in groups is encouraged for understanding, but working the problems should be worked on your own. No collaboration when you are writing down the homework.
+Late work -- at most one late homework; and one late lab is allowed. Please use your allowance responsibly. Collaboration -- studying in groups is encouraged for understanding, but working the problems should be worked on your own. No collaboration when you are writing down the homework.
 Grading will be based on absolute scale 90% (A)/80% (B)/70% (C)/60% (D).
 
 ### Tests
@@ -72,10 +74,10 @@ Tests will be closed book, with one A4 size paper as cheat-sheet allowed. Calcul
 
 ### Labs
 
-We will have labs throughout the semester. Please attend in person on your assigned lab day. Each student will be provided hardware that can be taken home. By accepting this hardware, the student is agreeing to return the hardware at the end of the semester with shipping pre-paid by the department. University of Maine administrative policy statements
+We will have labs throughout the semester. Please attend in person on your assigned lab day. Each student will be provided hardware. By accepting this hardware, the student is agreeing to return the hardware in good condition at the end of the semester.
 
 
-### Project : Pong game in Verilog
+### Project
 
 We will be learning Verilog throughout the course, less in the class, more in the labs. By the end of the course, you should know enough Verilog to implement a Pong game on the FPGA board. The labs are designed to help you implement a very basic version of Pong game step by step. Final project will be to add a fancier feature to the already implemented pong game.
 
@@ -111,6 +113,7 @@ Here are some examples from what students did last year:
 
 - Implementation technology (transistor switches, NMOS, CMOS, standard chips, PLD's, etc.)
 - Noise margins, clock skew, propagation delays, hazards
+
 ### Mask policy
 
 Masks are required in the class so that people at risk feel safe and welcome to the class.
