@@ -7,9 +7,12 @@ layout: page
 
 ### Learning objectives
 
-* Design combinational circuits by hand: The student should be able to design optimal 2-level 5-input digital combinational circuits by hand.
-* Design sequential circuits by hand: The student should be able to design n-input, m-state (n+m <= 5) digital sequential circuits by hand.
-* Design digital circuits by Verilog: Be able to design arbitrary digital circuits by using System Verilog and CAD tools like Quartus.
+By the end of this course, a student in this course will be able to:
+
+* Design combinational circuits by hand: Limited to 2-level 5-input digital combinational circuits.
+* Design sequential circuits by hand: Limited to n-input, m-state (where n+m <= 5).
+* Design arbitrary digital circuits by using System Verilog.
+
 
 ### Details
 
