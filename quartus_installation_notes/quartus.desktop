@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Quartus
+Comment=Launches Quartus
+TryExec=/home/vdhiman/altera/13sp1/quartus/bin/quartus
+Exec=/home/vdhiman/altera/13sp1/quartus/bin/quartus %F
+Icon=fooview
+MimeType=image/x-foo;
