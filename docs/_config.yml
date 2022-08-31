@@ -15,7 +15,6 @@ paginate: 10
 header_pages:
   - schedule.md
   - syllabus.md
-  - labnotes.md
 
 
 plugins:
