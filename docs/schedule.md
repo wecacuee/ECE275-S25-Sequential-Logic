@@ -10,7 +10,7 @@ layout: page
 | 09/02 | F | Signed numbers                                  |                            |                               |                       |
 | 09/05 | M | Two's complement arithmetic                     |                            |                               |                       |
 | 09/07 | W | No class Labor Day                              |                            |                               |                       |
-| 09/09 | F | Gray code                                       |                            | Homework 1 due                |                       |
+| 09/09 | F | Gray code                                       |                            | [HW 1 due]({{site.baseurl}}/homeworks/hw1/hw1.pdf)                |                       |
 | 09/12 | M | Two-input and multiple-input gates              |                            |                               | Verilog number conv   |
 | 09/14 | W | Boolean algebra                                 |                            |                               |                       |
 | 09/16 | F | SOP forms                                       |                            | Homework 2 due                |                       |

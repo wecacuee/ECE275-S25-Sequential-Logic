@@ -1,0 +1,171 @@
+\maketitle
+\section{Signed binary numbers}
+
+Signed numbers include both negative and positive numbers. There three common
+signed number representations
+
+\begin{enumerate}
+\item Sign magnitude representation
+\item One's complement
+\item Two's complement
+\end{enumerate}
+  
+\subsection{Sign-magnitude representation}
+The Most significant (left most) \emph{bit} (binary digit) represents sign ($0 =
++$ and $1 = -$), the rest represent the magnitude. Example, a 5-bit number
+$(11010)_2$ in signed magnitude representation has the value of $(-1010)_2 =
+-10$. Note that $+10$ has to be represented by a leading $0$ at the most
+significant bit (MSB) $+10 = (01010)_2$. Hence, the number of bits have to be specified.
+
+\begin{prob}
+  \begin{itemize}
+\item Write down all possible 4-digit binary numbers and corresponding decimal
+  values if they are in signed magnitude format? What is the minimum and maximum value?
+  \item What is the minimum and maximum value of n-digit signed binary number in
+    sign-magnitude format?
+\end{itemize}
+\end{prob}
+
+\includegraphics[width=12cm]{sign-magnitude-numbers.pdf}
+
+\subsection{One's complement negation}
+
+Negate $13_{10} = 01101_2$ using 5-bit one's complement.
+\vspace{10em}
+
+\noindent Negate $-13_{10}$ using 5-bit one's complement.
+\vspace{10em}
+% You can convert a positive number (say +10) to negative number by applying a
+% negative sign in front of it (-(+10) = -10). It is more evident from taking
+% negative of a negative number (-(-10) = +10). In case of sign-magnitude
+% representation, the ``negative operator'' flips the sign bit. The next two
+% signed number representations (1's complement and 2's complement). Are designed
+% around specific negative operator definitions.
+
+\subsection{One's complement binary numbers}
+
+% In one's complement representation, the negative operation is obtained by flipping
+% all the bits of the binary number. Example, a 5-bit one's
+% complement of $+10 = (01010)_2$ is $(10101)_2 = -10$. Note that flipping bits is
+% equivalent to subtracting the number from $(11111)_2$, hence the name. You can
+% also confirm that double negative operator yields back the same number.
+
+% \begin{prob}
+%   \begin{itemize}
+%   \item Write down all possible 4-digit binary numbers and corresponding decimal
+%     values if they are in sign magnitude format? What is the minimum and maximum value?
+%   \item What is the minimum and maximum value of n-digit signed binary number in
+%     one's complement?
+%   \end{itemize}
+% \end{prob}
+\vspace{20em}
+
+\begin{prob}
+  Determine the decimal values of the following 1’s complement 6-digit binary numbers :
+  \begin{enumerate}
+  \item 01101110
+  \item 10101101
+  \end{enumerate}
+\end{prob}
+\vspace{20em}
+
+\begin{prob}
+  Convert the decimal numbers -17 and +23 into the 6-digit one's complement binary numbers and try adding them. What
+  adjustments will you need to make to get the right result's (23-17=6) in binary representation.
+\end{prob}
+\vspace{20em}
+
+
+\subsection{Two's complement negation}
+
+Negate $13_{10} = 01101$ using 5-bit two's complement.
+\vspace{10em}
+
+\noindent Negate $-13_{10}$ using 5-bit two's complement.
+\vspace{10em}
+
+% In two's complement representation, the n-digit negative number is obtained by
+% subtracting the positive number from $2^{n}$. Example, two's
+% complement of 5-digit binary number $+10 = (01010)_2$ is $2^5 - 10 = 22 =
+% (11000)_2$. An easier algorithm to get two's complement goes via one's
+% complement. Note that $(11111)_2 = 2^5-1$. We can get two's complement by adding
+% 1 to one's complement. To get two's complement:
+% Easier algorithm
+% \begin{enumerate}
+% \item Flip all the bits. (Same as taking one's complement).
+% \item Add 1 to the number.
+% \end{enumerate}
+
+
+\subsection{Two's complement representation}
+
+% \begin{prob}
+%   \begin{itemize}
+%   \item Write down all possible 4-digit binary numbers and corresponding decimal
+%     values if they are in two's complement format? What is the minimum and maximum value?
+%   \item What is the minimum and maximum value of n-digit signed binary number in
+%     two's complement?
+%   \end{itemize}
+% \end{prob}
+\vspace{20em}
+
+\begin{prob}
+  Determine the decimal values of the following 2’s complement 6-digit numbers :
+  \begin{enumerate}
+  \item 01011110
+  \item 10010111
+  \end{enumerate}
+\end{prob}
+\vspace{10em}
+
+\begin{prob}
+  Convert the decimal numbers -17 and +23 into the 6-digit two's complement binary numbers and try adding them. What adjustments will you need to make to get the right result's (23-17=6) in binary representation.
+\end{prob}
+\vspace{20em}
+
+\begin{prob}
+  Convert the decimal numbers 73, 23, -17, and -163 into signed 8-bit numbers in the
+  following representations:
+  \begin{enumerate}
+    \item Sign and magnitude
+    \item 1’s complement
+    \item 2’s complement
+  \end{enumerate}
+\end{prob}
+\vspace{20em}
+
+
+\subsection{Arithmetic overflow}
+\begin{prob}
+  Consider addition of 4-digit two's complement binary numbers
+  \begin{enumerate}
+  \item $1010_2 + 1101_2$
+  \item $1011_2 + 1100_2$
+  \end{enumerate}
+  In which case overflow happens? Can you come up with a rule to easily detect overflow?
+\end{prob}
+\vspace{20em}
+
+\section{Binary coded decimal}
+In Binary coded decimal (BCD), each decimal digit is represented by 4 bits. For
+example, $1047 = (0001\_0000\_0100\_0111)_{\text{BCD}}$. It is useful in
+input-output applications where the number has to be either displayed as decimal
+or received as decimal.
+
+\includegraphics[width=0.5\linewidth]{bcdto7seg.png}
+
+\begin{prob}
+  Convert 11, 23, 35, 57 and 103897 to BCD?
+\end{prob}
+\vspace{10em}
+
+\section{Gray code}
+A sequence of binary numbers where only one bit changes when the number
+increases by 1. It is helpful in applications like wheel encoders
+
+\includegraphics[width=0.5\linewidth]{gray-code.pdf}
+
+\begin{prob}
+  Write all possible 3-bit binary numbers in gray-code
+\end{prob}
+\vspace{10em}

@@ -1,0 +1,101 @@
+
+\section{Place value number system}
+
+A decimal number 1342 can be written as
+\begin{align*}
+  1342&=1\times1000 + 3\times100 + 4\times10 + 2\times1
+        \\
+      &=1\times10^3 + 3\times10^2+4\times10^1 + 2\times10^0.
+\end{align*}
+
+Decimal numbers are said to be of base (or radix) 10. One can generalize this
+idea to arbitrary base (or radix) $r$. The same number expressed in some other
+base $r$ will have a very different value:
+\begin{align*}
+  (1342)_r &=1\times r^3 + 3\times r^2+4\times r^1 + 2\times r^0.
+\end{align*}
+
+In general the \emph{value} of a arbitrary $n$-digit number $d_{n-1}d_{n-2}
+\dots d_1 d_0$ in base $r$ is:
+\begin{align*}
+  (d_{n-1}d_{n-2} \dots d_1 d_0)_r &=d_{n-1} \times r^{n-1} + d_{n-2}\times r^{n-2}+ \dots + d_1\times r^1 + d_0\times r^0 &= \sum_{k=0}^{n-1} d_k r^k
+\end{align*}
+Each digit value is always smaller than base $d_k <= r-1$.
+
+\section{Binary numbers}
+
+Numbers with base $2$ are called binary numbers. For example, the number
+$(10110)_2$ has value:
+\begin{align*}
+  (10110)_2 &= 1 \times 2^4+ 0 \times 2^3 + 1\times 2^2 + 1 \times 2^1+ 0\times 2^0
+              \\
+            &= 22.
+\end{align*}
+
+\begin{prob}
+  Convert the following binary numbers to decimal: $(11110)_2$, $(100111)_2$.
+\end{prob}
+\vspace{10em}
+
+\paragraph{Conversion from decimal to binary}
+The value is in decimal because we find it easy to do calculations in decimal
+numbers. Decimal values can be converted back to Binary representation by
+\emph{repeated division} by 2 while noting down the remainder. Allow me
+to use $/$ sign to denote both quotient and remainder after division. Let's convert $(22)_{10}$
+back to binary: 
+
+\begin{align*}
+  22 / 2 &= (11, 0) & \text{ 11 is the quotient and 0 is the remainder} \\
+  11 / 2 &= (5, 1) & \text{5 is the quotient and 1 is the remainder}\\
+  5 / 2 &= (2, 1) & \\ 
+  2 / 2 &= (1, 0) & \\
+  1 / 2 &= (0, 1) &
+\end{align*}
+
+Read the remainders from bottom to top and right them as left to right, to form the resultant binary number $(22)_{10} = (10110)_2$.
+
+\begin{prob}
+Find the binary representation for decimal numbers: $123$ and $89$. Show your work.
+\end{prob}
+\vspace{10em}
+
+
+\section{Hexadecimal numbers}
+Numbers with base $16$ are called Hexadecimal numbers. From 0 to 9 the symbols
+are same as decimal numbers. From 10 to 15, Hexadecimal numbers use A to F.
+\[ A = 10, B = 11, C = 12, D = 13, E = 14, F = 15 \]. Example, $(10AD)_{16} = 1
+\times 16^3 + 10 \times 16^1 + 13 = 4096 + 160 + 13 = 4269$.
+
+\section{Octal numbers}
+Numbers with base $8$ are called octal numbers. Example, $(354)_8 = 3 \times 8^2
++ 5 \times 8 + 4 = 192 + 40 + 4 = 236$.
+
+
+
+\section{Hexadecimal/octal to binary and vice-versa}
+Normally, if you have to convert between a number of base $r_1$ to a number of
+base $r_2$, we will have to convert it via decimal numbers. Convert from base
+$r_1$ to decimal and then from decimal to $r_2$.
+
+Since Hexadecimal base $16$ is an exact power of $2$ ($16 = 2^4$). Conversion
+between Hexadecimal to binary is easy. You can group 4 binary digits from right
+to left and convert each group of 4 binary digits to a single Hexadecimal digit
+and back. Example, $(10110)_2 = (0001\_0110)_2 = (16)_{16}$. To convert back.
+Take example, $(10AD)_{16} = (0001\_0000\_1010\_1101)_2 = (1\_0000\_1010\_1101)_2$.
+
+\begin{prob}
+  Find the binary and decimal values of the following Hexadecimal numbers
+  $(A25F)_{16}$, $(F0F0)_{16}$.
+\end{prob}
+\vspace{10em}
+
+
+
+Similarly octal to binary can proceed by grouping 3-binary digits at a time.
+Example, $(354)_8 = (011\_101\_100)_2$.
+
+\begin{prob}
+  Find the binary and decimal values of the following Octal numbers
+  $(3751)_8$ and $(722)_8$.
+\end{prob}
+\vspace{10em}

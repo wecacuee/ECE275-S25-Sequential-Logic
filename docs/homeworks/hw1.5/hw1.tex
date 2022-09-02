@@ -1,0 +1,75 @@
+\documentclass[twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in]{geometry}
+\usepackage{graphicx}
+\input{sym}
+\title{Homework 1}
+\author{Max marks: 80}
+\date{Due on September 8, 2021, before class.}
+\newtheorem{prob}{Problem}
+
+\newcommand{\bx}{\bar{x}}
+\newcommand{\by}{\bar{y}}
+\newcommand{\bz}{\bar{z}}
+\begin{document}
+
+\maketitle
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{fig-2.24a.png}
+\caption{A three-input circuit}
+\label{fig:fig-2.24a}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{fig-2.23.png}
+    \caption{A three-variable function}
+    \label{fig:fig-2.23}
+\end{figure}
+
+\begin{prob}
+Use algebraic manipulation to find the minimum sum-of-products expression for the function $f = x_1x_3 + x_1\bx_2 + \bx_1 x_2 x_3 + \bx_1 \bx_2 \bx_3$. ~\cite[Prob 2.12]{brown2013fundamentals}[10 marks]
+\end{prob}
+
+\begin{prob}
+Use algebraic manipulation to find the minimum sum-of-products expression for the function $f = x_1\bx_2\bx_3 + x_1x_2x_4 + x_1\bx_2 x_3\bx_4$.~\cite[Prob 2.13]{brown2013fundamentals}[10 marks]
+\end{prob}
+
+\begin{prob}
+Draw a timing diagram for the circuit in Figure~\ref{fig:fig-2.24a}. Show the
+waveforms that can be observed on all wires (f, g, h, k, l) in the circuit.\cite[Prob 2.8]{brown2013fundamentals}[10 marks]
+\end{prob}
+
+\begin{prob}
+Represent the function in Figure~\ref{fig:fig-2.23} in the form of a Venn diagram and find its minimal
+sum-of-products form.~\cite[Prob 2.17]{brown2013fundamentals}[10 marks]
+\end{prob}
+
+\begin{prob}
+Use algebric manipulation to prove that $(x+y)\cdot(x+\bar{y}) = x$. \cite[Prob 2.2]{brown2013fundamentals} [10 marks].
+\end{prob}
+
+\begin{prob}
+Determine whether or not the following expressions are valid, i.e., whether the left- and
+right-hand sides represent the same function.
+\cite[Prob 2.7]{brown2013fundamentals}[10 marks]
+\begin{enumerate}
+    \item $x_1 \bx_3 + x_2 x_3 + \bx_2 \bx_3 = (\bx_1 + \bx_2 + x_3)(x_1 + x_2 + \bx_3)(\bx_1 + x_2 + \bx_3)$
+    \item $(x_1 + x_3)(\bx_1 + \bx_2 + \bx_3)(\bx_1 + x_2) = (x_1 + x_2)(x_2 + x_3)(\bx_1 + \bx_3)$
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+Design the simplest sum-of-products circuit that implements the function $f (x_1 , x_2 , x_3 ) = \sum m(3, 4, 6, 7)$.~\cite[Prob 2.21]{brown2013fundamentals}[10 marks]
+\end{prob}
+
+\begin{prob}
+Design the simplest product-of-sums circuit that implements the function $f (x_1 , x_2 , x_3 ) = \prod M (0, 2, 5)$.~\cite[Prob 2.22]{brown2013fundamentals}[10 marks]
+\end{prob}
+
+
+\bibliography{main}
+\bibliographystyle{plain}
+\end{document}
