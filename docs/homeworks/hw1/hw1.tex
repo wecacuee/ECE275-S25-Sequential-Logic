@@ -1,75 +1,79 @@
-\documentclass[twocolumn]{article}
+\documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[top=1in]{geometry}
 \usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
 \input{sym}
 \title{Homework 1}
-\author{Max marks: 80}
-\date{Due on September 8, 2021, before class.}
+\author{Max marks: 110}
+\date{Due on Sept 9th, 2021, 12 noon, before class. Always show your
+  work/process. Final answer is worth less than correct process.}
 \newtheorem{prob}{Problem}
 
 \newcommand{\bx}{\bar{x}}
 \newcommand{\by}{\bar{y}}
 \newcommand{\bz}{\bar{z}}
+\newcommand{\bA}{\bar{A}}
+\newcommand{\bB}{\bar{B}}
+\newcommand{\bC}{\bar{C}}
 \begin{document}
-
 \maketitle
 
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth]{fig-2.24a.png}
-\caption{A three-input circuit}
-\label{fig:fig-2.24a}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{fig-2.23.png}
-    \caption{A three-variable function}
-    \label{fig:fig-2.23}
-\end{figure}
-
 \begin{prob}
-Use algebraic manipulation to find the minimum sum-of-products expression for the function $f = x_1x_3 + x_1\bx_2 + \bx_1 x_2 x_3 + \bx_1 \bx_2 \bx_3$. ~\cite[Prob 2.12]{brown2013fundamentals}[10 marks]
+  Convert the each of the following numbers into binary, decimal, hexadecimal,
+octal numbers. Show your work. ($8 \times 6 $ marks)
+
+  \begin{tabular}{lllll}
+    \toprule
+     & Binary & Decimal & Hexadecimal & Octal \\
+    \midrule
+    a)& $1110_2$     & ? & ? & ?  \\
+    b)& $10\_0100_2$ & ? & ? & ? \\
+    c)& ? & $339_{10}$   & ? & ? \\
+    d)& ? & $711_{10}$   & ? & ? \\
+    e)& ? & ? & $7C_{16}$    & ? \\
+    f)& ? & ? & $ED3A_{16}$  & ? \\
+    g)& ? & ? & ? & $371_8$\\
+    h)& ? & ? & ? & $2560_8$\\
+    \bottomrule
+  \end{tabular}
 \end{prob}
 
 \begin{prob}
-Use algebraic manipulation to find the minimum sum-of-products expression for the function $f = x_1\bx_2\bx_3 + x_1x_2x_4 + x_1\bx_2 x_3\bx_4$.~\cite[Prob 2.13]{brown2013fundamentals}[10 marks]
+  Convert the each of the following numbers into decimal, 8-bit sign-magnitude binary,
+  8-bit one's complement binary and 8-bit two's complement binary. Show your work. ($6 \times 6 $ marks)
+
+  \begin{tabular}{lllll}
+    \toprule
+    & Decimal & Sign-magnitude & One's complement & Two's complement \\
+    \midrule
+    a) & $-59_{10}$ & & & \\
+    b) & $-150_{10}$ & & & \\
+    c) & & & & $0100\_1110_2$ \\
+    d) & &  & & $1011\_0101_2$\\
+    e) & & & $0110\_1111_2$&  \\
+    f) & &  & $1001\_1110_2$& \\
+    \bottomrule
+  \end{tabular}
 \end{prob}
 
 \begin{prob}
-Draw a timing diagram for the circuit in Figure~\ref{fig:fig-2.24a}. Show the
-waveforms that can be observed on all wires (f, g, h, k, l) in the circuit.\cite[Prob 2.8]{brown2013fundamentals}[10 marks]
+  Convert the decimal numbers to 6-bit two's complement binary and then add
+  them. Check if the addition causes overflow ($3 \times 6$ marks).
+  \begin{enumerate}
+  \item $-16_{10} - 9_{10}$
+  \item $19_{10} - 4_{10}$
+  \item $-3_{10} - 30_{10}$
+  \end{enumerate}
 \end{prob}
 
 \begin{prob}
-Represent the function in Figure~\ref{fig:fig-2.23} in the form of a Venn diagram and find its minimal
-sum-of-products form.~\cite[Prob 2.17]{brown2013fundamentals}[10 marks]
+  \begin{enumerate}
+  \item Convert $289_{10}$  to binary coded decimal (BCD). (2 marks)
+  \item Convert $1001\_ 0101\_ 0001_{BCD}$  to decimal. (2 marks)
+  \item Convert $0110\_ 1001_{BCD}$  to binary. (4 marks)
+  \end{enumerate}
 \end{prob}
 
-\begin{prob}
-Use algebric manipulation to prove that $(x+y)\cdot(x+\bar{y}) = x$. \cite[Prob 2.2]{brown2013fundamentals} [10 marks].
-\end{prob}
-
-\begin{prob}
-Determine whether or not the following expressions are valid, i.e., whether the left- and
-right-hand sides represent the same function.
-\cite[Prob 2.7]{brown2013fundamentals}[10 marks]
-\begin{enumerate}
-    \item $x_1 \bx_3 + x_2 x_3 + \bx_2 \bx_3 = (\bx_1 + \bx_2 + x_3)(x_1 + x_2 + \bx_3)(\bx_1 + x_2 + \bx_3)$
-    \item $(x_1 + x_3)(\bx_1 + \bx_2 + \bx_3)(\bx_1 + x_2) = (x_1 + x_2)(x_2 + x_3)(\bx_1 + \bx_3)$
-\end{enumerate}
-\end{prob}
-
-\begin{prob}
-Design the simplest sum-of-products circuit that implements the function $f (x_1 , x_2 , x_3 ) = \sum m(3, 4, 6, 7)$.~\cite[Prob 2.21]{brown2013fundamentals}[10 marks]
-\end{prob}
-
-\begin{prob}
-Design the simplest product-of-sums circuit that implements the function $f (x_1 , x_2 , x_3 ) = \prod M (0, 2, 5)$.~\cite[Prob 2.22]{brown2013fundamentals}[10 marks]
-\end{prob}
-
-
-\bibliography{main}
-\bibliographystyle{plain}
 \end{document}
