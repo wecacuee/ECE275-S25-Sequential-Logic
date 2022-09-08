@@ -96,6 +96,26 @@ complement. Note that $(11111)_2 = 2^5-1$. We can get two's complement by adding
 \vspace{10em}
 
 
+How to convert one's complement number representation into sign-magnitude numbers?
+\begin{enumerate}
+\item Check if the number is positive or negative. Even for one's complement representation, or two's complement representation, if the MSB (Most-significant bit) is 1, then the number is negative, otherwise positive.
+\item If positive: For positive numbers, two's complement, one's complement and sign magnitude are the same. No conversion between different representation is needed.
+2.b If negative: For negative numbers. Flip the bits of 1's complement. Once you flip the 1's complement bits of a negative number, you get the corresponding positive number.
+\item We still want to represent the original negative number. So we set the MSB of sign-magnitude representation to 1. Since the range (min and max) for both n-bit 1's complement and sign-magnitude are the same (between $-(2^{n-1}-1)$ and $2^{n-1}-1$), you can always represent 8-bit 1's complement numbers with needing to extend the 8-bit number to 9-bits.
+\end{enumerate}
+
+Example: Convert 8-bit one's complement 10101010 to 8-bit sign-magnitude
+Let number n = 10101010
+\begin{enumerate}
+\item Is the number +ve or -ve: It is negative because it starts with 1.
+\item The number is not positive.
+\item Take the 1's complement of the negative number to get the positive part. i.e. Flip the bits:\\
+-n = 01010101 or n = -(01010101)
+\item
+ We got the positive part of the number, but we want to represent the original negative number, so we set the MSB bit one. Hence, the equivalent sign-magnitude representation is:\\
+n = 11010101
+\end{enumerate}
+
 
 \subsection{Two's complement representation}
 
@@ -145,6 +165,21 @@ complement. Note that $(11111)_2 = 2^5-1$. We can get two's complement by adding
   In which of the two case overflow happens? Can you come up with a rule to ``easily'' detect overflow?
 \end{prob}
 \vspace{20em}
+
+\subsubsection{Rules for detecting arithmetic overflow:}
+
+\begin{enumerate}
+  \item Adding numbers of different signs never produces an overflow.
+  \item Adding numbers of the same sign may produce an overflow
+    \begin{enumerate}
+        \item Wrong approach: Adding two negative 2's complement numbers always produces an additional carry-over 1, but that in itself isn't an overflow. An example, the range of 4-bit 2's complement numbers is between -8 to +7. Adding -3 to -4 in 2's complement is 1101 + 1100 produces an additional carry over 1. You can ignore the additional carry-over 1 to get the correct answer 1001 = -7 which is within range -8 to 7.
+        \item Approach 1: The easiest way for now to detect overflow is if adding two -ve numbers results in a +ve number, or adding +ve numbers results in a -ve number.
+        \item Approach 2: You can also do a range test in decimal based range test. The range of n-bit 2's complement numbers is between $-2^{n-1}$ and $2^{n-1}-1$. For 5-bit 2's complement numbers, it is between -16 and 15. For 6-bit 2's complement numbers, it is between -32 and 31.
+        \item Approach 3: You can also check the carry-overs of the most significant two bits. If they match, i.e. 0 and 0, or 1 and 1, then there is no overflow. If they do not match, i.e. 0 and 1 or 1 and 0, then there is an overflow.
+     \end{enumerate}
+\end{enumerate}
+
+
 
 \section{Binary coded decimal}
 In Binary coded decimal (BCD), each decimal digit is represented by 4 bits. For
