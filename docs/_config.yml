@@ -39,8 +39,6 @@ plainwhite:
       url: "/syllabus"
     - title: Schedule
       url: "/schedule"
-    - title: Lab notes
-      url: "/labnotes"
     - title: Course feedback
       url: https://docs.google.com/forms/d/e/1FAIpQLScX9rWaFGDKy-7FuAazdjeMPRQGnBM6kn17jhl5JfRqmr83cw/viewform?usp=sf_link
     - title: Similar courses
