@@ -215,7 +215,7 @@ How about Venn digrams?
 
 
 \section{Multi-input networks}
-\begin{prob}
+\begin{example}
   Convert the following (ANSI) network into a Boolean expression and a truth table.
   \begin{tikzpicture}[circuit logic US]
     \matrix[column sep=7mm]{
@@ -238,7 +238,7 @@ How about Venn digrams?
     
     \draw (andHD.output) to [edge label=f] ++(right:3mm);
   \end{tikzpicture}
-\end{prob}
+\end{example}
 \vspace{20em}
 
 \begin{prob}
@@ -299,6 +299,25 @@ Minterms defined as follows for each row of a two input truth table:\\
 then $Y = \bar{A}      B  + A B = m_1 + m_3 = \sum (1, 3)$.
 
 \noindent This also gives the \emph{sum of products canonical form}.
+
+\begin{example}
+  What is the maxterm $m_{13}$ for a 4-input circuit with inputs $x, y, z, w$
+  (ordered from MSB to LSB).
+\end{example}
+\vspace{10em}
+
+%\noindent Find the minterm $m_n$
+%\begin{enumerate}
+%    \item Convert the minterm number $n$ to a $m$-bit binary number where $m$ is the
+%      order of inputs.
+%    \item Replace 0 with the corresponding input complement and 1 with the input.
+%\end{enumerate}
+
+\begin{prob}
+  What is the maxterm $m_{23}$ for a 5-input circuit with inputs $a, b, c, d, e$
+  (ordered from MSB to LSB).
+\end{prob}
+\vspace{10em}
 
 \begin{example}
   Convert the following 4-input truth table into sum of minterms and sum of products canonical form.
@@ -390,6 +409,18 @@ then $Y = (A+B)(\bar{A} + B) = M_0M_2$.
 product of sums canonical form.
 
 \begin{example}
+  Write the maxterm $M_{11}$ for 4-input Boolean function with the ordered inputs $A, B, C, D$.
+\end{example}
+
+% \noindent Find the maxterm $M_n$
+% \begin{enumerate}
+% \item Convert the maxterm number $n$ to a $m$-bit binary number where $m$ is the
+%   order of inputs.
+% \item Replace 0 with the corresponding input and 1 with the input complement.
+% Add + between each input.
+% \end{enumerate}
+
+\begin{example}
   Convert the following 4-input truth table into product of maxterms and product of sums canonical form.
 
   \noindent
@@ -415,9 +446,6 @@ product of sums canonical form.
     $M_{15}$ & 1 & 1 & 1 & 1 & 0 \\
     \bottomrule
   \end{tabular}
-\end{example}
-
-\begin{example}
 \end{example}
 
 \begin{prob}
@@ -448,22 +476,71 @@ product of sums canonical form.
   \end{tabular}
 \end{prob}
 
+\begin{example}
+  Write the 3-input truth table for the function $f = m_2 + m_3 + m_7$.
+\end{example}
+\vspace{10em}
+
+\begin{prob}
+  Write the 3-input truth table for the function $f = M_4M_5M_7$. 
+\end{prob}
+
+\begin{prob}
+  Write the truth table for the function $f = \bar{A}B\bar{C} + AB\bar{C}$. 
+\end{prob}
+
 \section{Karnaugh maps}
 
 \subsection{Two input K-maps}
 \begin{Karnaughquatre}
   \phminterms{0,1,2,3}
 \end{Karnaughquatre}
+
+\begin{example}
+  Convert the following truth table into a K-map.
+
+  \noindent
+  \begin{tabular}{ll|l}
+    \toprule
+     A & B & f \\
+    \midrule
+    0 & 0 & 0 \\ 
+    0 & 1 & 1 \\ 
+    1 & 0 & 1 \\ 
+    1 & 1 & 0 \\ 
+    \bottomrule
+  \end{tabular}
+\end{example}
+\vspace{10em}
+
+\begin{prob}
+  Convert the following Venn Diagram into a K-map.
+
+  \includegraphics[width=0.2\linewidth]{OR_Venn.pdf}
+\end{prob}
+\vspace{10em}
   
 \subsection{Three input K-maps}
+
 \begin{Karnaughvuit}
   \phminterms{0,1,2,3,4,5,6,7}
 \end{Karnaughvuit}
+
+\begin{prob}
+  Draw a K-map for the function $f = \bar{A}\bar{B}C + AB\bar{C}$.
+\end{prob}
+\vspace{10em}
 
 \subsection{Four input K-maps}
 \begin{Karnaugh}{AB}{CD}
   \phminterms{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
 \end{Karnaugh}
+
+
+\begin{prob}
+  Draw a K-map for a 4-input function $f = m_1 + m_2 + m_7 $.
+\end{prob}
+\vspace{10em}
 
 \subsection{Five input K-maps}
 
@@ -475,6 +552,11 @@ A = 1
 \begin{Karnaugh}{BC}{DE}
   \phmintermssixt{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
 \end{Karnaugh}
+
+\begin{prob}
+  Draw a K-map for a 5-input function $f = M_1 M_2 M_7 $.
+\end{prob}
+\vspace{10em}
 
 %\bibliography{main}
 %\bibliographystyle{plain}
