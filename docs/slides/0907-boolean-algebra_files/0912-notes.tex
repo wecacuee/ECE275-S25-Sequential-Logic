@@ -1,0 +1,198 @@
+\section{More Gates and notations summary}
+\rotatebox[origin=c]{90}{
+\begin{tabular}{lccp{0.2\linewidth}cp{0.2\linewidth}}
+  \toprule
+  Name & C/Verilog & Boolean expr. & Truth Table & (ANSI) symbol & K-map \\
+  \midrule
+  NAND Gate &
+  \texttt{Q = \~{}(x1 \& x2)} &
+  $Q = \overline{x_1 \cdot x_2} = \overline{x_1 x_2}$ &
+ \mbox{\begin{tabular}{cc|c}
+ \toprule
+ $x_1$ & $x_2$ & $\overline{x_1 \cdot x_2}$ \\
+ \midrule
+ 0 & 0 & 1 \\
+ 0 & 1 & 1 \\
+ 1 & 0 & 1 \\
+ 1 & 1 & 0 \\
+ \bottomrule
+ \end{tabular}} &
+\includegraphics[width=0.2\linewidth]{NAND_ANSI_Labelled.pdf} &
+\begin{minipage}[b][][t]{\linewidth}
+\begin{Karnaughquatre}
+\minterms{0,1,2}
+\maxterms{3}
+\end{Karnaughquatre}
+\end{minipage}
+\\
+  NOR Gate &
+\texttt{Q = \~{}(x1 | x2)} &
+$Q = \overline{x_1 + x_2}$ &
+\mbox{\begin{tabular}{cc|c}
+  \toprule
+  $x_1$ & $x_2$ & $\overline{x_1 + x_2}$ \\
+  \midrule
+  0 & 0 & 1 \\
+  0 & 1 & 0 \\
+  1 & 0 & 0 \\
+  1 & 1 & 0 \\
+  \bottomrule
+\end{tabular}} &
+\includegraphics[width=0.2\linewidth]{NOR_ANSI_Labelled.pdf} & 
+                                                               \begin{minipage}[b][][t]{\linewidth}
+\begin{Karnaughquatre}
+\minterms{3}
+\maxterms{0,1,2}
+\end{Karnaughquatre}
+\end{minipage}
+\\
+XOR Gate &
+\texttt{Q = x1 \^{} x2}
+&
+$ Q = x_1 \oplus x_2$
+&
+\mbox{\begin{tabular}{cc|c}
+\toprule
+$x_1$ & $x_2$ & $x_1 \oplus x_2$ \\
+\midrule
+0 & 0 & 0 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 0 \\
+\bottomrule
+        \end{tabular}}
+&
+\includegraphics[width=0.2\linewidth]{XOR_ANSI_Labelled.pdf} &
+\begin{minipage}[b][][t]{\linewidth}
+\begin{Karnaughquatre}
+\minterms{1,2}
+\maxterms{0,3}
+\end{Karnaughquatre}
+\end{minipage}
+\\
+XNOR Gate &
+\texttt{Q = \~{}(x1 \^{} x2)}
+&
+$ Q = \overline{x_1 \oplus x_2}$
+&
+\mbox{\begin{tabular}{cc|c}
+        \toprule
+        $x_1$ & $x_2$ & $\overline{x_1 \oplus x_2}$ \\
+        \midrule
+        0 & 0 & 1 \\
+        0 & 1 & 0 \\
+        1 & 0 & 0 \\
+        1 & 1 & 1 \\
+        \bottomrule
+      \end{tabular}}
+    &
+    \includegraphics[width=0.2\linewidth]{XNOR_ANSI_Labelled.pdf} &
+    \begin{minipage}[b][][t]{\linewidth}
+      \begin{Karnaughquatre}
+        \minterms{0,3}
+        \maxterms{1,2}
+      \end{Karnaughquatre}
+    \end{minipage}
+  \end{tabular}
+}
+\newpage
+
+\section{Boolean Algebra}
+
+\subsection{Axioms of Boolean algebra}
+
+\begin{enumerate}
+\item 
+  $ 0 \cdot 0 = 0 $
+\item 
+    $ 1 + 1 = 1 $
+\item
+    $ 1 \cdot 1 = 1 $
+\item
+    $ 0 + 0 = 0 $
+\item
+    $ 0 \cdot 1 = 1 \cdot 0 = 0 $
+\item
+      $ \bar{0} = 1 $
+\item
+        $ \bar{1} = 0 $
+\item
+      $ x = 0 \text{ if } x \ne 1$ 
+    \item
+      $ x = 1 \text{ if } x \ne 0$ 
+\end{enumerate}
+
+\subsection{Single variable theorems}
+
+\begin{enumerate}
+\item $ x \cdot 0 = 0 $
+  \vspace{5em}
+\item $ x + 1 = 1 $
+  \vspace{5em}
+\item $ x \cdot 1 = x $
+  \vspace{5em}
+\item $ x + 0 = x $
+  \vspace{5em}
+\item $ x \cdot x = x $
+  \vspace{5em}
+\item $ x + x = x $
+  \vspace{5em}
+\item $ x \cdot \bar{x} = 0 $
+  \vspace{5em}
+\item $ x + \bar{x} = 1 $
+  \vspace{5em}
+\item $\bar{\bar{x}} = x $
+  \vspace{5em}
+\end{enumerate}
+
+\begin{remark}[Duality]
+  Swap $+$ with $\cdot$ and 0 with 1 to get another theorem
+\end{remark}
+
+\subsection{Two and three variable properties}
+
+\begin{enumerate}
+\item Commutative: $x\cdot y = y \cdot x$ , $x + y = y + x$
+  \vspace{10em}
+\item Associative: $x\cdot(y\cdot z) = (x \cdot y) \cdot z$, $x+(y+ z) = (x + y) + z$
+  \vspace{10em}
+\item Distributive: $x\cdot(y + z) = x \cdot y + x \cdot z$, $x + y \cdot z = (x + y) \cdot (y + z)$
+  \vspace{10em}
+\item Absorption: $x + x\cdot y = x$, $x \cdot (x+y) = x$
+  \vspace{10em}
+\item Combining: $x \cdot y + x \cdot \bar{y}$, $(x+y) \cdot (x + \bar{y}) = x$
+  \vspace{10em}
+\item DeMorgan's theorem: $\overline{x \cdot y} = \bar{x} + \bar{y}$,
+  $\overline{x + y} = \bar{x} \cdot \bar{y}$.
+  \vspace{10em}
+\item Concensus:
+  \begin{enumerate}
+  \item $x + \bar{x}\cdot y = x + y$
+    \vspace{10em}
+  \item $x \cdot (\bar{x} + y) = x \cdot y$
+    \vspace{10em}
+  \item $x \cdot y + y\cdot z + \bar{x} \cdot z = x\cdot y + \bar{x} \cdot z$
+    \vspace{10em}
+  \item $(x + y) \cdot (y+ z) \cdot (\bar{x} + z) = (x+ y) \cdot (\bar{x} + z)$
+    \vspace{10em}
+  \end{enumerate}
+\end{enumerate}
+
+\begin{example}[Multiplexer]
+  Multiplexer is a circuit used to select one of the input lines $x_1$ and $x_2$
+  based only select input $s$. When $s=0$, $x_1$ is selected, $x_2$ is selected otherwise.
+  Find a boolean expression and a circuit for multiplexer\\
+  \includegraphics[width=0.2\linewidth]{multiplexer-symbol.png}
+  \includegraphics[width=0.2\linewidth]{multiplexer-spec.png}
+\end{example}
+\vspace{10em}
+
+\begin{example}
+  Simplify $f = \bA\bB\bC + A \bB\bC + A\bB\bC $ using boolean algebra.
+\end{example}
+\vspace{10em}
+
+\begin{example}
+  Simplify $f = \bA\bA\bC + \bA\bB C $ using K-maps.
+\end{example}
+\vspace{10em}
