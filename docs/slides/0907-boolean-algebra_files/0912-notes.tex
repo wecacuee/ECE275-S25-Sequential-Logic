@@ -1,3 +1,71 @@
+\section{Karnaugh maps}
+
+\subsection{Two input K-maps}
+\begin{Karnaughquatre}
+  \phminterms{0,1,2,3}
+\end{Karnaughquatre}
+
+% \begin{example}
+%   Convert the following truth table into a K-map.
+% 
+%   \noindent
+%   \begin{tabular}{ll|l}
+%     \toprule
+%      A & B & f \\
+%     \midrule
+%     0 & 0 & 0 \\ 
+%     0 & 1 & 1 \\ 
+%     1 & 0 & 1 \\ 
+%     1 & 1 & 0 \\ 
+%     \bottomrule
+%   \end{tabular}
+% \end{example}
+% \vspace{10em}
+
+% \begin{prob}
+%   Convert the following Venn Diagram into a K-map.
+% 
+%   \includegraphics[width=0.2\linewidth]{OR_Venn.pdf}
+% \end{prob}
+% \vspace{10em}
+  
+\subsection{Three input K-maps}
+
+\begin{Karnaughvuit}
+  \phminterms{0,1,2,3,4,5,6,7}
+\end{Karnaughvuit}
+
+% \begin{prob}
+%   Draw a K-map for the function $f = \bar{A}\bar{B}C + AB\bar{C}$.
+% \end{prob}
+% \vspace{10em}
+
+\subsection{Four input K-maps}
+\begin{Karnaugh}{AB}{CD}
+  \phminterms{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+\end{Karnaugh}
+
+
+% \begin{prob}
+%   Draw a K-map for a 4-input function $f = m_1 + m_2 + m_7 $.
+% \end{prob}
+% \vspace{10em}
+
+\subsection{Five input K-maps}
+
+A = 0
+\begin{Karnaugh}{BC}{DE}
+  \phminterms{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+\end{Karnaugh} \hfill
+A = 1
+\begin{Karnaugh}{BC}{DE}
+  \phmintermssixt{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+\end{Karnaugh}
+
+% \begin{prob}
+%   Draw a K-map for a 5-input function $f = M_1 M_2 M_7 $.
+% \end{prob}
+% \vspace{10em}
 \section{More Gates and notations summary}
 \rotatebox[origin=c]{90}{
 \begin{tabular}{lccp{0.2\linewidth}cp{0.2\linewidth}}
@@ -97,6 +165,39 @@ $ Q = \overline{x_1 \oplus x_2}$
 }
 \newpage
 
+
+\begin{example}
+  Convert the following Boolean expression into a K-map.
+  $ f = \overline{A\bB + C}D $
+\end{example}
+\vspace{20em}
+
+\begin{prob}
+  Convert the following logic circuit into a K-map.\\
+  \begin{tikzpicture}[circuit logic US]
+    \matrix[column sep=7mm]{
+      \node (A) {$A$}; & &  \node [or gate] (andAB) {}; & & & \\
+      \node (B) {$B$}; & \node [not gate] (nB) {};  &  & \node [and gate] (orGC) {}; &  & \\
+      \node (C) {$C$}; & & \node (C2) {}; & & & \node [and gate] (andHD) {}; \\
+      \node (D) {$D$}; & &  & & \node (D2) {}; &\\
+    };
+    \draw (A) -- ++(right:3mm) |- (andAB.input 1);
+    \draw (B) -- (nB.input);
+    \draw (nB.output) -- ++(right:3mm) |- (andAB.input 2);
+
+    \draw (andAB.output) to [edge label=g] ++(right:3mm) |- (orGC.input 1);
+    \draw (C) -- (C2.east) -- ++(right:3mm) |- (orGC.input 2);
+
+    % \draw (orGC.output)  to [edge label=h] (andHD.input);
+
+    \draw (orGC.output) to [edge label=h] ++(right:3mm) |- (andHD.input 1);
+    \draw (D) -- (D2.east) -- ++(right:3mm) |- (andHD.input 2);
+    
+    \draw (andHD.output) to [edge label=f] ++(right:3mm);
+  \end{tikzpicture}
+\end{prob}
+\vspace{20em}
+
 \section{Boolean Algebra}
 
 \subsection{Axioms of Boolean algebra}
@@ -122,7 +223,7 @@ $ Q = \overline{x_1 \oplus x_2}$
       $ x = 1 \text{ if } x \ne 0$ 
 \end{enumerate}
 
-\subsection{Single variable theorems}
+\subsection{Single variable theorems (Prove by drawing K-maps)}
 
 \begin{enumerate}
 \item $ x \cdot 0 = 0 $
@@ -149,7 +250,7 @@ $ Q = \overline{x_1 \oplus x_2}$
   Swap $+$ with $\cdot$ and 0 with 1 to get another theorem
 \end{remark}
 
-\subsection{Two and three variable properties}
+\subsection{Two and three variable properties (Prove by K-maps)}
 
 \begin{enumerate}
 \item Commutative: $x\cdot y = y \cdot x$ , $x + y = y + x$
