@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[only]{excludeonly}
+\usepackage{tikz}
+\usetikzlibrary{circuits.logic.US,positioning,calc} 
+\input{karnaugh}
+\input{sym}
+\title{Logic minimization: Minimum-cost circuits}
+\author{Vikas Dhiman for ECE275}
+\newtheorem{example}{Example}
+\newtheorem{prob}{Problem}
+\newtheorem{remark}{Remark}
+
+\newcommand{\bx}{\bar{x}}
+\newcommand{\by}{\bar{y}}
+\newcommand{\bz}{\bar{z}}
+\newcommand{\bA}{\bar{A}}
+\newcommand{\bB}{\bar{B}}
+\newcommand{\bC}{\bar{C}}
+
+\begin{document}
+\maketitle
+
+\section{A few more Boolean problems}
+\begin{example}
+  Simplify the following Boolean expression:
+  \[ f = x_1\bx_3 \bx_4 + x_2 \bx_3 \bx_4 + x_1 \bx_2 \bx_3 \]
+\end{example}
+
+\begin{example}
+  Using algebraic manipulation to prove that:
+  \[ x + yz = (x + y)(y+z) \]
+\end{example}
+
+\begin{example}
+  Design a three-way light control
+  \includegraphics[width=\linewidth]{figures/design-a-3-way-light-switch.pdf}
+\end{example}
+
+\section{Logic minimization}
+
+A general optimization criteria for multi-level logic are to Minimize
+some combination of:
+\begin{enumerate}
+\item Area occupied by the logic gates and interconnect;
+\item the Critical Path Delay of the longest path through the logic;
+\item the Degree of Testability of the circuit, measured in terms of the percentage
+of faults covered by a specified set of test vectors, for an appropriate fault model
+(Eg., single stuck faults, multiple stuck faults, etc.);
+\item Power consumed by the logic gates.
+\end{enumerate}
+
+In this course, we will start with two-level multi-input circuits and a criteria
+based on the number of gates/transistors/diodes.
+
+\section{Programmable Logic Arrays}
+\includegraphics[width=0.5\linewidth]{figures/PLA-abstract.png}
+\includegraphics[width=0.5\linewidth]{figures/PLA-logic.png}
+
+\section{Two-level circuits}
+The cost that we are going to consider in this class depend upon:
+\begin{enumerate}
+\item Number of gates.
+\item Number of input to the gates.
+\end{enumerate}
+More gates need more transistors, more area on the chip. More-inputs the gate
+need more transistors within each gate. Number of gate inputs can be considered
+secondary criterion to the number of gates.
+
+\begin{example}
+  Find the cost of the following Boolean expression $X = \bA\bB C + AB\bC + A\bB$.
+\end{example}
+
+
+
+%\bibliography{main}
+%\bibliographystyle{plain}
+\end{document}
