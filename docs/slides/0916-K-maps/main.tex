@@ -8,6 +8,8 @@
 \usepackage[only]{excludeonly}
 \usepackage{tikz}
 \usetikzlibrary{circuits.logic.US,positioning,calc} 
+\usepackage[american]{circuitikz}
+
 \input{karnaugh}
 \input{sym}
 \title{Logic minimization: Minimum-cost circuits}
@@ -26,21 +28,21 @@
 \begin{document}
 \maketitle
 
-\section{A few more Boolean problems}
-\begin{example}
-  Simplify the following Boolean expression:
-  \[ f = x_1\bx_3 \bx_4 + x_2 \bx_3 \bx_4 + x_1 \bx_2 \bx_3 \]
-\end{example}
-
-\begin{example}
-  Using algebraic manipulation to prove that:
-  \[ x + yz = (x + y)(y+z) \]
-\end{example}
-
-\begin{example}
-  Design a three-way light control
-  \includegraphics[width=\linewidth]{figures/design-a-3-way-light-switch.pdf}
-\end{example}
+% \section{A few more Boolean problems}
+% \begin{example}
+%   Simplify the following Boolean expression:
+%   \[ f = x_1\bx_3 \bx_4 + x_2 \bx_3 \bx_4 + x_1 \bx_2 \bx_3 \]
+% \end{example}
+% 
+% \begin{example}
+%   Using algebraic manipulation to prove that:
+%   \[ x + yz = (x + y)(y+z) \]
+% \end{example}
+% 
+% \begin{example}
+%   Design a three-way light control
+%   \includegraphics[width=\linewidth]{figures/design-a-3-way-light-switch.pdf}
+% \end{example}
 
 \section{Logic minimization}
 
@@ -76,6 +78,92 @@ secondary criterion to the number of gates.
   Find the cost of the following Boolean expression $X = \bA\bB C + AB\bC + A\bB$.
 \end{example}
 
+\begin{prob}
+  Find the cost of the following Boolean expression $X = A\bB C + \bA B\bC + \bB
+  C$.
+\end{prob}
+
+\section{Terminology for K-maps}
+Running Example: $f = \sum m(0, 1, 2, 3, 7) = \bx_1 + x_1 x_2 x_3$.
+\begin{description}
+  \item[Literal] A single variable or its complement. Example: $\bx, x_1, x_2, x_3$
+  \item[Implicant] A product term which is true for a function. All minterms are
+    implicants. Example: $x_1
+    x_2 x_3$, $\bx_1$, $m_0 = \bx_1\bx_2\bx_3$, $\bx_1 x_3$, $\bx_1 \bx_3$.
+  \item [Prime Implicant] An implicant that cannot be combined into fewer
+    literals. Example: $\bx_1, x_2x_3$.
+  \item [Essential Prime Implicant] An implicant that cannot be combined into
+    fewer literals. Example: $x_2x_3$.
+  \item [Cover] : List of Prime Implicants that account for all $f = 1$.
+  \item [Cost]: Number of gates (excluding not gate on literals) and number of
+      inputs to each gate.
+\end{description}
+
+\begin{example}
+  Find minimum cost expression for the function $f(x_1, x_2, x_3) = \prod M(4, 5, 6)$
+\end{example}
+\vspace{10em}
+
+\begin{prob}
+  Find minimum cost expression for the function $f(x_1, x_2, x_3) = \prod M(2, 5, 6)$
+\end{prob}
+\vspace{10em}
+
+\subsection{Incompletely specified functions or Don't cares}
+
+\begin{figure}[h!]
+  \centering
+  \begin{circuitikz}
+    \draw (0,0) node[seven segment val=0 dot off box on]{};
+    \draw (1,0) node[seven segment val=1 dot off box on]{};
+    \draw (2,0) node[seven segment val=2 dot off box on]{};
+    \draw (3,0) node[seven segment val=3 dot off box on]{};
+    \draw (4,0) node[seven segment val=4 dot off box on]{};
+    \draw (5,0) node[seven segment val=5 dot off box on]{};
+    \draw (6,0) node[seven segment val=6 dot off box on]{};
+    \draw (7,0) node[seven segment val=7 dot off box on]{};
+    \draw (8,0) node[seven segment val=8 dot off box on]{};
+    \draw (9,0) node[seven segment val=9 dot off box on]{};
+  \end{circuitikz}\includegraphics[width=0.1\linewidth]{figures/seven_segment.png}
+  \caption{7 Segment Representations of Each Integer}
+  \label{sevensegs}
+\end{figure}
+
+\begin{tabular}{cccc|c}
+  \toprule
+  \multicolumn{4}{c|}{BCD Value} & LED Segment \\
+  $D_3$ & $D_2$ & $D_1$ & $D_0$ & E \\
+  \midrule
+  0 & 0 & 0 & 0 & 0\\
+  0 & 0 & 0 & 1 & 1\\
+  0 & 0 & 1 & 0 & 0\\
+  0 & 0 & 1 & 1 & 1\\
+  0 & 1 & 0 & 0 & 1\\
+  0 & 1 & 0 & 1 & 1\\
+  0 & 1 & 1 & 0 & 0\\
+  0 & 1 & 1 & 1 & 1\\
+  1 & 0 & 0 & 0 & 0\\
+  1 & 0 & 0 & 1 & 1\\
+  1 & 0 & 1 & 0 & d\\
+  1 & 0 & 1 & 1 & d\\
+  1 & 1 & 0 & 0 & d\\
+  1 & 1 & 0 & 1 & d\\
+  1 & 1 & 1 & 0 & d\\
+  1 & 1 & 1 & 1 & d\\
+  \bottomrule
+\end{tabular}
+
+\begin{example}
+  Find minimum cost expression for the function
+  \[ f(x_1, \dots, x_4) = \sum m(2, 4, 5, 6, 10) + D(12, 13, 14, 15) \]
+\end{example}
+\vspace{10em}
+
+\begin{prob}
+  Find minimum cost expression for the function
+  \[ f(x_1, \dots, x_4) = \sum m(0, 2, 4, 6, 7, 8, 9, 13) + D(1, 12, 15) \]
+\end{prob}
+\vspace{10em}
 
 
 %\bibliography{main}
