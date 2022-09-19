@@ -1,11 +1,15 @@
-\documentclass[twocolumn]{article}
+\documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[top=1in]{geometry}
 \usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usetikzlibrary{circuits.logic.US,positioning,calc} 
 \input{sym}
-\title{Homework 1}
+\title{Homework 2}
 \author{Max marks: 80}
-\date{Due on September 8, 2021, before class.}
+\date{Due on September 23, 2022, before class. Please submit in person in paper
+  this time. It makes grading easier.}
 \newtheorem{prob}{Problem}
 
 \newcommand{\bx}{\bar{x}}
@@ -16,45 +20,79 @@
 \maketitle
 
 \begin{figure}
+\begin{minipage}{0.5\linewidth}
 \centering
-\includegraphics[width=\linewidth]{fig-2.24a.png}
+\begin{tikzpicture}[circuit logic US]
+  \matrix[column sep=7mm]{
+    \node (x2) {$x_2$}; & \node [not gate] (nx2) {};&  \node [nand gate] (x1nx2) {}; & \\
+    \node (x3) {$x_3$}; & \node [not gate] (nx3) {};&  & \node [or gate] (f) {};\\
+    & & \node [and gate] (x1nx3) {}; &  & \\
+    \node (x1) {$x_1$}; & &  & \\
+  };
+  \draw (x2.east) -- ++(right:3mm) |- (nx2.input);
+  \draw (nx2.output) to [edge label=g] ++(right:3mm) |- (x1nx2.input 1);
+
+  \draw (x3.east) -- ++(right:3mm) |- (x1nx2.input 2);
+  \draw (x3.east) -- ++(right:3mm) |- (nx3.input);
+  \draw (nx3.output) to [edge label=h] ++(right:3mm) |- (x1nx3.input 1);
+
+  \draw (x1.east) -- ++(right:3mm) |- (x1nx3.input 2);
+
+  \draw (x1nx2.output) to [edge label=k] ++(right:3mm) |- (f.input 1);
+  \draw (x1nx3.output) to [edge label=l] ++(right:3mm) |- (f.input 2);
+
+  \draw (f.output) to [edge label=f] ++(right:3mm);
+
+\end{tikzpicture}
 \caption{A three-input circuit}
 \label{fig:fig-2.24a}
-\end{figure}
-
-\begin{figure}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
     \centering
-    \includegraphics[width=\linewidth]{fig-2.23.png}
+    \begin{tabular}{ccc|c}
+      \toprule
+      $x_1$ & $x_2$ & $x_3$ & $f(x_1, x_2, x_3)$ \\
+      \midrule
+      0 & 0 & 0 & 0 \\
+      0 & 0 & 1 & 1 \\
+      0 & 1 & 0 & 1 \\
+      0 & 1 & 1 & 0 \\
+      1 & 0 & 0 & 1 \\
+      1 & 0 & 1 & 1 \\
+      1 & 1 & 0 & 1 \\
+      1 & 1 & 1 & 0 \\
+      \bottomrule
+      \end{tabular}
     \caption{A three-variable function}
     \label{fig:fig-2.23}
+\end{minipage}
 \end{figure}
 
 \begin{prob}
-Use algebraic manipulation to find the minimum sum-of-products expression for the function $f = x_1x_3 + x_1\bx_2 + \bx_1 x_2 x_3 + \bx_1 \bx_2 \bx_3$. ~\cite[Prob 2.12]{brown2013fundamentals}[10 marks]
+Use algebraic manipulation to simplify the function $f = x_1x_3 + x_1x_2 + \bx_1 x_2 x_3 + \bx_1 \bx_2 \bx_3$. [10 marks]
 \end{prob}
 
 \begin{prob}
-Use algebraic manipulation to find the minimum sum-of-products expression for the function $f = x_1\bx_2\bx_3 + x_1x_2x_4 + x_1\bx_2 x_3\bx_4$.~\cite[Prob 2.13]{brown2013fundamentals}[10 marks]
+Use algebraic manipulation to simplify the function $f = x_1\bx_2\bx_3 + x_1\bx_2x_4 + x_1\bx_2 x_3\bx_4$.[10 marks]
+\end{prob}
+
+%\begin{prob}
+%Draw a timing diagram for the circuit in Figure~\ref{fig:fig-2.24a}. Show the
+%waveforms that can be observed on all wires (f, g, h, k, l) in the circuit.[10 marks]
+%\end{prob}
+
+\begin{prob}
+Represent the function in Figure~\ref{fig:fig-2.23} in the form of a Venn diagram and find its minimal sum-of-products form.[10 marks]
 \end{prob}
 
 \begin{prob}
-Draw a timing diagram for the circuit in Figure~\ref{fig:fig-2.24a}. Show the
-waveforms that can be observed on all wires (f, g, h, k, l) in the circuit.\cite[Prob 2.8]{brown2013fundamentals}[10 marks]
-\end{prob}
-
-\begin{prob}
-Represent the function in Figure~\ref{fig:fig-2.23} in the form of a Venn diagram and find its minimal
-sum-of-products form.~\cite[Prob 2.17]{brown2013fundamentals}[10 marks]
-\end{prob}
-
-\begin{prob}
-Use algebric manipulation to prove that $(x+y)\cdot(x+\bar{y}) = x$. \cite[Prob 2.2]{brown2013fundamentals} [10 marks].
+Use algebric manipulation to prove that $(x+y)\cdot(x+\bar{y}) = x$. [10 marks].
 \end{prob}
 
 \begin{prob}
 Determine whether or not the following expressions are valid, i.e., whether the left- and
 right-hand sides represent the same function.
-\cite[Prob 2.7]{brown2013fundamentals}[10 marks]
+[10 marks]
 \begin{enumerate}
     \item $x_1 \bx_3 + x_2 x_3 + \bx_2 \bx_3 = (\bx_1 + \bx_2 + x_3)(x_1 + x_2 + \bx_3)(\bx_1 + x_2 + \bx_3)$
     \item $(x_1 + x_3)(\bx_1 + \bx_2 + \bx_3)(\bx_1 + x_2) = (x_1 + x_2)(x_2 + x_3)(\bx_1 + \bx_3)$
@@ -62,11 +100,11 @@ right-hand sides represent the same function.
 \end{prob}
 
 \begin{prob}
-Design the simplest sum-of-products circuit that implements the function $f (x_1 , x_2 , x_3 ) = \sum m(3, 4, 6, 7)$.~\cite[Prob 2.21]{brown2013fundamentals}[10 marks]
+Design the simplest sum-of-products circuit that implements the function $f (x_1 , x_2 , x_3 ) = \sum m(3, 4, 6, 8)$.[10 marks]
 \end{prob}
 
 \begin{prob}
-Design the simplest product-of-sums circuit that implements the function $f (x_1 , x_2 , x_3 ) = \prod M (0, 2, 5)$.~\cite[Prob 2.22]{brown2013fundamentals}[10 marks]
+Design the simplest product-of-sums circuit that implements the function $f (x_1 , x_2 , x_3 ) = \prod M (0, 2, 6)$.[10 marks]
 \end{prob}
 
 
