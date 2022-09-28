@@ -1,0 +1,43 @@
+\maketitle
+\section{Circuit design using NAND/NOR gates }
+
+\begin{example}
+  Implement the function $f(x_1, x_2, x_3) = \sum m(2, 3, 4, 6, 7)$ using (1)
+  NAND gates only and (2) NOR gates only.
+\end{example}
+\vspace{20em}
+
+\begin{remark}
+  NAND-NAND logic is generated from SOP form. NOR-NOR logic is generated from POS form.
+\end{remark}
+
+\begin{remark}
+  NOT gate can also be created from a NAND gate $\bx = \overline{x \cdot x}$.\\
+  \begin{tikzpicture}[circuit logic US]
+    \matrix[column sep=7mm]{
+      \node (x) {$x$}; & \node  [nand gate] (nand) {};\\
+    };
+    \draw (x.east) --++(right:3mm) |- (nand.input 1);
+    \draw (x.east) --++(right:3mm) |- (nand.input 2);
+    \draw (nand.output) --++(right:3mm);
+  \end{tikzpicture}
+\end{remark}
+
+\begin{remark}
+  NOT gate can also be created from a NOR gate $\bx = \overline{x + x}$.\\
+  \begin{tikzpicture}[circuit logic US]
+    \matrix[column sep=7mm]{
+      \node (x) {$x$}; & \node  [nor gate] (nand) {};\\
+    };
+    \draw (x.east) --++(right:3mm) |- (nand.input 1);
+    \draw (x.east) --++(right:3mm) |- (nand.input 2);
+    \draw (nand.output) --++(right:3mm);
+  \end{tikzpicture}
+\end{remark}
+
+\begin{prob}
+  Design the simplest circuit that implements the function $f (x_1 , x_2 , x_3 ) = \sum m(3, 4, 6, 7)$
+  using (1) NAND gates only (2) NOR gates only.
+\end{prob}
+
+\vspace{20em}

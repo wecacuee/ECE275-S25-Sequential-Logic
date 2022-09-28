@@ -1,0 +1,28 @@
+* CE-BOK
+  
+  + [X] (1,6) Understand and use the laws and theorems of Boolean Algebra
+  + [X] (1,2) Design combinational circuits for positive and negative logic
+  + [X] (1,6) Generate minterms, maxterms and canonical forms and convert between them
+  + [X] (1,6) Perform algebraic simplification using Boolean algebra
+  + [X] (1,6) Simplification using K-maps
+  + [X] (1,6) Derive sum of product and product of sums expressions for a combinational circuit
+  + [ ] (1,6) Convert combinational logic to NAND-NAND and NOR-NOR forms
+  + [ ] (1,6) Simplification using Quine-McCluskey method
+  + [ ] (1,2,6) Design Hazard-free two level circuits and understand Hazards in multi-level circuits
+  + [ ] (1,) Compute fan out and noise margin of one device driving the same time
+  + [ ] (1,6) Know the differences and similarities between PAL, PLA, and ROMs and can use each for logic design
+  + [ ] (1,2,6) Design combinational circuits using multiplexers and decoders
+  + [ ] (1,2,6) Describe how tri-state and open-collector outputs are different from totem-pole outputs.
+  + [ ] (1,2,6) Different between and limitations of master-slave and edge-triggered flip-flops.
+  + [ ] (1,6) Analyze a sequential circuit and derive a state-table and a state-graph
+  + [ ] (1,2,6) Understand the difference between synchronous and asynchronous inputs
+  + [ ] (1,2,6) Derive a state graph or state table from a word description of the problem
+  + [ ] (1,2,6) Reduce the number of states in a state table using row reduction and implication tables
+  + [ ] (1,2,6) Perform a state assignment using the guideline method
+  + [ ] (1,2,6) Implement a design using JK, SR, D or T flip-flops
+  + [ ] (1,2) Analyse and design both Mealy and Moore sequential circuits with multiple inputs and multiple outputs
+  + [ ] (1,6) Convert between Mealy and Moore designs
+  + [ ] (1,2) Partition a system into multiple state machines
+  + [ ] (1,6) Simulate designs using computer tools
+  + [ ] (1,6) Use computer tools to program gate arrays logic and debug and test
+  + [X] (1,2,6). Use computer tools to enter designs graphically, (using waveforms??) and HDL

@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[only]{excludeonly}
+\usepackage{tikz}
+\usetikzlibrary{circuits.logic.US,positioning,calc} 
+\usepackage[american]{circuitikz}
+
+\input{karnaugh}
+\input{sym}
+\author{Vikas Dhiman for ECE275}
+\newtheorem{example}{Example}
+\newtheorem{prob}{Problem}
+\newtheorem{remark}{Remark}
+\newtheorem{definition}{Definition}
+
+\newcommand{\bx}{\bar{x}}
+\newcommand{\by}{\bar{y}}
+\newcommand{\bz}{\bar{z}}
+\newcommand{\bA}{\bar{A}}
+\newcommand{\bB}{\bar{B}}
+\newcommand{\bC}{\bar{C}}
+\newcommand{\bD}{\bar{D}}
+
+\title{NAND/NOR gates + Quine McCluskey + Petricks}
+\begin{document}
+\include{0928-nand-nor-gates}
+\include{0928-quine-mccluskey}
+
+%\bibliography{main}
+%\bibliographystyle{plain}
+\end{document}
