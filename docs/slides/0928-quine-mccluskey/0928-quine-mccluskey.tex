@@ -64,6 +64,32 @@ Steps:
 \vspace{20em}
 
 \begin{example}
+  \begin{Karnaugh}{AB}{CD}
+    \minterms{0,4,5,13,15,11}
+    \maxterms{1,2,3,6,7,8,9,10,12,14}
+    \implicant{0}{4}{red}
+    \implicant{4}{5}{blue}
+    \implicant{5}{13}{green}
+    \implicant{13}{15}{cyan}
+    \implicant{15}{11}{orange}
+  \end{Karnaugh}
+\end{example}
+\vspace{10em}
+
+\begin{example}
+  \begin{Karnaugh}{AB}{CD}
+    \minterms{1,2,3,5,7}
+    \indeterminants{0,6,9,13}
+    \maxterms{4,8,10,11,12,14,15}
+    \implicant{0}{2}{red}
+    \implicant{1}{7}{blue}
+    \implicant{1}{6}{green}
+    \implicant{1}{9}{cyan}
+  \end{Karnaugh}
+\end{example}
+\vspace{10em}
+
+\begin{example}
   Reduce the following PI table\\
   \begin{tabular}{r|ccccccccc}
     \toprule
