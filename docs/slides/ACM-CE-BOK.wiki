@@ -1,13 +1,13 @@
 * CE-BOK
   
   + [X] (1,6) Understand and use the laws and theorems of Boolean Algebra
-  + [X] (1,2) Design combinational circuits for positive and negative logic
   + [X] (1,6) Generate minterms, maxterms and canonical forms and convert between them
   + [X] (1,6) Perform algebraic simplification using Boolean algebra
   + [X] (1,6) Simplification using K-maps
   + [X] (1,6) Derive sum of product and product of sums expressions for a combinational circuit
   + [ ] (1,6) Convert combinational logic to NAND-NAND and NOR-NOR forms
   + [ ] (1,6) Simplification using Quine-McCluskey method
+  + [X] (1,2) Design combinational circuits for positive and negative logic
   + [ ] (1,2,6) Design Hazard-free two level circuits and understand Hazards in multi-level circuits
   + [ ] (1,) Compute fan out and noise margin of one device driving the same time
   + [ ] (1,6) Know the differences and similarities between PAL, PLA, and ROMs and can use each for logic design
