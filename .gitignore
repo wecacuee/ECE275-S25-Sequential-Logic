@@ -3,3 +3,6 @@ nohup.out
 *.log
 *.blg
 *.bbl
+*.out
+/back/
+/code/
