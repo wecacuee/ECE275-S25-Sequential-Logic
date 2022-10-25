@@ -71,6 +71,10 @@ There will be no make-ups for missed exams;  plan to be there.
 Late work -- at most one late homework; and one late lab is allowed. Please use your allowance responsibly. Collaboration -- studying in groups is encouraged for understanding, but working the problems should be worked on your own. No collaboration when you are writing down the homework.
 Grading will be based on absolute scale 90% (A)/80% (B)/70% (C)/60% (D).
 
+#### Lab reports
+
+The students will submit the labs in writing (preferably digital format including Verilog files, screenshots and pictures). We will create a brightspace assignment for each lab and ask students to upload relevant files and answers.
+
 ### Tests
 
 Tests will be closed book, with one A4 size paper as cheat-sheet allowed. Calculators will neither be needed nor allowed.
