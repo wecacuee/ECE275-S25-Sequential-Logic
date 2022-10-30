@@ -75,9 +75,13 @@ Grading will be based on absolute scale 90% (A)/80% (B)/70% (C)/60% (D).
 
 The students will submit the labs in writing (preferably digital format including Verilog files, screenshots and pictures). We will create a brightspace assignment for each lab and ask students to upload relevant files and answers. Lab reports should be short proof of works in response to the lab manuals. You do not need to repeat the material from lab manuals. In the lab reports include:
 
-    1. Answers to the questions in lab manuals.
-    2. Verilog code that you wrote.
-    3. Screenshots or pictures showing that it worked.
+1. Answers to the questions in lab manuals.
+2. Verilog code that you wrote.
+3. Screenshots or pictures showing that it worked.
+4. It is mandatory for everyone to attend the labs in person and get their task checked off by TAs.
+5. All reports must be submitted individually. 
+6. It must have proper snaps attached of any work/calculation you did in your notebook; Verilog code and FPGA kit with proper output demonstrated.
+
 
 
 ### Tests
