@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[only]{excludeonly}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usetikzlibrary{circuits.logic.US,positioning,calc} 
+\usepackage[american]{circuitikz}
+
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+  \hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
+\input{karnaugh}
+\input{sym}
+\title{ECE275 Practice problems for Midterm 2 Fall 2022}
+\author{Instructor: Vikas Dhiman (\texttt{vikas.dhiman@maine.edu})}
+\newtheorem{example}{Example}
+\newtheorem{prob}{Problem}
+\newtheorem{remark}{Remark}
+
+\newcommand{\bx}{\bar{x}}
+\newcommand{\by}{\bar{y}}
+\newcommand{\bz}{\bar{z}}
+\newcommand{\bX}{\bar{X}}
+\newcommand{\bY}{\bar{Y}}
+\newcommand{\bZ}{\bar{Z}}
+\newcommand{\bA}{\bar{A}}
+\newcommand{\bB}{\bar{B}}
+\newcommand{\bC}{\bar{C}}
+
+\fancyhead[LH]{Name: \hspace{10em}}
+\fancyhead[RH]{Email: \hspace{10em}}
+\begin{document}
+\include{20221109-midterm}
+
+%\bibliography{main}
+%\bibliographystyle{plain}
+\end{document}
