@@ -15,6 +15,7 @@ layout: page
 # Lab supporting documents
 
 - Pin Assignments : [DE0_TOP.qsf]({{site.baseurl}}/lab_pdfs/DE0_TOP.qsf)
+- Top level file with all pins: [DE0_TOP.v]({{site.baseurl}}/lab_pdfs/DE0_TOP.qsf)
 - DE0 FPGA Manual : [DEO User Manual](https://intel.com/content/dam/altera-www/global/en_US/portal/dsn/42/doc-us-dsnbk-42-5804152209-de0-user-manual.pdf)
 
 # Prelabs
@@ -24,6 +25,7 @@ layout: page
 # Additional Resources
 
 - Intel/Altera Document on Synthesis of Math Functions : [Advanced Synthesis Cookbook](https://intel.com/content/dam/www/programmable/us/en/pdfs/literature/manual/stx_cookbook.pdf)
+- [Accompanying Cookbook code](https://github.com/thomasrussellmurphy/stx_cookbook)
 
 # VGA Driver Files
 

@@ -27,7 +27,7 @@ output	wire	[10:0]	Y_pix;
 output	reg	[0:0]		H_visible;
 output	reg	[0:0]		V_visible;
 			
-output	reg	[0:0]		pixel_clk;
+output	wire [0:0]		pixel_clk;
 
 output	reg	[9:0]		pixel_cnt;
 
