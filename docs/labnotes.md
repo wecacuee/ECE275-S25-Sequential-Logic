@@ -11,11 +11,12 @@ layout: page
 - Oct 24, 2022 : [Procedural Verilog and Binary to BCD]({{site.baseurl}}/lab_pdfs/ECE275_Lab6.pdf)
 - Oct 31, 2022  : [Verilog Code Quality]({{site.baseurl}}/lab_pdfs/ECE275_Lab7.pdf)
 - Nov 15, 2022 : [HDL Simulation]({{site.baseurl}}/lab_pdfs/ECE275_Lab8.pdf)
+- Nov 18, 2022 : [Pong project Kickoff]({{site.baseurl}}/lab_pdfs/kickoff.pdf)
 
 # Lab supporting documents
 
 - Pin Assignments : [DE0_TOP.qsf]({{site.baseurl}}/lab_pdfs/DE0_TOP.qsf)
-- Top level file with all pins: [DE0_TOP.v]({{site.baseurl}}/lab_pdfs/DE0_TOP.qsf)
+- Top level file with all pins: [DE0_TOP.v]({{site.baseurl}}/lab_pdfs/DE0_TOP.v)
 - DE0 FPGA Manual : [DEO User Manual](https://intel.com/content/dam/altera-www/global/en_US/portal/dsn/42/doc-us-dsnbk-42-5804152209-de0-user-manual.pdf)
 
 # Prelabs
