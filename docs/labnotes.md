@@ -11,7 +11,7 @@ layout: page
 - Oct 24, 2022 : [Procedural Verilog and Binary to BCD]({{site.baseurl}}/lab_pdfs/ECE275_Lab6.pdf)
 - Oct 31, 2022  : [Verilog Code Quality]({{site.baseurl}}/lab_pdfs/ECE275_Lab7.pdf)
 - Nov 15, 2022 : [HDL Simulation]({{site.baseurl}}/lab_pdfs/ECE275_Lab8.pdf)
-- Nov 18, 2022 : [Pong project Kickoff]({{site.baseurl}}/lab_pdfs/kickoff.pdf)
+- Nov 18, 2022 : [Pong project Kickoff]({{site.baseurl}}/lab_pdfs/pongproject-kickoff/kickoff.pdf)
 
 # Lab supporting documents
 
