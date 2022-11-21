@@ -27,6 +27,7 @@ layout: page
 
 - Intel/Altera Document on Synthesis of Math Functions : [Advanced Synthesis Cookbook](https://intel.com/content/dam/www/programmable/us/en/pdfs/literature/manual/stx_cookbook.pdf)
 - [Accompanying Cookbook code](https://github.com/thomasrussellmurphy/stx_cookbook)
+-  [Parker Dillmann's DE0_Drivers](https://github.com/LonghornEngineer/DE0_Drivers)
 
 # VGA Driver Files
 
