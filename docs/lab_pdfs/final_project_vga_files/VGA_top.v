@@ -1,12 +1,13 @@
 `include "./DE0_VGA.v"
 
-module VGA_demo(CLK_50, VGA_BUS_R, VGA_BUS_G, VGA_BUS_B, VGA_HS, VGA_VS);
+module VGA_demo(CLOCK_50, 
+                VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS);
 
-input	wire			CLK_50;
+input	wire			CLOCK_50;
 
-output	wire	[3:0]		VGA_BUS_R;		//Output Red
-output	wire	[3:0]		VGA_BUS_G;		//Output Green
-output	wire	[3:0]		VGA_BUS_B;		//Output Blue
+output	wire	[3:0]		VGA_R;		//Output Red
+output	wire	[3:0]		VGA_G;		//Output Green
+output	wire	[3:0]		VGA_B;		//Output Blue
 
 output	wire	[0:0]		VGA_HS;			//Horizontal Sync
 output	wire	[0:0]		VGA_VS;			//Vertical Sync
@@ -32,11 +33,11 @@ always @(posedge pixel_clk)
 		//Pass pins and current pixel values to display driver
 		DE0_VGA VGA_Driver
 		(
-			.clk_50(CLK_50),
+			.clk_50(CLOCK_50),
 			.pixel_color(pixel_color),
-			.VGA_BUS_R(VGA_BUS_R), 
-			.VGA_BUS_G(VGA_BUS_G), 
-			.VGA_BUS_B(VGA_BUS_B), 
+			.VGA_BUS_R(VGA_R), 
+			.VGA_BUS_G(VGA_G), 
+			.VGA_BUS_B(VGA_B), 
 			.VGA_HS(VGA_HS), 
 			.VGA_VS(VGA_VS), 
 			.X_pix(X_pix), 
