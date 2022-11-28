@@ -1,5 +1,5 @@
 # This Dockerfile installs Quartus-web 13.0sp1 compatible with DE0 Cyclone III
-# Usage download Quartus-web-13.0.1.232-linux.tar next to the Dockerfile
+# Usage download Quartus-web-${VERSION}-linux.tar next to the Dockerfile
 FROM  ubuntu:20.04 as base
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
@@ -13,18 +13,19 @@ RUN apt-get update && \
 
 RUN mkdir -p /root/src
 
+ENV VERSION 13.1.0.162
 ENV ALTERA_INSTALL_DIR /root/altera/13.0sp1
-COPY QuartusSetupWeb-13.0.1.232.run ModelSimSetup*.run cyclone*.qdz /root/src/
+COPY QuartusSetupWeb-${VERSION}.run ModelSimSetup*.run cyclone*.qdz /root/src/
 
 RUN cd /root/src && \
-    chmod +x QuartusSetupWeb-13.0.1.232.run && \
-    env QUARTUS_64BIT=1 ./QuartusSetupWeb-13.0.1.232.run --mode unattended --unattendedmodeui none --installdir /root/altera/13.0sp1
+    chmod +x QuartusSetupWeb-${VERSION}.run && \
+    env QUARTUS_64BIT=1 ./QuartusSetupWeb-${VERSION}.run --mode unattended --unattendedmodeui none --installdir $ALTERA_INSTALL_DIR
 
 ENV QUARTUS_INSTALL_DIR $ALTERA_INSTALL_DIR/quartus/
 
 RUN cd /root/src && \
-    chmod +x ModelSimSetup-13.0.1.232.run && \
-    ./ModelSimSetup-13.0.1.232.run --mode unattended --unattendedmodeui none --installdir /root/altera/13.0sp1 --modelsim_edition modelsim_ase
+    chmod +x ModelSimSetup-${VERSION}.run && \
+    ./ModelSimSetup-${VERSION}.run --mode unattended --unattendedmodeui none --installdir $ALTERA_INSTALL_DIR --modelsim_edition modelsim_ase
 
 ENV MODELSIM_INSTALL_DIR $ALTERA_INSTALL_DIR/modelsim_ase/
 

@@ -11,6 +11,7 @@
 \usepackage{subcaption}
 \usepackage{titlesec}
 \usepackage{amsthm}
+\usepackage{listings}
 \newtheorem{prob}{Problem}
 \usepackage[shortlabels]{enumitem}
 
@@ -33,8 +34,8 @@
 \titleformat*{\section}{\bfseries\Large\color{myLayoutColorMain}}
 
 \begin{document}
-\title{ECE275 Lab Final Project Kickoff}
-\author{Vikas Dhiman}
+\title{ECE275 Project progress report (Due Nov 30th)}
+\author{Instructor: Vikas Dhiman}
 \maketitle
 
 \section{VGA module}
@@ -63,6 +64,13 @@ Watch the tutorial below and replicate it on the Altera FPGA board,
   \href{https://vikasdhiman.info/ECE275-Sequential-Logic/lab_pdfs/final_project_vga_files/VGA_top.qsf}{VGA\_top.qsf}
 \end{itemize}
 
+{\color{red}
+  Required submissions for project progress report on Nov 30 before class.
+  \begin{enumerate}
+  \item A working version of VGA\_top.v and VGA\_top.qsf that can draw a box on
+    the screen.
+  \end{enumerate}
+}
 
 
 \section{Breaking application into smaller parts }
@@ -80,9 +88,18 @@ Watch the tutorial below and replicate it on the Altera FPGA board,
   Repeat the above problem in Verilog and show a clock being reduced from 50 MHz
   to 10 Hz in ModelSim simulator. Example files covered in class,
   \href{https://vikasdhiman.info/ECE275-Sequential-Logic/lab_pdfs/pongproject-kickoff/slowclock/testslowclock.sv}{testslowclock.v}
-    \href{https://vikasdhiman.info/ECE275-Sequential-Logic/lab_pdfs/pongproject-kickoff/slowclock/slowclock.sv}{slowclock.v}
+    \href{https://vikasdhiman.info/ECE275-Sequential-Logic/lab_pdfs/pongproject-kickoff/slowclock/slowclock.sv}{slowclock.v}.
 \end{prob}
 
+{\color{red}
+  Required submissions for project progress report on Nov 30 before class.
+  \begin{enumerate}
+  \item Modified testslowclock.sv to generate a fastclock of frequency 50MHz.
+  \item Modified slowclock.sv, that outputs a slowclock of frequency 10Hz when
+    the frequency of input fastclock is 50MHz.
+  \item Screen shot of the waveform that you generated using ModelSim.
+  \end{enumerate}
+}
 
 \subsection{Bouncing Ball}
 
@@ -97,6 +114,47 @@ code and test it using a testbench?
   resolution and ball represented by a box your chosen size. Connect this
   module's output to the VGA module.
 \end{prob}
+
+
+{\color{red}
+  Required submissions for project progress report on Nov 30 before class.
+  \begin{enumerate}
+  \item A bouncingball.sv that bounces the ball around a screen of resolution
+    640x480. The output of the module must be the 10-bit XY coordinates of the
+    ball, 10-bit ballx and 10-bit bally.
+  \item A testbouncingball.sv that runs at 10Hz and shows the ballx moving
+    between 0 and 640 and bally moving between 0 and 480. Note that you can
+    right click on wave-variable and select radix to be Unsigned decimal. You
+    may use the code from Figure~\ref{lst:testbouncingball.sv} as a starting point.\\
+    \includegraphics[width=\linewidth]{./media/testbouncingball-radix-unsigned.png}
+  \item Screenshot of the waveform generated using ModelSim.
+  \end{enumerate}
+}
+
+\begin{figure}
+\begin{lstlisting}[language=verilog]
+`timescale 10ms/1ms
+module testbouncingball();
+  reg clock;
+  reg reset;
+  reg [9:0] paddle_y;
+  initial begin
+    clock = 0;
+    paddle_y = 10'd240;
+    #5 reset = 1;
+    #15 reset = 0;
+  end
+  always #5 clock = ~clock;
+    
+  wire [9:0] ballx;
+  wire [9:0] bally;
+  
+  bouncingball bball( clock, reset, paddle_y, ballx, bally);
+endmodule
+\end{lstlisting}
+  \caption{Sample testbouncingball.sv}
+  \label{lst:testbouncingball.sv}
+\end{figure}
 
 \subsection{Moving paddle}
 
@@ -114,6 +172,47 @@ code and test it using a testbench?
   Once you have the VGA example working, extend the above problem to 640x480
   resolution with you
 \end{prob}
+
+{\color{red}
+  Required submissions for project progress report on Nov 30 before class.
+  \begin{enumerate}
+  \item A paddle.sv that takes 2 bit input up\_down for up button and down
+    button and outputs the Y-coordinate of the paddle which moves according to
+    the button pressed.
+  \item A testpaddle.sv that runs at 50Hz and shows the paddle\_y to increase and
+    decreases witch change in up and down input. You
+    may use the code from Figure~\ref{lst:testpaddle.sv} as a starting point.\\
+    \includegraphics[width=\linewidth]{./media/testpaddle-up-down-wave.png}.
+  \item Screenshot of the waveform generated using ModelSim.
+  \end{enumerate}
+}
+
+\begin{figure}
+\begin{lstlisting}[language=verilog]
+`timescale 10ms/1ms
+module testpaddle();
+   reg clock;
+   reg reset;
+   reg [1:0] up_down; // up down buttons
+   wire [9:0] paddle_y; // y coordinate of paddle y
+   initial begin
+      clock = 0;
+      reset = 0;
+      up_down = 2'b00;
+      #1 reset = 1;
+      #2 reset = 0;
+      #10 up_down = 2'b10; // after delay of 100ms press up
+      #10 up_down = 2'b01; // after delay of 100ms press down
+      #10 up_down = 2'b00; // after delay of 100ms release both
+   end
+   always #1 clock = ~clock; // 20ms clock time period
+
+   paddle pdl( clock, reset, up_down, paddle_y);
+endmodule
+\end{lstlisting}
+\caption{Sample testpaddle.sv}
+\label{lst:testpaddle.sv}
+\end{figure}
 
 \subsection{Ball paddle collision}
 
