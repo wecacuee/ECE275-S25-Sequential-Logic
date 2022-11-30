@@ -5,6 +5,7 @@
 \usepackage{url}
 
 \usepackage[margin=1in]{geometry}
+\usepackage{wrapfig}
 \usepackage{float}
 \usepackage{tcolorbox}
 \usepackage{tocloft}
@@ -41,7 +42,7 @@
 \lstdefinestyle{verilog-style}
 {
     language=Verilog,
-    basicstyle=\tiny\ttfamily,
+    basicstyle=\small\ttfamily,
     keywordstyle=\color{vblue},
     identifierstyle=\color{black},
     commentstyle=\color{vgreen},
@@ -161,7 +162,7 @@ There is no general template, but the following template will work for all
       ...
       // All outputs from the module are declared as regs
       output reg [bits3:0] output_1, 
-      output reg [bits4:0] output_2,
+      output reg [bits4:0] output_2
   );
   // Every synchronous module will need some states
   // States are always declared as registers
@@ -255,9 +256,11 @@ There is no general template, but the following template will work for all
   Can I combine the register block and the two combinational block into a single
   always block?
 \end{question}
-Yes you can. That works. Most students are doing everything in a single always
-block. Remember, you want to generate a circuit from this HDL code. It is helpful for your
-understanding to write HDL code that corresponds to circuit blocks.
+Yes, you can. Not recommended, but it works. Most students are doing everything in a single always
+block. It does not mean that you should. Remember, you want to generate a
+circuit from this HDL code. It is helpful for your understanding to write HDL
+code that corresponds to circuit blocks. You should periodically check the RTL
+diagram in the Netlist viewer.
 
 \begin{lstlisting}[style=verilog-style,frame=ltrb]
   // module keyword starts a module definition.
@@ -362,15 +365,18 @@ general, the following rules can help:
     \lstinline[style=verilog-style]{wire}. When in doubt use a \lstinline[style=verilog-style]{reg}.
 \end{enumerate}
 
+\begin{wrapfigure}[10]{r}{0.4\linewidth}
+  \includegraphics[width=\linewidth]{./blocking-vs-non-blocking-assignment.png}
+\end{wrapfigure}
+
+
 \begin{question}
   When to use continuous assign \lstinline[style=verilog-style]{assign} vs non-blocking assign ``\lstinline{<=}'' vs
   blocking assign ``=''? 
 \end{question}
 The textbook has a very nice explanation of this usage
-in Section 4.5.4. I have reproduced the summary block here. In general, Chapter 4 is will be a useful read if you are
+in Section 4.5.4. I have reproduced the summary block here. In general, Chapter 4 is a useful read if you are
 still struggling with System Verilog programming.
-
-\includegraphics[width=0.4\linewidth]{./blocking-vs-non-blocking-assignment.png}
 
 \begin{question}
   What's the deal with \lstinline[style=verilog-style]{initial} block?
