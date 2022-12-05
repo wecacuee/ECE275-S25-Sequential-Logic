@@ -1,0 +1,85 @@
+% \documentclass[twocolumn]{article}
+% \usepackage[utf8]{inputenc}
+% \usepackage[top=1in]{geometry}
+% \usepackage{graphicx}
+% \usepackage{booktabs}
+% \usepackage{amsmath}
+% \input{sym}
+% \title{Homework 8}
+% \author{Max marks: 120}
+% \date{Due on Nov 10th, 2021, 9 AM, before class.}
+% \newtheorem{prob}{Problem}
+% 
+% \newcommand{\bw}{\bar{w}}
+% \newcommand{\bx}{\bar{x}}
+% \newcommand{\by}{\bar{y}}
+% \newcommand{\bz}{\bar{z}}
+% \newcommand{\bA}{\bar{A}}
+% \newcommand{\bB}{\bar{B}}
+% \newcommand{\bC}{\bar{C}}
+% \begin{document}
+% 
+% \maketitle
+\begin{prob}
+  Derive a minimal state table for an FSM (Finite-state machine) that acts as a
+three-bit parity generator. For every three bits that are observed on the input
+w during three consecutive clock cycles, the FSM generates the parity bit p = 1
+if and only if the number of 1s in the three-bit sequence is odd (10
+marks)~\cite[Prob 6.12]{brown2013fundamentals}.
+\end{prob}
+
+\begin{prob}
+  Design a modulo-6 counter, which counts in the sequence 0, 1, 2, 3, 4, 5, 0,
+1, . . . . The counter counts the clock pulses if its enable input, w, is equal
+to 1. Use D flip-flops in your circuit (20 marks)~\cite[Prob 6.23]{brown2013fundamentals}.
+\end{prob}
+
+
+\begin{prob}
+  Design a three-bit counterlike circuit controlled by the input w. If w = 1,
+then the counter adds 2 to its contents, wrapping around if the count reaches 8
+or 9. Thus if the present state is 8 or 9, then the next state becomes 0 or 1,
+respectively. If w = 0, then the counter subtracts 1 from its contents, acting
+as a normal down-counter. Use J-K flip-flops in your circuit (20
+marks)~\cite[Prob 6.26]{brown2013fundamentals}.
+\end{prob}
+
+\subsubsection*{State Reduction}
+\begin{prob}
+  Reduce the following state table to a minimum number of states:\\
+  \includegraphics[width=0.5\linewidth]{fig-15.2.png}\\
+  (10 marks).
+\end{prob}
+
+\begin{prob}
+  Digital engineer B. I. Nary has just completed the design of a sequential circuit
+  which has the following state table:\\
+  \includegraphics[width=0.5\linewidth]{fig-15.3a.png}\\
+  His assistant, F. L. Ipflop, who has just completed this course, claims that
+his design can be used to replace Mr. Nary’s circuit. Mr. Ipflop’s design has
+the following state table:\\
+\includegraphics[width=0.5\linewidth]{fig-15.3b.png}\\
+\begin{enumerate}
+\item Is Mr. Ipflop correct? (Prove your answer.)(10 marks)
+\item If Mr. Nary’s circuit is always started in state $S_0$ , is Mr. Ipflop correct? (Prove
+  your answer by showing equivalent states, etc.) (10 marks)
+  \end{enumerate} .
+\end{prob}
+
+\subsubsection*{State Assignment}
+\begin{prob}
+  \begin{enumerate}
+  \item Reduce the following state table to a minimum number of states using implica-
+    tion charts (10 marks).
+  \item Use the guideline method to determine a suitable state assignment for the
+    reduced table (10 marks).
+  \item Realize the table using D flip-flops (10 marks).
+  \item Realize the table using J-K flip-flops (10 marks).
+  \end{enumerate}
+  \includegraphics[width=0.5\linewidth]{fig-15.25.png}
+\end{prob}
+
+
+%\bibliography{main}
+%\bibliographystyle{plain}
+%\end{document}
