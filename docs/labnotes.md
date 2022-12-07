@@ -38,7 +38,47 @@ layout: page
 - PLL (Phase Locked Loop) Verilog File : [PLL_PIXEL_CLK.v]({{site.baseurl}}/lab_pdfs/final_project_vga_files/PLL_PIXEL_CLK.v)
 - QSF File : [VGA_top.qsf]({{site.baseurl}}/lab_pdfs/final_project_vga_files/VGA_top.qsf)
 
+
 # Testbenches
 
 - Tutorial video on testbenches (Must be logged in to you Umaine account to view) : [Testbenches Tutorial](https://drive.google.com/file/d/1_xbmeY4J0596vx63K-ubjDB998AcH6LX/view?usp=sharing)
 
+# How to display text on VGA
+
+- You will need the following four files
+  + [display_message.v](../verilog/tic-tac-toe-dec-7/display_message.v)
+  + [draw_ascii.v](../verilog/tic-tac-toe-dec-7/draw_ascii.v)
+  + [rom_async.v](../verilog/tic-tac-toe-dec-7/rom_async.v)
+  + [font_unscii_8x8_latin_uc.mem](../verilog/tic-tac-toe-dec-7/font_unscii_8x8_latin_uc.mem)
+- Usage:
+
+<pre><code class="language-verilog">
+wire [11:0]  text_message_pixel_color;
+wire [0:8*7-1] msg_7char = "RUNNING"; // only supports all casp
+display_message #(
+                     .MSG_LENGTH(7), // length of message
+                     .char_width(32), // char width in pixels
+                     .char_height(32), // char height in pixels
+                     .INIT_F("font_unscii_8x8_latin_uc.mem") // font file
+                     ) disp_msg
+     (.X_pix(X_pix), // current X_pix being drawn
+      .Y_pix(Y_pix), // current Y_pix being drawn
+      .MSG(msg_7char), // Message as 8-bit ascii value
+      .msg_x(RESX / 2 - 4*3*BALLWIDTH), // X pos of left top corner of msg
+      .msg_y(RESY / 2 - 2*BALLWIDTH), // Y pos of left top corner of msg
+      .char_color(12'b1100_0000_0000), // text color
+      .text_bg_color(12'b1111_1111_1111), // text background color
+      .prev_layer_color(BGCOLOR), // color from previous layers 
+      .pixel_color(text_message_pixel_color)); // output wire for pixel color
+
+
+always @(posedge pixel_clk)
+	begin
+      if (ballpixel)
+        pixel_color <= BALLCOLOR;
+      else if (paddlepixel)
+        pixel_color <= PADDLECOLOR;
+      else
+        pixel_color <= text_message_pixel_color;
+	end
+</code></pre>
