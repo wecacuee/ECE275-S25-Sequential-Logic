@@ -3,15 +3,17 @@ layout: page
 ---
 # Lab notes
 
-- Aug 29, 2022 : [Quartus Setup]({{site.baseurl}}/lab_pdfs/ECE275_Lab1_Quartus_Setup.pdf)
-- Sep 12, 2022 : [Verilog and Multiplexers]({{site.baseurl}}/lab_pdfs/ECE275_Lab2_Multiplexers_Verilog_and_Schematics.pdf)
-- Sep 19, 2022 : [Verilog Modules]({{site.baseurl}}/lab_pdfs/ECE275_Lab3_Verilog_Modules.pdf)
-- Sep 26, 2022 : [Ripple Adder]({{site.baseurl}}/lab_pdfs/ECE275_Lab4.pdf)
-- Oct 03, 2022 : [Logic Synthesis and Always Blocks]({{site.baseurl}}/lab_pdfs/ECE275_Lab5.pdf)
-- Oct 24, 2022 : [Procedural Verilog and Binary to BCD]({{site.baseurl}}/lab_pdfs/ECE275_Lab6.pdf)
-- Oct 31, 2022  : [Verilog Code Quality]({{site.baseurl}}/lab_pdfs/ECE275_Lab7.pdf)
-- Nov 15, 2022 : [HDL Simulation]({{site.baseurl}}/lab_pdfs/ECE275_Lab8.pdf)
-- Nov 18, 2022 : [Pong project Kickoff]({{site.baseurl}}/lab_pdfs/pongproject-kickoff/kickoff.pdf)
+- Aug 28, 2022 : [Quartus Setup]({{site.baseurl}}/lab_pdfs/ECE275_Lab1_Quartus_Setup.pdf)
+<!--
+- Sep 11, 2022 : [Verilog and Multiplexers]({{site.baseurl}}/lab_pdfs/ECE275_Lab2_Multiplexers_Verilog_and_Schematics.pdf)
+- Sep 18, 2022 : [Verilog Modules]({{site.baseurl}}/lab_pdfs/ECE275_Lab3_Verilog_Modules.pdf)
+- Sep 25, 2022 : [Ripple Adder]({{site.baseurl}}/lab_pdfs/ECE275_Lab4.pdf)
+- Oct 02, 2022 : [Logic Synthesis and Always Blocks]({{site.baseurl}}/lab_pdfs/ECE275_Lab5.pdf)
+- Oct 23, 2022 : [Procedural Verilog and Binary to BCD]({{site.baseurl}}/lab_pdfs/ECE275_Lab6.pdf)
+- Oct 30, 2022  : [Verilog Code Quality]({{site.baseurl}}/lab_pdfs/ECE275_Lab7.pdf)
+- Nov 14, 2022 : [HDL Simulation]({{site.baseurl}}/lab_pdfs/ECE275_Lab8.pdf)
+- Nov 17, 2022 : [Pong project Kickoff]({{site.baseurl}}/lab_pdfs/pongproject-kickoff/kickoff.pdf)
+-->
 
 # Lab supporting documents
 

@@ -3,7 +3,7 @@ layout: page
 ---
 
 # ECE 275 --- Sequential Logic Systems
-## Fall 2022 (In-person)
+## Fall 2023 (In-person)
 
 ### Learning objectives
 
@@ -35,16 +35,12 @@ By the end of this course, a student in this course will be able to:
 
 Barrows Hall Rm 105, [`vikas.dhiman@maine.edu`](mailto:vikas.dhiman@maine.edu)
 
-Drop-in Hours: 2-5pm Thursdays. <!-- You can book multiple slots for longer questions. -->
-<!-- Google Calendar Appointment Scheduling begin -->
-<!-- iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ28CahXgHZTVhZ-L3SmL7-V1KRYRdrp_D5HO5gu-a_1IcLMwGq1EOwVcUqyQBbjydlzQKJUWp5-?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe -->
-<!-- end Google Calendar Appointment Scheduling -->
+Office hours: By appointment
 
 ### Teaching assistants 
 
-*  Shihab Ahamad (Monday Lab) <shihab.ahamad@maine.edu>
-*  Zafaryab Haider (Tue/Wed Lab) <zafaryab.haider@maine.edu>
-*  Abhilash Durgam (Tue lab/Grading) <abhilash.durgam@maine.edu>
+*  Shihab Ahamad  <shihab.ahamad@maine.edu>
+*  Faija Farjana  <faija.farjana@maine.edu>
 
 ### Expected time commitment per week
 
@@ -60,11 +56,11 @@ Grading is an unfortunate necessity. Grades are based on the following split. Pl
 
 - Homework: 30%
   + Weekly; 9 homeworks; due at the beginning of the class.
-- 2 mid-terms and final (Oct. 7, Nov. 9, Dec 14): 30% total (10% each).
+- 2 mid-terms and final (Oct. 6, Nov. 8, Dec 13): 30% total (10% each).
   + Closed book.
-- Labs: 30% 
+- Labs: 25% 
   + 6-labs; expected to be finished in lab; the deliverable is expected next week.
-- Project: 10%
+- Project: 15%
   + Extensions to the pong-game
 
 There will be no make-ups for missed exams;  plan to be there.
@@ -73,16 +69,14 @@ Grading will be based on absolute scale 90% (A)/80% (B)/70% (C)/60% (D).
 
 #### Lab reports
 
-The students will submit the labs in writing (preferably digital format including Verilog files, screenshots and pictures). We will create a brightspace assignment for each lab and ask students to upload relevant files and answers. Lab reports should be short proof of works in response to the lab manuals. You do not need to repeat the material from lab manuals. In the lab reports include:
+The students will submit the labs in writing (preferably digital format including Verilog files, screenshots and pictures). We will create a brightspace assignment for each lab and ask students to upload relevant files and answers. Lab reports should be short proof of works in response to the lab manuals. You do not need to write lengthy prose for the report or repeat the material from lab manuals. In the lab reports include:
 
 1. Answers to the questions in lab manuals.
 2. Verilog code that you wrote.
 3. Screenshots or pictures showing that it worked.
 4. It is mandatory for everyone to attend the labs in person and get their task checked off by TAs.
-5. All reports must be submitted individually. 
+5. All reports must be submitted individually.
 6. It must have proper snaps attached of any work/calculation you did in your notebook; Verilog code and FPGA kit with proper output demonstrated.
-
-
 
 ### Tests
 
@@ -91,7 +85,6 @@ Tests will be closed book, with one A4 size paper as cheat-sheet allowed. Calcul
 ### Labs
 
 We will have labs throughout the semester. Please attend in person on your assigned lab day. Each student will be provided hardware. By accepting this hardware, the student is agreeing to return the hardware in good condition at the end of the semester.
-
 
 ### Project
 
