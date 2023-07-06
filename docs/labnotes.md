@@ -4,6 +4,7 @@ layout: page
 # Lab notes
 
 - Aug 28, 2022 : [Quartus Setup]({{site.baseurl}}/lab_pdfs/ECE275_Lab1_Quartus_Setup.pdf)
+
 <!--
 - Sep 11, 2022 : [Verilog and Multiplexers]({{site.baseurl}}/lab_pdfs/ECE275_Lab2_Multiplexers_Verilog_and_Schematics.pdf)
 - Sep 18, 2022 : [Verilog Modules]({{site.baseurl}}/lab_pdfs/ECE275_Lab3_Verilog_Modules.pdf)
