@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Seq Circuit example</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="Vikas Dhiman">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js/dist/theme/simple.css" id="theme">
+	<link rel="stylesheet" href="reveal.js/plugin/highlight/zenburn.css">
+
+	<script src="reveal.js/dist/reveal.js"></script>
+    <script src="reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+	<script src="reveal.js/plugin/math/math.js"></script>
+	<script src="reveal.js-plugins/audio-slideshow/plugin.js"></script>
+	<script src="reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+	<script src="reveal.js-plugins/audio-slideshow/recorder.js"></script>
+	<script src="reveal.js-plugins/animate/svg.min.js"></script>
+	<script src="reveal.js-plugins/animate/plugin.js"></script>
+    <script src="reveal.js-plugins/chalkboard/plugin.js"></script>
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"  >
+    <link rel="stylesheet" href="reveal.js-plugins/chalkboard/style.css">
+
+<style>
+.reveal .slides section .fragment.step-fade-in-then-out {
+	opacity: 0;
+	display: none; }
+.reveal .slides section .fragment.step-fade-in-then-out.visible.current-fragment {
+	opacity: 1;
+	display: inherit; }
+ .reveal .slides section .fragment.step-fade-in-then-out.visible {
+	 opacity: 10%;
+	 display: inherit; }
+
+ .reveal .slides section .source {
+     color: gray;
+     font-size: small;
+     text-align: right;
+ }
+
+ div.image-table {
+     display:inline-block;width:450px;vertical-align:top
+ }
+ div.image-table>span {
+     text-align: center;
+ }
+
+ table.truth-table tr th:last-child { border-left-style: double }
+ table.truth-table tr td:last-child { border-left-style: double }
+
+ table.truth-table-2 tr td:last-child { border-left-style: double }
+ table.truth-table-2 tr td:nth-last-child(2) { border-left-style: double }
+ table.truth-table-2 tr th:last-child { border-left-style: double }
+ table.truth-table-2 tr th:nth-last-child(2) { border-left-style: double }
+
+ .reveal table.k-map-3 tr td {
+     border-style: solid;
+ }
+ .reveal table.k-map-3 tr th {
+     border-style: solid;
+ }
+ .reveal table.k-map-3 tr:first-child th {
+     border-style: dashed;
+ }
+ .reveal table.k-map-3 tr:nth-child(2) th {
+     border-style: dashed;
+ }
+
+ .reveal table.k-map-3 tr td:first-child {
+     border-style: dashed;
+ }
+
+
+ .reveal table.k-map-3 tr th:first-child {
+     border-style: dashed;
+ }
+
+ .reveal table.k-map-3 tr:first-child th:first-child {
+     border-style: none;
+ }
+ .reveal table.k-map-3 tr:nth-child(2) th:first-child {
+     border-style: none;
+ }
+
+ .reveal table.k-map-3 tr th:nth-child(2) {
+     border-style: dashed;
+ }
+
+ .reveal table.k-map-3 tr:last-child td {
+     border-bottom: solid;
+ }
+
+ .reveal table.k-map-3 tr:last-child th:first-child {
+     border-bottom: dashed;
+ }
+
+ .reveal table.k-map-4 tr td {
+     border-style: solid;
+ }
+ .reveal table.k-map-4 tr th {
+     border-style: solid;
+ }
+ .reveal table.k-map-4 tr:first-child th {
+     border-style: dashed;
+ }
+ .reveal table.k-map-4 tr:nth-child(2) th {
+     border-style: dashed;
+ }
+
+ .reveal table.k-map-4 tr td:first-child {
+     border-style: dashed;
+ }
+
+
+ .reveal table.k-map-4 tr th:first-child {
+     border-style: dashed;
+ }
+
+ .reveal table.k-map-4 tr:first-child th:first-child {
+     border-style: none;
+ }
+ .reveal table.k-map-4 tr:first-child th:nth-child(2) {
+     border-style: none;
+ }
+ .reveal table.k-map-4 tr:nth-child(2) th:first-child {
+     border-style: none;
+ }
+ .reveal table.k-map-4 tr:nth-child(2) th:nth-child(2) {
+     border-style: none;
+ }
+
+ .reveal table.k-map-4 tr th:nth-child(2) {
+     border-style: dashed;
+ }
+
+ .reveal table.k-map-4 tr:last-child td {
+     border-bottom: solid;
+ }
+
+ .reveal table.k-map-4 tr:last-child th:first-child {
+     border-bottom: dashed;
+ }
+ .tableizer-table tr td {
+     min-width:25px
+ }
+</style>
+
+</head>
+
+<body>
+	<div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+
+<section class="center">
+<div style="display:none" >
+    \[
+    \newcommand{\bx}{\bar{x}}
+    \newcommand{\by}{\bar{y}}
+    \newcommand{\bz}{\bar{z}}
+    \newcommand{\bA}{\bar{A}}
+    \newcommand{\bB}{\bar{B}}
+    \newcommand{\bC}{\bar{C}}
+    \newcommand{\bD}{\bar{D}}
+    \newcommand{\bE}{\bar{E}}
+    \]
+</div>
+<h2>ECE 275: Sequential circuit design example</h2>
+	<p>
+		<a href="https://vikasdhiman.info/ECE275-Sequential-Logic/">Website: https://vikasdhiman.info/ECE275-Sequential-Logic/</a>
+	</p>
+</section>
+
+<section class="center">
+    <h2>Announcemnts</h2>
+    <ul><li>
+        Midterm 2 is on Monday, Nov 15th.
+    </li><li>
+        HW 8 is due on Friday (Nov 12th) at 9 AM before class.
+    </li><li>
+        Office hours on Thursday 4-5:30
+    </li></ul>
+</section>
+
+<section>
+    Design a circuit to detect sequences of 0010 or 0001. Overlapping patterns are allowed. Use Mealy circuit design. Implement it using J-K flip-flops.
+</section>
+
+<section class="center">
+    <h1>Counters revisited</h1>
+</section>
+
+<section>
+    <h2>3-bit Up counter</h2>
+</section>
+
+<section>
+    <h2>Gray code counter</h2>
+</section>
+
+<section>
+    <h2>Example</h2>
+    Detect sequences of 1001 or 110. Non-overlaping.
+</section>
+
+<section><h2>Thanks, Questions, Feedback?</h2>
+    <a href="https://vikasdhiman.info/ECE275-Sequential-Logic/">https://vikasdhiman.info/ECE275-Sequential-Logic/</a>
+    <img src="images/course-feedback.png" height="80%"></img>
+</section>
+
+	<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				height: 900,
+				width: 1200,
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+				mouseWheel: false,
+				previewLinks: false,
+                slideNumber: true,
+                // Transition style
+                transition: 'none', // none/fade/slide/convex/concave/zoom
+//				autoSlide: 5000,
+				animate: {
+					autoplay: true
+				},
+				math: {
+					mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+				},
+				// menu: { // Menu works best with font-awesome installed: sudo apt-get install fonts-font-awesome
+				// 	themes: false,
+				// 	transitions: false,
+				// 	markers: true,
+				// 	hideMissingTitles: true,
+				// 	custom: [
+				//             { title: 'Plugins', icon: '<i class="fa fa-external-link-alt"></i>', src: 'toc.html' },
+				//             { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' }
+				//         ]
+				// },
+                chalkboard: {
+                    theme: 'whiteboard'
+                },
+				plugins: [ RevealMarkdown, RevealHighlight,
+                           RevealMath, // RevealAudioSlideshow, RevealAudioRecorder,
+                           RevealAnimate, RevealChalkboard ],
+			});
+	</script>
+
+</body>
+</html>
