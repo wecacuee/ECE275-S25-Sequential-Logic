@@ -13,7 +13,6 @@ paginate: 10
 
 
 header_pages:
-  - schedule.md
   - syllabus.md
   - labnotes.md
   - category/lecture
@@ -40,11 +39,9 @@ plainwhite:
     - title: Syllabus
       url: "/syllabus"
     - title: Schedule
-      url: "/schedule"
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTjyw0_zWfPbG3yFm_hv6XIx2Q4hWhC7oQSIYzZ2Y3aEvE9G4f0CxxkdAaydcUVv24xyfUpCf-ldWKQ/pubhtml?gid=0&single=true"
     - title: Lab Notes
       url: "/labnotes"
-    - title: Course feedback
-      url: https://docs.google.com/forms/d/e/1FAIpQLScX9rWaFGDKy-7FuAazdjeMPRQGnBM6kn17jhl5JfRqmr83cw/viewform?usp=sf_link
     - title: Similar courses
       url: "/similar-courses"
 
