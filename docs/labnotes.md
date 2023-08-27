@@ -3,7 +3,7 @@ layout: page
 ---
 # Lab notes
 
-- Aug 28, 2022 : [Quartus Setup](https://www.overleaf.com/download/project/64a7061b17a08caff1ff8df0/build/18a343fb7e3-91436535245e2720/output/output.pdf?compileGroup=priority&clsiserverid=clsi-pre-emp-c2d-d-f-96l7&enable_pdf_caching=true&popupDownload=true)
+- Aug 28, 2022 : [Quartus Setup](https://www.overleaf.com/read/fnvkrtypyjyk)
 
 <!--
 - Sep 11, 2022 : [Verilog and Multiplexers]({{site.baseurl}}/lab_pdfs/ECE275_Lab2_Multiplexers_Verilog_and_Schematics.pdf)
