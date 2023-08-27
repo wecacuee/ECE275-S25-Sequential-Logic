@@ -42,6 +42,8 @@ plainwhite:
       url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTjyw0_zWfPbG3yFm_hv6XIx2Q4hWhC7oQSIYzZ2Y3aEvE9G4f0CxxkdAaydcUVv24xyfUpCf-ldWKQ/pubhtml?gid=0&single=true"
     - title: Lab Notes
       url: "/labnotes"
+    - title: Zoom Link
+      url: "https://maine.zoom.us/j/88422320947?pwd=M1FmZWxxTHA2d3ozbWJab1RHYlBQZz09"
     - title: Similar courses
       url: "/similar-courses"
 
