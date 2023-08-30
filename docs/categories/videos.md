@@ -1,4 +1,4 @@
 ---
 layout: categories
-category-name: lecture
+category-name: videos
 ---
