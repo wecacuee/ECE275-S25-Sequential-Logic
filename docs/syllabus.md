@@ -34,7 +34,7 @@ By the end of this course, a student in this course will be able to:
 
 #### Vikas Dhiman
 
-Barrows Hall Rm 105, [`vikas.dhiman@maine.edu`](mailto:vikas.dhiman@maine.edu)
+Barrows Hall Rm 279, [`vikas.dhiman@maine.edu`](mailto:vikas.dhiman@maine.edu)
 
 Office hours: By appointment
 <https://calendar.app.google/VPSRRLpdmaByJvjt5>
