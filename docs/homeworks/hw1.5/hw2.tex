@@ -7,8 +7,8 @@
 \usetikzlibrary{circuits.logic.US,positioning,calc} 
 \input{sym}
 \title{Homework 2}
-\author{Max marks: 70}
-\date{Due on September 23, 2022, before class. Please submit both in brightspace
+\author{Max marks: 105}
+\date{Due on September 18, 2023, before class. Please submit both in brightspace
   and in person in paper this time. Grading on paper is easier.}
 \newtheorem{prob}{Problem}
 
@@ -69,29 +69,41 @@
 \end{figure}
 
 \begin{prob}
-Use algebraic manipulation to simplify the function $f = x_1x_3 + x_1x_2 + \bx_1 x_2 x_3 + \bx_1 \bx_2 \bx_3$. [10 marks]
+  Consider the circuit in Figure~\ref{fig:fig-2.24a}. Write the circuit as:
+  \begin{enumerate}
+    \item Boolean expression [5 marks]
+    \item Truth table [10 marks]
+    \item Venn diagram. [5 marks]
+  \end{enumerate} (Total 20 marks)
 \end{prob}
 
 \begin{prob}
-Use algebraic manipulation to simplify the function $f = x_1\bx_2\bx_3 + x_1\bx_2x_4 + x_1\bx_2 x_3\bx_4$.[10 marks]
-\end{prob}
-
-%\begin{prob}
-%Draw a timing diagram for the circuit in Figure~\ref{fig:fig-2.24a}. Show the
-%waveforms that can be observed on all wires (f, g, h, k, l) in the circuit.[10 marks]
-%\end{prob}
-
-\begin{prob}
-Represent the function in Figure~\ref{fig:fig-2.23} in the form of a Venn diagram and find its minimal sum-of-products form.[10 marks]
-\end{prob}
-
-\begin{prob}
-Use algebric manipulation to prove that $(x+y)\cdot(x+\bar{y}) = x$. [10 marks].
+Represent the function in Figure~\ref{fig:fig-2.23} in the form of a 
+\begin{enumerate}
+  \item Venn diagram [5 marks]
+  \item Boolean expression [5 marks]
+  \item ANSI symbol network [5 marks]
+  \item Timing diagram [5 marks]
+\end{enumerate}
+    Also, find its minimal sum-of-products form [5 marks].
+    (Total 25 marks).
 \end{prob}
 
 \begin{prob}
-Determine whether or not the following expressions are valid, i.e., whether the left- and
-right-hand sides represent the same function.
+Use algebraic manipulation to simplify the function $f = x_1x_3 + x_1x_2 + \bx_1 \bx_2 x_3 + \bx_1 \bx_2 \bx_3$. If the function is already in its simplest form, say so. [10 marks]
+\end{prob}
+
+\begin{prob}
+Use algebraic manipulation to simplify the function $f = x_1 x_2\bx_3 + x_1\bx_2x_4 + x_1\bx_2 x_3\bx_4$. If the function is already in its simplest form, say so. [10 marks]
+\end{prob}
+
+\begin{prob}
+Use algebraic manipulation to prove that $(x+y)\cdot(x+\bar{y}) = x$. [10 marks].
+\end{prob}
+
+\begin{prob}
+Determine whether or not the following expressions are valid, i.e., whether the
+left- and right-hand sides represent the same function.
 [10 marks]
 \begin{enumerate}
     \item $x_1 \bx_3 + x_2 x_3 + \bx_2 \bx_3 = (\bx_1 + \bx_2 + x_3)(x_1 + x_2 + \bx_3)(\bx_1 + x_2 + \bx_3)$
@@ -101,14 +113,14 @@ right-hand sides represent the same function.
 
 \begin{prob}
 Design the simplest sum-of-products circuit that implements the function $f (x_1
-, x_2 , x_3, x_4 ) = \sum m(3, 4, 6, 8)$.[10 marks]
+, x_2 , x_3, x_4 ) = \sum m(3, 4, 6, 7, 8)$.[10 marks]
 \end{prob}
 
 \begin{prob}
-Design the simplest product-of-sums circuit that implements the function $f (x_1 , x_2 , x_3 ) = \prod M (0, 2, 6)$.[10 marks]
+Design the simplest product-of-sums circuit that implements the function $f (x_1 , x_2 , x_3 ) = \prod M (0, 2, 5, 6)$.[10 marks]
 \end{prob}
 
 
-\bibliography{main}
-\bibliographystyle{plain}
+%\bibliography{main}
+%\bibliographystyle{plain}
 \end{document}
