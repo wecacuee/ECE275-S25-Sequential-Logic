@@ -36,6 +36,8 @@
 
 \section{Objectives}
 \begin{enumerate}
+  \item Understand timing diagrams, gate delays and critical path
+  \item Design Hazard-free two level circuits
   \item Building blocks of sequential circuits
   \item Analyze a sequential circuit and derive a state-table and a state-graph
   \item Derive a state graph or state table from a word description of the problem
@@ -51,6 +53,45 @@
   we only need up to two bit counter $C_1C_0$. Draw a truth table for this
   circuit. Do you have requisite knowledge for designing this circuit? Can this
   circuit be designed without a memory element?
+\end{example}
+\vspace{10em}
+
+
+\section{Timing diagrams and propagation delays}
+
+\begin{example}[Timing diagram]
+  Draw a timing diagram for an ideal NAND gate.
+\end{example}
+\vspace{20em}
+
+\subsection{Delays}
+\includegraphics[width=0.5\linewidth]{fig/fig2.67-delays-tpd-tcd.png}
+\begin{definition}[Propagation delay ($t_{pd}$)]
+\end{definition}
+\vspace{5em}
+
+\begin{definition}[Contamination delay ($t_{cd}$)]
+\end{definition}
+\vspace{5em}
+
+\subsection{Paths}
+\includegraphics[width=0.8\linewidth]{fig/fig2.68-short-path-and-critical-path.png}
+\begin{example}
+  Find the propagation delay of the circuit above given that propagation delay
+  of each gate is $100 ps$  add contamination delay of $60ps$.
+\end{example}
+\vspace{10em}
+
+\section{Glitches or Hazards}
+\includegraphics[width=0.6\linewidth]{fig/fig2.76-timing-of-a-glitch.png}
+\begin{definition}[Glitch or Hazard]
+
+\end{definition}
+\vspace{5em}
+
+\begin{example}
+  Design a circuit that fixes the glitch in the above circuit (also known as
+  glitch-free or hazard-free circuit).
 \end{example}
 \vspace{10em}
 

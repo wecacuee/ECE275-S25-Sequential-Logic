@@ -39,8 +39,6 @@ Appendix B of Brown and Vranesic book, ``Fundamentals of digital logic.''
 \begin{enumerate}
 \item Describe how tri-state and open-collector outputs are different from totem-pole outputs
 \item Compute noise margin of one device driving the same time
-\item Understand timing diagrams, gate delays and critical path
-\item Design Hazard-free two level circuits
 \end{enumerate}
 
 \section{Logic levels and Noise Margins}
@@ -224,43 +222,6 @@ Draw a Multiplexer using transmission gates.
 \includegraphics[width=0.3\linewidth]{fig/four-state-and-operator.png}
 \includegraphics[width=0.3\linewidth]{fig/four-state-or-operator.png}
 
-\section{Timing diagrams and propagation delays}
-
-\begin{example}[Timing diagram]
-  Draw a timing diagram for an ideal NAND gate.
-\end{example}
-\vspace{20em}
-
-\subsection{Delays}
-\includegraphics[width=0.5\linewidth]{fig/fig2.67-delays-tpd-tcd.png}
-\begin{definition}[Propagation delay ($t_{pd}$)]
-\end{definition}
-\vspace{5em}
-
-\begin{definition}[Contamination delay ($t_{cd}$)]
-\end{definition}
-\vspace{5em}
-
-\subsection{Paths}
-\includegraphics[width=0.8\linewidth]{fig/fig2.68-short-path-and-critical-path.png}
-\begin{example}
-  Find the propagation delay of the circuit above given that propagation delay
-  of each gate is $100 ps$  add contamination delay of $60ps$.
-\end{example}
-\vspace{10em}
-
-\section{Glitches or Hazards}
-\includegraphics[width=0.6\linewidth]{fig/fig2.76-timing-of-a-glitch.png}
-\begin{definition}[Glitch or Hazard]
-
-\end{definition}
-\vspace{5em}
-
-\begin{example}
-  Design a circuit that fixes the glitch in the above circuit (also known as
-  glitch-free or hazard-free circuit).
-\end{example}
-\vspace{10em}
 
 %\bibliography{main}
 %\bibliographystyle{plain}
