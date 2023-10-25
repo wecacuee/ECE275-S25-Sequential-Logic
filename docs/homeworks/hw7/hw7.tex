@@ -6,7 +6,7 @@
 \usepackage{amsmath}
 \input{sym}
 \title{Homework 4}
-\author{Max marks: 60}
+\author{Max marks: 100}
 \date{Due on Nov 1st, 2023, 12 noon, before class.}
 \newtheorem{prob}{Problem}
 
@@ -43,17 +43,17 @@
   \label{fig:5.10}
 \end{figure}
 
-\begin{prob}
-  Figure~\ref{fig:5.4} shows a S-R latch built with NOR gates. Draw a similar
-latch using NAND gates. Derive its characteristic table and show its timing
-diagram. Assume that $\bar{S}$ and $\bar{R}$ are available.
-\label{prob:2} (10 marks)~\cite[Prob 5.2]{brown2013fundamentals}.
-\end{prob}
-\begin{figure}[ht!]
-  \includegraphics[width=\linewidth]{fig-5.4.png}
-  \caption{Circuit for Prob~\ref{prob:2}}
-  \label{fig:5.4}
-\end{figure}
+% \begin{prob}
+%   Figure~\ref{fig:5.4} shows a S-R latch built with NOR gates. Draw a similar
+% latch using NAND gates. Derive its characteristic table and show its timing
+% diagram. Assume that $\bar{S}$ and $\bar{R}$ are available.
+% \label{prob:2} (10 marks)~\cite[Prob 5.2]{brown2013fundamentals}.
+% \end{prob}
+% \begin{figure}[ht!]
+%   \includegraphics[width=\linewidth]{fig-5.4.png}
+%   \caption{Circuit for Prob~\ref{prob:2}}
+%   \label{fig:5.4}
+% \end{figure}
 
 \begin{prob}
   An SR flip-flop is a flip-flop that has set and reset inputs like a gated SR
@@ -84,6 +84,31 @@ logic gates. (10 marks)~\cite[Prob 5.5]{brown2013fundamentals}
   \caption{Circuit for Problem~\ref{prob:6}.}
     \label{fig:p5.3}
 \end{figure}
+
+
+\begin{prob}
+  Derive a minimal state table for an FSM (Finite-state machine) that acts as a
+three-bit parity generator. For every three bits that are observed on the input
+w during three consecutive clock cycles, the FSM generates the parity bit p = 1
+if and only if the number of 1s in the three-bit sequence is odd (10
+marks)~\cite[Prob 6.12]{brown2013fundamentals}.
+\end{prob}
+
+\begin{prob}
+  Design a modulo-6 counter, which counts in the sequence 0, 1, 2, 3, 4, 5, 0,
+1, . . . . The counter counts the clock pulses if its enable input, w, is equal
+to 1. Use D flip-flops in your circuit (20 marks)~\cite[Prob 6.23]{brown2013fundamentals}.
+\end{prob}
+
+
+\begin{prob}
+  Design a three-bit counterlike circuit controlled by the input w. If w = 1,
+then the counter adds 2 to its contents, wrapping around if the count reaches 8
+or 9. Thus if the present state is 8 or 9, then the next state becomes 0 or 1,
+respectively. If w = 0, then the counter subtracts 1 from its contents, acting
+as a normal down-counter. Use J-K flip-flops in your circuit (20
+marks)~\cite[Prob 6.26]{brown2013fundamentals}.
+\end{prob}
 
 \bibliography{main}
 \bibliographystyle{plain}
