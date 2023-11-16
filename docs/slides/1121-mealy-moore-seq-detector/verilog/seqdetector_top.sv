@@ -8,7 +8,7 @@ output reg Z
 reg [2:0] state;
 reg [2:0] next_state;
 
-// Define states as constants
+// Define states as constants 
 parameter [2:0]
 S0 = 3'b000,
 S1 = 3'b001,
