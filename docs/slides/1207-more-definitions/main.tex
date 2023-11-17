@@ -1,4 +1,5 @@
 \documentclass{article}
+
 \usepackage[utf8]{inputenc}
 \usepackage[top=1in]{geometry}
 \usepackage{graphicx}
@@ -33,6 +34,26 @@
 \begin{document}
 
 \maketitle
+
+
+\section{FPGA~\cite[Section~B.6.5]{stephen2022fundamentals}}
+
+\includegraphics[width=0.5\linewidth]{./media/FPGA.png}
+\includegraphics[width=0.5\linewidth]{./media/LUT.png}\\
+\includegraphics[width=0.5\linewidth]{./media/FF-LUT.png}
+\includegraphics[width=0.5\linewidth]{./media/programmed-FPGA.png}
+
+
+\begin{definition}[Random Access Memory (RAM)] Structure of a RAM is as follows:\\
+  \includegraphics[width=0.3\linewidth]{./media/memory-array.png}
+  \includegraphics[width=0.3\linewidth]{./media/memory-array-32kb.png}
+  \includegraphics[width=0.3\linewidth]{./media/SRAM-cell.png}\\
+  \includegraphics[width=0.7\linewidth]{./media/SRAM.png}
+\end{definition}
+
+\begin{definition}[Read Only Memory (ROM)] Structure of a ROM is as follows:\\
+  \includegraphics[width=\linewidth]{./media/rom.png}
+\end{definition}
 
 
 \begin{definition}[Fan-in]
@@ -72,17 +93,6 @@
 \end{example}
 \vspace{5em}
 
-\begin{definition}[Random Access Memory (RAM)] Structure of a RAM is as follows:\\
-  \includegraphics[width=0.3\linewidth]{./media/memory-array.png}
-  \includegraphics[width=0.3\linewidth]{./media/memory-array-32kb.png}
-  \includegraphics[width=0.3\linewidth]{./media/SRAM-cell.png}\\
-  \includegraphics[width=0.7\linewidth]{./media/SRAM.png}
-\end{definition}
-
-\begin{definition}[Read Only Memory (ROM)] Structure of a ROM is as follows:\\
-  \includegraphics[width=\linewidth]{./media/rom.png}
-\end{definition}
-
 \section{Timing parameters for sequential circuit~\cite[Section~3.5]{harris2022digital}}
 
 \includegraphics[width=0.6\linewidth]{./media/ff-timings.png}
@@ -101,13 +111,6 @@
 \begin{definition}[Clock-to-Q propagation delay $t_{ccq}$ of a latch/flip-flop]
   Time taken for Q output to stabalize  after the clock edge.
 \end{definition}
-
-\section{FPGA~\cite[Section~B.6.5]{stephen2022fundamentals}}
-
-\includegraphics[width=0.5\linewidth]{./media/FPGA.png}
-\includegraphics[width=0.5\linewidth]{./media/LUT.png}\\
-\includegraphics[width=0.5\linewidth]{./media/FF-LUT.png}
-\includegraphics[width=0.5\linewidth]{./media/programmed-FPGA.png}
 
 \bibliography{main}
 \bibliographystyle{plain}

@@ -1,4 +1,5 @@
 \documentclass{article}
+
 \usepackage[utf8]{inputenc}
 \usepackage[top=1in]{geometry}
 \usepackage{graphicx}
@@ -40,6 +41,31 @@ Appendix B of Brown and Vranesic book, ``Fundamentals of digital logic.''
 \item Describe how tri-state and open-collector outputs are different from totem-pole outputs
 \item Compute noise margin of one device driving the same time
 \end{enumerate}
+
+\section{FPGA~\cite[Section~B.6.5]{stephen2022fundamentals}}
+\includegraphics[width=0.5\linewidth]{./media/FPGA.png}
+\includegraphics[width=0.5\linewidth]{./media/LUT.png}\\
+
+\includegraphics[width=0.5\linewidth]{./media/FF-LUT.png}
+\includegraphics[width=0.5\linewidth]{./media/programmed-FPGA.png}
+
+
+\begin{definition}[Random Access Memory (RAM)] Structure of a RAM is as follows:\\
+  \includegraphics[width=0.3\linewidth]{./media/memory-array.png}
+  \includegraphics[width=0.3\linewidth]{./media/memory-array-32kb.png}
+  \includegraphics[width=0.3\linewidth]{./media/SRAM-cell.png}\\
+  \includegraphics[width=0.7\linewidth]{./media/SRAM.png}
+\end{definition}
+
+\begin{definition}[Read Only Memory (ROM)] Structure of a ROM is as follows:\\
+  \includegraphics[width=\linewidth]{./media/rom.png}
+\end{definition}
+
+\begin{example}
+Draw a Multiplexer using sum of products form.
+\end{example}
+\vspace{10em}
+
 
 \section{Logic levels and Noise Margins}
 
@@ -222,7 +248,6 @@ Draw a Multiplexer using transmission gates.
 \includegraphics[width=0.3\linewidth]{fig/four-state-and-operator.png}
 \includegraphics[width=0.3\linewidth]{fig/four-state-or-operator.png}
 
-
-%\bibliography{main}
-%\bibliographystyle{plain}
+\bibliography{main}
+\bibliographystyle{plain}
 \end{document}
