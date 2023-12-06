@@ -14,10 +14,108 @@ Student Name: \hfill Student Email: \hspace{10em}
   \item Please use a pen or heavy pencil to ensure legibility. Colored
     pens/pencils are recommended for K-map grouping.
   \item Please show your work; where appropriate, marks will be awarded for proper and well-reasoned explanations.
-  \item Please submit the solutions as a  homework on Monday, Nov 7 before
-    class. Submit in paper and a copy to brightspace.
 \end{itemize}
-\newpage
+%\newpage
+
+\begin{prob}
+Use the following 5-variable K-map for F (A, B, C, D, E), and find
+  a minimal SOP expression for F (15 marks)\\
+\begin{minipage}{0.5\linewidth}
+  \centering
+  \begin{Karnaugh}{BC}{DE}
+    \minterms{0,1,5,6,7,8,9,14}
+  \end{Karnaugh}\\
+  A=0
+\end{minipage}%
+\begin{minipage}{0.5\linewidth}
+  \centering
+  \begin{Karnaugh}{BC}{DE}
+    \minterms{1,4,5,6,7,9,12,14}
+  \end{Karnaugh}\\
+  A=1
+\end{minipage}
+\end{prob}
+
+\begin{prob}
+  A sequential circuit has two inputs and two outputs. The inputs ($X_1$ and $X_0$ ) represent a 2-bit binary number, N. If the present value of N is greater than the previous value, then $Z_1$ is 1. If the present value of N is less than the previous value, then $Z_2$ is 1. \textbf{Otherwise}, $Z_1$ and $Z_2$ are 0. When the first pair of inputs is received, there is no previous value of N, so we cannot determine whether the present N is greater than or less than the previous value; therefore, the “otherwise” category applies.
+
+Find a Mealy state table for the circuit (minimum number of states, including starting state, is five) (30 marks).
+\label{p:fsm}
+\end{prob}
+(Hint: The header for Mealy State table will look something like this:)\\
+\begin{tabular}{c|c|c|c|c|c|c|c|c}
+  \toprule
+  Present State & \multicolumn{4}{c|}{ Next State} & \multicolumn{4}{c}{Outputs ($Z_1 Z_2$)} \\
+                & Inputs $X_1X_0=$ 00 & 01 & 10 & 11 & $X_1X_0=$ 00 & 01 & 10 & 11 \\
+  \midrule
+  $S_0$  & $S_1$ & $S_2$ & $S_3$ & $S_4$ & 00 & 00 & 00 & 00 \\
+\end{tabular}
+%\newpage
+
+\begin{prob}
+  % 15.15
+  Reduce the following state table to minimum number of states (30 marks)\\
+  \begin{tabular}{c|cc|cc}
+  \end{tabular}
+  \includegraphics[width=0.3\linewidth]{./fig/15.15-state-table.png}
+  \label{p:state-reduction}
+\end{prob}
+%\newpage
+
+\begin{prob}
+  % Reduce the following state table to a minimum number of states using
+  % implication charts (20 marks).
+  \begin{enumerate}
+  \item
+    Use the guideline method (Highest priority and Medium priority only) to determine a suitable \textbf{state assignment} for the state table (20 marks).
+  % % \item
+  % % Realize the table using D flip-flops.
+  \item Realize the least significant bit of the encoding table using J-K flip-flops (30 marks).
+  \end{enumerate} 
+
+  \begin{tabular}{c|cc|c}
+    \toprule
+    Present State & \multicolumn{2}{c|}{Next State} & Output (Z)\\
+                  & X = 0 & 1 & \\
+                  \midrule
+    A & A & B & 1\\
+    B & C & E & 0\\
+    C & F & G & 1\\
+    D & C & A & 0\\
+    E & B & G & 1\\
+    F & F & B & 1\\
+    G & C & F & 0\\
+    \bottomrule
+  \end{tabular}
+\end{prob}
+%\newpage
+
+\begin{prob}
+  A 4:2 priority encoder takes 4 inputs $y_0, y_1, y_2, y_3$ and has three outputs, $w_1, w_0$ and $\text{IST}$. Find boolean expressions for $w_1$ and $w_0$ using K-maps for the priority encoder. The priority encoder truth table is given for reference (``*'' indicates all possible input combinations and ``d'' indicates don't care output). (10 marks) \\
+  \begin{tabular}{cccc|ccc}
+    \toprule
+    \multicolumn{4}{c|}{Inputs} & \multicolumn{3}{c}{Outputs}\\
+    $y_0$ & $y_1$ & $y_2$ & $y_3$ & $w_1$ & $w_0$ & $\text{IST}$ \\
+    \midrule
+    0 & 0 & 0 & 0 & d & d & 0\\
+    1 & * & * & * & 0 & 0 & 1\\
+    0 & 1 & * & * & 0 & 1 & 1\\
+    0 & 0 & 1 & * & 1 & 0 & 1\\
+    0 & 0 & 0 & 1 & 1 & 1 & 1\\
+    \midrule
+  \end{tabular}
+\end{prob}
+%\newpage
+
+\begin{prob}
+  % 9 study guide 5
+  (Optional for extra credit) The following diagram shows the pattern of 0’s and 1’s stored in a ROM
+  with eight words and four bits per word. What will be the values of $F_1 , F_2 ,
+  F_3 , and F_4$ if $A= B = 0$ and $C = 1$?
+  Also give the minterm expansions for $F_1$ and $F_2$ (20 marks).\\
+  \includegraphics[width=0.4\linewidth]{./fig/ROM-minterms.png}
+\end{prob}
+%\newpage
 
 \begin{prob}
   The following prime implicant table is for a four variable function $f(A, B,
@@ -38,7 +136,7 @@ Student Name: \hfill Student Email: \hspace{10em}
     \bottomrule
   \end{tabular}\\
 \end{prob}
-\newpage
+%\newpage
 
 \begin{prob}
   Packages arrive at the stockroom and are delivered on carts to offices and laboratories
@@ -60,7 +158,7 @@ Student Name: \hfill Student Email: \hspace{10em}
   minimization techniques described in this class, present a systematic procedure for
   finding the minimum cost solution. (20 marks)
 \end{prob}
-\newpage
+%\newpage
 
 \begin{prob}
   (a) For $V_{IH}$ = 4 V, $V_{OH}$ = 4.5 V, $V_{IL}$ = 1 V, $V_{OL}$ = 0.3 V, and $V_{DD}$ = 5 V, calculate the
@@ -71,34 +169,34 @@ Student Name: \hfill Student Email: \hspace{10em}
   across each transistor is 0.1 V, what is $V_{OL}$ ? What is the corresponding $NM_L$ using the other
   parameters from part (a) (10 marks).
 \end{prob}
-\newpage
+%\newpage
 
 \begin{prob}
   What is the difference between positive logic and negative logic? Design a
   CMOS complex gate for $f = x_1 \bx_2 + \bx_1 x_2$ under negative logic (10 marks).
 \end{prob}
-\newpage
+%\newpage
 
 \begin{prob}
   Find the propagation delay and contamination  delay of the following circuit (5 marks):\\
   \includegraphics[width=0.4\linewidth]{./fig/fig2.83-circuit.png} 
 \end{prob}
-\newpage
+%\newpage
 
 \begin{prob}
   Describe how tri-state and open-collector outputs are different from totem-
   pole outputs using NMOS NOR gate as an example (10 marks).
 \end{prob}
-\newpage
+%\newpage
 
-\begin{prob}
-  Assume that the inverter in the given circuit has a propagation delay of 5 ns and the
-  AND gate has a propagation delay of 10 ns. Draw a timing diagram for the circuit
-  showing X, Y, and Z. Assume that X is initially 0, Y is initially 1, after 10 ns X
-  becomes 1 for 80 ns, and then X is 0 again. (20 marks)\\
-  \includegraphics[width=0.4\linewidth]{./fig/fig-not-AND-latch.png}
-\end{prob}
-\newpage
+% \begin{prob}
+%   Assume that the inverter in the given circuit has a propagation delay of 5 ns and the
+%   AND gate has a propagation delay of 10 ns. Draw a timing diagram for the circuit
+%   showing X, Y, and Z. Assume that X is initially 0, Y is initially 1, after 10 ns X
+%   becomes 1 for 80 ns, and then X is 0 again. (20 marks)\\
+%   \includegraphics[width=0.4\linewidth]{./fig/fig-not-AND-latch.png}
+% \end{prob}
+%\newpage
 
 \begin{prob}
   A latch can be constructed from an OR gate, an AND gate, and an inverter con-
@@ -113,25 +211,79 @@ Student Name: \hfill Student Email: \hspace{10em}
     \includegraphics[width=0.4\linewidth]{./fig/timing-diagram.png}
   \end{enumerate}
 \end{prob}
-\newpage
+%\newpage
 
 \begin{prob}
-  Design a 4-bit BCD counter that counts from 0000, to 1001 and then loops back
-  to 0000 (20 marks).
-  (Yet to be covered in class).\\
+  Figure~\ref{fig:seven-seg-display} shows the notation for a BCD to 7-segment
+display and Table~\ref{tab:seven-segment-tt} shows the corresponding truth
+table. The inputs corresponding to the missing rows in the truth table should be
+considered as don't care.
   \begin{enumerate}
-  \item Draw its state transition diagram and table
-  \item Design the circuit using a D flip-flop.
+   \item implement segment ``a'' using an 8:1 mux and no other logic gate, (10 marks)
+   \item implement segment ``a'' using a 4:1 mux and one other gate, (10 marks)
+   \item implement segment ``f'' with 4:1 mux and no other logic gate. Assume
+     inputs are available in both uncomplemented and complemented form. (Hint:
+     There are (${}^4C_2 = 6$) possible pairs of control inputs: ($w_3, w_2$), ($w_2, w_1$),
+     ($w_1,w_0$), ($w_0, w_3$), ($w_0, w_2$), ($w_1, w_3$). There are 6 don't
+     care conditions. With two control inputs of the multiplexer and one input,
+     you can represent an expression with up to 4-SOP-terms of size
+     three-literals or less. You might the arrive at the answer sooner, if you
+     try to write the minimal SOP expression first and find the two inputs that
+     occur most often in all the terms. Those two inputs are most likely to be the
+     chosen pair of control inputs.) (10 marks)
   \end{enumerate}
 \end{prob}
-\newpage
+
+\begin{table}[h!]
+  \footnotesize
+\begin{tabular}{l|cccc||ccccccc}
+  \toprule
+  Row & $w_3$ & $w_2$ & $w_1$ & $w_0$ & a & b & c & d & e & f & g \\
+  \midrule
+  0  & 0    & 0   &   0 &   0 & 1 & 1 & 1 & 1 & 1 & 1 & 0 \\
+  1  & 0    & 0   &   0 &   1 & 0 & 1 & 1 & 0 & 0 & 0 & 0 \\
+  2  & 0    & 0   &   1 &   0 & 1 & 1 & 0 & 1 & 1 & 0 & 1 \\ 
+  3  & 0    & 0   &   1 &   1 & 1 & 1 & 1 & 1 & 0 & 0 & 1 \\ 
+  4  & 0    & 1   &   0 &   0 & 0 & 1 & 1 & 0 & 0 & 1 & 1 \\ 
+  5  & 0    & 1   &   0 &   1 & 1 & 0 & 1 & 1 & 0 & 1 & 1 \\   
+  6  & 0    & 1   &   1 &   0 & 1 & 0 & 1 & 1 & 1 & 1 & 1 \\ 
+  7  & 0    & 1   &   1 &   1 & 1 & 1 & 1 & 0 & 0 & 0 & 0 \\ 
+  8  & 1    & 0   &   0 &   0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+  9  & 1    & 0   &   0 &   1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 \\
+  \bottomrule
+\end{tabular}
+\caption{Truth table for BCD to seven-segment display as shown in
+  Figure~\ref{fig:seven-seg-display}. The missing combinations of inputs should
+  be considered as dont care.}
+\label{tab:seven-segment-tt}
+\end{table}
+
+\begin{figure}[h!]
+  \includegraphics[width=\linewidth,trim=0 10cm 0 0.2cm,clip]{fig/fig-4.21.png}
+  \\
+  \caption{Seven segment display and BCD-to-7-segment display converter. When
+    $a=1$ the corresponding segment of the display lights up. To display the
+    number 8, you will turn on all the seven segments, while to display 1, you
+    will turn on $b=1, c=1$ and turn off $=0$ the rest. The full truth-table for
+  the seven-segment display is shown in Table~\ref{tab:seven-segment-tt}.}
+  \label{fig:seven-seg-display}
+\end{figure}
+
+%\begin{prob}
+%  Design a 4-bit BCD counter that counts from 0000, to 1001 and then loops back
+%  to 0000 (20 marks).\\
+%  \begin{enumerate}
+%  \item Draw its state transition diagram and table
+%  \item Design the circuit using a D flip-flop.
+%  \end{enumerate}
+%\end{prob}
+%\newpage
 
 \begin{prob}
   Design a 3-bit modulo 8 Gray counter that counts from 000, to 111 and then loops back
-  to 0000. (A modulo N counter counts from 0 to $N-1$) (20 marks).
-  (Yet to be covered in class).\\
+  to 0000. (A modulo N counter counts from 0 to $N-1$) (20 marks).\\
   \begin{enumerate}
-  \item Draw its state transition diagram and table
+  \item Draw its state transition table
   \item Design the circuit using a D flip-flop.
   \end{enumerate}
 \end{prob}
