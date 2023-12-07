@@ -74,36 +74,36 @@
 \end{prob}
 
 \begin{prob}
-If the SOP form for $ \bar{f} = A\bB\bC+\bA\bB$, then give the POS form for
+If the SOP form for $ \bar{f} = AB\bC+\bA\bB$, then give the POS form for
 $f$. [10 marks]
 \end{prob}
 \subsubsection*{Solution}
 
 Take inverse on both sides
 \begin{align*}
-  \overline{\bar{f}} &= \overline{A\bB\bC+\bA\bB} &
+  \overline{\bar{f}} &= \overline{AB\bC+\bA\bB} &
   \\
-  f  &= \overline{A\bB\bC} \cdot \overline{\bA\bB} & \text{ by DeMorgan's}
+  f  &= \overline{AB\bC} \cdot \overline{\bA\bB} & \text{ by DeMorgan's}
   \\
-    &= (\bA + B + C) (A + B) & \text{ by DeMorgan's}
+    &= (\bA + \bB + C) (A + B) & \text{ by DeMorgan's}
 \end{align*}
 
 \begin{prob}
-Use DeMorgan's Theorem to find $f$  if  $\bar{f} = (A + BC)D + EF$. [10 marks]
+Use DeMorgan's Theorem to find $f$  if  $\bar{f} = (A + \bB C)D + EF$. [10 marks]
 \end{prob}
 
 \subsubsection*{Solution}
 Take inversion on both sides
 \begin{align*}
-  \overline{\bar{f}} &= \overline{(A+BC)D + EF} &
+  \overline{\bar{f}} &= \overline{(A+\bB C)D + EF} &
   \\
-  f  &= \overline{((A+BC)D)} \cdot \overline{EF} & \text{ by DeMorgan's}
+  f  &= \overline{((A+\bB C)D)} \cdot \overline{EF} & \text{ by DeMorgan's}
   \\
-  &= (\overline{(A+BC)} + \bar{D}) (\bar{E}+\bar{F}) & \text{ by DeMorgan's}
+  &= (\overline{(A+\bB C)} + \bar{D}) (\bar{E}+\bar{F}) & \text{ by DeMorgan's}
   \\
-  &= (\bA\overline{(BC)} + \bar{D}) (\bar{E}+\bar{F}) & \text{ by DeMorgan's}
+  &= (\bA\overline{(\bB C)} + \bar{D}) (\bar{E}+\bar{F}) & \text{ by DeMorgan's}
   \\
-  &= (\bA(\bB + \bC) + \bar{D}) (\bar{E}+\bar{F}) & \text{ by DeMorgan's}
+  &= (\bA(B + \bC) + \bar{D}) (\bar{E}+\bar{F}) & \text{ by DeMorgan's}
 \end{align*}
 
 \begin{table}
