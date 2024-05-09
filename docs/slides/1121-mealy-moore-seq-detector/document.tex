@@ -1,0 +1,80 @@
+
+\section{Objectives}
+\begin{enumerate}
+  \item Analyse and design both Mealy and Moore sequential circuits with multiple inputs and multiple outputs
+  \item Convert between Mealy and Moore designs
+  % \item Reduce the number of states in a state table using row reduction and
+  %   implication tables
+  %  \item Perform a state assignment using the guideline method
+  %  \item Partition a system into multiple state machines
+\end{enumerate}
+
+\section{Mealy vs Moore Finite State Machines}
+\begin{definition}[Finite State Machines (FSM)]~\cite[Sec~3.4]{harris2022digital}
+\end{definition}
+\vspace{5em}
+
+\begin{definition}[Mealy FSM]~\cite[Sec~3.4.3]{harris2022digital}
+\end{definition}
+\vspace{5em}
+
+\begin{definition}[Moore FSM]~\cite[Sec~3.4.3]{harris2022digital}
+\end{definition}
+\vspace{5em}
+
+
+\begin{example}
+  A sequential circuit has one input (X) and one output (Z). The circuit
+  examines groups of four consecutive inputs and produces an output Z=1 if the
+  input sequence 0010 or 0001 occurs. The sequences can overlap. Draw both Mealy
+  and Moore timing diagrams. Find the Mealy and Moore state graph.
+\end{example}
+\vspace{20em}
+
+\begin{prob}
+  A sequential circuit has one input (X) and one output (Z). The circuit
+  examines groups of four consecutive inputs and produces an output Z=1 if the
+  input sequence 0101 or 1001 occurs. The circuit resets after every four
+  inputs. Draw both Mealy and Moore timing diagrams. Find the Mealy and Moore state graph.
+\end{prob}
+\vspace{20em}
+
+\section{State reduction via Implication tables}
+\todo{Skip this section}
+
+\begin{wrapfigure}[16]{r}[0pt]{0.4\linewidth}
+\includegraphics[width=\linewidth]{./media/state-reduc-ex-state-table.png}
+\caption{Example state table}
+\end{wrapfigure}
+To minimize the number of states, we will identify “equivalent
+states” and eliminate any redundancy found. Two states are
+equivalent if they have equivalent next states and the same output
+for each possible input condition. To find equivalent states we will
+create an “implication table” which looks at pairs of states and
+identifies which states have to be equivalent if this pair is to be
+equivalent. We can use a table to hold information about each pair.
+
+\begin{wrapfigure}[10]{r}[0pt]{0.4\linewidth}
+  \includegraphics[width=\linewidth]{./media/blank-implication-table.png}
+  \caption{Implication table}
+\end{wrapfigure}
+To investigate all possible pairs, we could use a square table
+such as this to record information about pairs of states. But
+note every pair represented in the upper right “triangle” of the
+table is also listed in the lower left “triangle” of the table.
+Furthermore, the diagonal of the table will only present
+information about a state being equivalent to itself. Only the
+part of the table in bold is needed to investigate all possible
+pairs of states:
+
+\begin{wrapfigure}[5]{r}[0pt]{0.3\linewidth}
+  \includegraphics[width=\linewidth]{./media/selected-implication-table.png}
+  \caption{Selected implication table}
+\end{wrapfigure}
+
+\newpage
+\section{State assignment}
+\todo{Skip this section}
+
+
+

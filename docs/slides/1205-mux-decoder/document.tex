@@ -1,0 +1,81 @@
+
+\section{Objectives}
+\begin{enumerate}
+   \item Design combinational circuits using multiplexers and decoders
+\end{enumerate}
+
+\section{Design combinational circuit using multiplexers ~\cite[Section~2.8.1]{harris2022digital}}
+
+\subsection{Review: 2to1 Multiplexer (MUX)}
+\includegraphics[width=0.3\linewidth]{./media/harrisfig2.54-2to1-mux-symb-tt.png}
+\includegraphics[width=0.3\linewidth]{./media/harrisfig2.55-2to1-mux.png}
+\includegraphics[width=0.3\linewidth]{./media/harrisfig2.56-2to1-mux-tristate-buffs.png}
+
+\subsection{Wider multiplexers}
+Draw the symbol for a 4:1 MUX, an 8:1 MUX and a $2^N:1$ MUX and write
+corresponding Boolean expressions.
+\vspace{10em}
+
+
+\begin{example}
+  Design a circuit for $Y = A\bB + \bB \bC + \bA B C$ using a 8:1 MUX.
+\end{example}
+\vspace{10em}
+
+\begin{remark}
+  A $2^N:1$ MUX can be used to program any N-input logic function.
+\end{remark}
+
+\begin{example}
+  Design a circuit for $Y = A\bB + \bB \bC + \bA B C$ using a 4:1 MUX and 
+  NOT gates only.
+\end{example}
+\vspace{10em}
+
+\begin{remark}
+  A $2^{N-1}:1$ MUX can be used to program any N-input logic function, if we use
+  literals on the input side.
+\end{remark}
+
+\begin{example}
+  Design a circuit for $Y = \bA C + \bA B + B \bD $ using a 8:1 MUX and NOT
+  gates only. Also design using 4:1 MUX and other gates.
+   fewest gates.
+\end{example}
+\vspace{10em}
+
+\section{Encoders and Decoders}
+
+\begin{example}
+Draw the symbol and the truth table for 2:4 decoder. Also write the logic expressions.
+\end{example}
+\vspace{10em}
+
+\begin{example}
+  Draw the symbol and the truth table for 3:8 decoder, 4:16 decoder and $N:2^N$ decoder. Also write the logic expressions.
+\end{example}
+\vspace{10em}
+
+\begin{example}
+Design a circuit for a XOR gate using a 2:4 decoder and an OR gate.
+\end{example}
+\vspace{10em}
+
+\begin{example}
+  Design a circuit for $Y = A\bB + \bB \bC + \bA B C$ using a 3:8 decoder and an
+  OR gate.
+\end{example}
+\vspace{10em}
+
+
+\subsection{(Priority) Encoders}
+
+\begin{example}
+  Draw symbol and truth table for a 4:2 priority encoder. 
+\end{example}
+\vspace{10em}
+
+\begin{example}
+  Draw symbol and truth table for a 8:3 priority encoder. 
+\end{example}
+\vspace{10em}

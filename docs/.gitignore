@@ -5,3 +5,14 @@
 auto/
 *.fls
 *.fdb_latexmk
+homeworks/hw7/2023-hw4-sol-whitened.pdf
+homeworks/hw7/2023-hw4-sol.pdf
+homeworks/hw7/2023-hw4-sol.pdf.xoj
+slides/1014-analog-details/auxdir/
+slides/1121-mealy-moore-seq-detector/verilog/related/
+slides/1121-mealy-moore-seq-detector/verilog/seqdetector.cr.mti
+slides/1121-mealy-moore-seq-detector/verilog/seqdetector.mpf
+slides/1121-mealy-moore-seq-detector/verilog/work/
+slides/main.lod
+slides/main.toc
+transcript

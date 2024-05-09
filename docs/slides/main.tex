@@ -1,0 +1,118 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[only]{excludeonly}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usetikzlibrary{circuits.logic.US,positioning,calc} 
+\usepackage[american]{circuitikz}
+\usepackage{enumitem,amssymb}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{easy-todo}
+
+% \newlist{todolist}{itemize}{2}
+% \setlist[todolist]{label=$\square$}
+% \usepackage{pifont}
+% \newcommand{\cmark}{\ding{51}}%
+% \newcommand{\xmark}{\ding{55}}%
+% \newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+%   \hspace{-2.5pt}}
+% \newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
+\input{0928-quine-mccluskey/karnaugh}
+\input{0907-boolean-algebra/sym}
+\graphicspath{{0831-number-system/}
+{0831-number-system}
+{0907-boolean-algebra}
+{0916-K-maps}
+{0928-adders-carry-ahead}
+{0928-quine-mccluskey}
+{0930-review}
+{1014-analog-details}
+{1024-cmos-gate-review}
+{1026-sequential-logic}
+{1031-review}
+{1121-mealy-moore-seq-detector}
+{11-29-notes.pdf}
+{1130-FSM-optimization}
+{1205-mux-decoder}
+{1207-more-definitions}
+} 
+\title{Digital circuit design}
+\author{Vikas Dhiman for ECE275}
+\newtheorem{example}{Example}
+\newtheorem{prob}{Problem}
+\newtheorem{remark}{Remark}
+\newtheorem{definition}{Definition}
+
+\newcommand{\bw}{\bar{w}}
+\newcommand{\bx}{\bar{x}}
+\newcommand{\by}{\bar{y}}
+\newcommand{\bz}{\bar{z}}
+\newcommand{\bW}{\bar{W}}
+\newcommand{\bX}{\bar{X}}
+\newcommand{\bY}{\bar{Y}}
+\newcommand{\bZ}{\bar{Z}}
+\newcommand{\bA}{\bar{A}}
+\newcommand{\bB}{\bar{B}}
+\newcommand{\bC}{\bar{C}}
+\newcommand{\bD}{\bar{D}}
+
+\newcommand{\notescol}{white}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\chapter{Course improvements: TODO}
+\listoftodos
+
+\todoi{Weave homeworks, labs and notes}
+\todoi{Less emphasis on K-maps, more on Verilog}
+\todoi{Maybe quine mccluskey and espresso by C-coding example}
+
+
+\chapter{Number System}
+\input{./0831-number-system/0831-notes.tex}
+\input{./0831-number-system/0902-notes.tex}
+\chapter{Boolean Algebra}
+\input{./0907-boolean-algebra/0907-notes.tex}
+\input{./0907-boolean-algebra/0912-notes.tex}
+\section{Logic minimization}
+\input{./0916-K-maps/0919-notes.tex}
+\input{./0916-K-maps/0921-notes.tex}
+\input{./0916-K-maps/0923-notes.tex}
+\chapter{Adders, Muxes and Decoders}
+\input{1205-mux-decoder/document.tex}
+% \chapter{Review}
+% \input{./0930-review/0919-notes.tex}
+% \input{./0930-review/0921-notes.tex}
+% \input{./0930-review/0923-notes.tex}
+% \input{./0930-review/0928-syllabus-covered.tex}
+% \input{./0930-review/0930-sample-exam.tex}
+\chapter{Sequential Logic}
+\input{1026-sequential-logic/document.tex}
+%\chapter{Review 2}
+%\input{./1031-review/1031-syllabus-covered.tex}
+%\input{./1031-review/20221109-midterm.tex}
+\section{Mealy Moore Sequence detector}
+\input{1121-mealy-moore-seq-detector/document.tex}
+\section{Finite State Machine Optimization}
+\input{1130-FSM-optimization/document}
+%\input{./1205-mux-decoder/2023-12-01-syllabus-covered.tex}
+\chapter{More definitions}
+\input{1207-more-definitions/document.tex}
+\chapter{Quine McCluskey}
+\input{./0928-quine-mccluskey/0928-nand-nor-gates.tex}
+\input{./0928-quine-mccluskey/0928-quine-mccluskey.tex}
+\chapter{Analog details}
+\input{1014-analog-details/document.tex}
+
+\bibliography{1130-FSM-optimization/main.bib}
+\bibliographystyle{plain}
+\end{document}
