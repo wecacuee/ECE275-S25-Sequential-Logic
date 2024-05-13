@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="78.681732mm"
+   height="74.816437mm"
+   viewBox="0 0 78.681732 74.816437"
+   version="1.1"
+   id="svg1160"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="32-bit-multiplier.svg">
+  <defs
+     id="defs1154" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-257.02439"
+     inkscape:cy="489.95682"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1516"
+     inkscape:window-height="1316"
+     inkscape:window-x="2960"
+     inkscape:window-y="122"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata1157">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-173.8377,-203.6513)">
+    <path
+       d="m 182.50611,232.65958 h 69.76462 v 27.29477 h -69.76462 z"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path22"
+       inkscape:connector-curvature="0" />
+    <text
+       y="206.86765"
+       x="173.42223"
+       style="font-variant:normal;font-weight:normal;font-size:4.23333311px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text418">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="173.42223 176.60146 179.18802 182.64665 183.98862 186.57942 189.26335 191.84991 194.52962 196.18909 197.53105 200.12186 201.46382 204.15622 206.84862 208.37262 209.71458 212.21649 213.55846 216.25085 218.94325 220.46725 223.15118 224.32382 225.98329 227.32526 231.44852 234.12822 235.30086 236.96033 238.13297 240.81689 241.98952 243.16216 245.76566 247.50555"
+         y="206.86765"
+         sodipodi:role="line"
+         id="tspan416">How about a 32- x 32-bit multiplier?</tspan>
+    </text>
+    <path
+       d="m 198.75893,220.34411 0.0275,1.7914 0.0317,1.79564 0.0318,1.79282 0.0314,1.79564 0.0317,1.7914 0.0318,1.79705 0.0317,1.79141"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path420"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 196.33499,227.83393 1.61502,-1.24848 1.6122,-1.24989 1.61642,-1.24848"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path422"
+       inkscape:connector-curvature="0" />
+    <text
+       y="227.57542"
+       x="202.50159"
+       style="font-variant:normal;font-weight:normal;font-size:4.23333311px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text426">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="202.50159 205.19398"
+         y="227.57542"
+         sodipodi:role="line"
+         id="tspan424">32</tspan>
+    </text>
+    <path
+       d="m 235.1088,220.01214 0.0317,1.79282 0.0275,1.79564 0.0317,1.7914 0.0314,1.79564 0.0317,1.79282 0.0318,1.79529 0.0332,1.79175"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path428"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 232.68486,227.50162 1.61643,-1.24848 1.61502,-1.24849 1.61643,-1.24989"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path430"
+       inkscape:connector-curvature="0" />
+    <text
+       y="227.24745"
+       x="238.85149"
+       style="font-variant:normal;font-weight:normal;font-size:4.23333311px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text434">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="238.85149 241.54388"
+         y="227.24745"
+         sodipodi:role="line"
+         id="tspan432">32</tspan>
+    </text>
+    <path
+       d="m 218.36138,259.88697 0.0332,1.79564 0.0317,1.79281 0.0318,1.79564 0.0314,1.79141 0.0317,1.79564 0.0318,1.79281 0.0317,1.79564"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path436"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 215.94168,267.37644 1.61219,-1.24848 1.61643,-1.24566 1.61502,-1.24848"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path438"
+       inkscape:connector-curvature="0" />
+    <text
+       y="267.12234"
+       x="222.10831"
+       style="font-variant:normal;font-weight:normal;font-size:4.23333311px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text448">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="222.10831 224.80072"
+         y="267.12234"
+         sodipodi:role="line"
+         id="tspan440">64</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="197.43591"
+         y="216.56213"
+         id="tspan442">X</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="233.78581"
+         y="217.00311"
+         id="tspan444">Y</tspan>
+      <tspan
+         style="stroke-width:0.35277775"
+         x="217.04265"
+         y="278.46774"
+         id="tspan446">Z</tspan>
+    </text>
+    <text
+       y="248.87955"
+       x="193.02895"
+       style="font-variant:normal;font-weight:normal;font-size:6.0606122px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       id="text452">
+      <tspan
+         style="stroke-width:0.35277775"
+         x="193.02895 196.8835 200.73805 202.91986 206.7623 208.44109 210.81685 212.73807 218.6411 222.47746 224.15625 226.53201 228.2108 232.05324 233.73203 235.41081 239.13809"
+         y="248.87955"
+         sodipodi:role="line"
+         id="tspan450">32-bit multiplier</tspan>
+    </text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path1206"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="m 182.50611,232.65958 h 69.76462 v 27.29477 h -69.76462 z" />
+    <text
+       id="text1210"
+       style="font-variant:normal;font-weight:normal;font-size:4.23333311px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       x="173.42223"
+       y="206.86765">
+      <tspan
+         id="tspan1208"
+         sodipodi:role="line"
+         y="206.86765"
+         x="173.42223 176.60146 179.18802 182.64665 183.98862 186.57942 189.26335 191.84991 194.52962 196.18909 197.53105 200.12186 201.46382 204.15622 206.84862 208.37262 209.71458 212.21649 213.55846 216.25085 218.94325 220.46725 223.15118 224.32382 225.98329 227.32526 231.44852 234.12822 235.30086 236.96033 238.13297 240.81689 241.98952 243.16216 245.76566 247.50555"
+         style="stroke-width:0.35277775">How about a 32- x 32-bit multiplier?</tspan>
+    </text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path1212"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="m 198.75893,220.34411 0.0275,1.7914 0.0317,1.79564 0.0318,1.79282 0.0314,1.79564 0.0317,1.7914 0.0318,1.79705 0.0317,1.79141" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1214"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="m 196.33499,227.83393 1.61502,-1.24848 1.6122,-1.24989 1.61642,-1.24848" />
+    <text
+       id="text1218"
+       style="font-variant:normal;font-weight:normal;font-size:4.23333311px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       x="202.50159"
+       y="227.57542">
+      <tspan
+         id="tspan1216"
+         sodipodi:role="line"
+         y="227.57542"
+         x="202.50159 205.19398"
+         style="stroke-width:0.35277775">32</tspan>
+    </text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path1220"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="m 235.1088,220.01214 0.0317,1.79282 0.0275,1.79564 0.0317,1.7914 0.0314,1.79564 0.0317,1.79282 0.0318,1.79529 0.0332,1.79175" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1222"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="m 232.68486,227.50162 1.61643,-1.24848 1.61502,-1.24849 1.61643,-1.24989" />
+    <text
+       id="text1226"
+       style="font-variant:normal;font-weight:normal;font-size:4.23333311px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       x="238.85149"
+       y="227.24745">
+      <tspan
+         id="tspan1224"
+         sodipodi:role="line"
+         y="227.24745"
+         x="238.85149 241.54388"
+         style="stroke-width:0.35277775">32</tspan>
+    </text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path1228"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="m 218.36138,259.88697 0.0332,1.79564 0.0317,1.79281 0.0318,1.79564 0.0314,1.79141 0.0317,1.79564 0.0318,1.79281 0.0317,1.79564" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1230"
+       style="fill:none;stroke:#000000;stroke-width:0.49741665;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       d="m 215.94168,267.37644 1.61219,-1.24848 1.61643,-1.24566 1.61502,-1.24848" />
+    <text
+       id="text1240"
+       style="font-variant:normal;font-weight:normal;font-size:4.23333311px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       x="222.10831"
+       y="267.12234">
+      <tspan
+         id="tspan1232"
+         sodipodi:role="line"
+         y="267.12234"
+         x="222.10831 224.80072"
+         style="stroke-width:0.35277775">64</tspan>
+      <tspan
+         id="tspan1234"
+         y="216.56213"
+         x="197.43591"
+         style="stroke-width:0.35277775">X</tspan>
+      <tspan
+         id="tspan1236"
+         y="217.00311"
+         x="233.78581"
+         style="stroke-width:0.35277775">Y</tspan>
+      <tspan
+         id="tspan1238"
+         y="278.46774"
+         x="217.04265"
+         style="stroke-width:0.35277775">Z</tspan>
+    </text>
+    <text
+       id="text1244"
+       style="font-variant:normal;font-weight:normal;font-size:6.0606122px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
+       x="193.02895"
+       y="248.87955">
+      <tspan
+         id="tspan1242"
+         sodipodi:role="line"
+         y="248.87955"
+         x="193.02895 196.8835 200.73805 202.91986 206.7623 208.44109 210.81685 212.73807 218.6411 222.47746 224.15625 226.53201 228.2108 232.05324 233.73203 235.41081 239.13809"
+         style="stroke-width:0.35277775">32-bit multiplier</tspan>
+    </text>
+  </g>
+</svg>
