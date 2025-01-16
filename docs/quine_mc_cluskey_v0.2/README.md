@@ -1,4 +1,4 @@
-Quine–McCluskey Algorithm
+Quine-McCluskey Algorithm
 =========================
 
 Version: 0.2 
