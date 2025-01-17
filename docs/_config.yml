@@ -39,11 +39,11 @@ plainwhite:
     - title: Syllabus
       url: "/syllabus"
     - title: Schedule
-      url: ""
+      url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vT_z0AyQfbKGDzBrqQ3i3uDthFGjRWNkxjb5cYGLC5Mc8aSBXfjiU4gfk5jp1u1Co-Tjw4EoadyDKg5/pubhtml?gid=1765543150&single=true"
     - title: Lab Notes
       url: "/labnotes"
     - title: Zoom Link
-      url: ""
+      url: "https://maine.zoom.us/j/86013358593?pwd=uqita5qiEkiGhvKht1pBNZqkxIz1UG.1"
     - title: Similar courses
       url: "/similar-courses"
 

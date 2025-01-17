@@ -4,3 +4,6 @@
 [submodule "docs/slides/reveal.js"]
 	path = docs/slides/html/reveal.js
 	url = https://github.com/hakimel/reveal.js
+[submodule "docs/slides/labs/01-quartus-setup"]
+	path = docs/slides/labs/01-quartus-setup
+	url = https://git@git.overleaf.com/64a7061b17a08caff1ff8df0

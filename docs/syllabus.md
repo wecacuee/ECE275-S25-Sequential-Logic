@@ -4,7 +4,7 @@ layout: page
 
 # ECE 275 --- Sequential Logic Systems
 
-## Fall 2023 (In-person)
+## Spring 2025 (In-person)
 
 ### Learning objectives
 
@@ -19,7 +19,7 @@ By the end of this course, a student in this course will be able to:
 
 *Credits*: 3 credits
 
-*Web page*: <https://vikasdhiman.info/ECE275-F23-Sequential-Logic>
+*Web page*: <https://vikasdhiman.info/ECE275-25-Sequential-Logic>
 
 *Text*: David M. Harris, Sarah L. Harris - Digital Design and Computer Architecture, (Publisher: Morgan Kaufmann). [You can download textbooks from libgen.rs](https://libgen.rs)
 
@@ -36,13 +36,11 @@ By the end of this course, a student in this course will be able to:
 
 Barrows Hall Rm 279, [`vikas.dhiman@maine.edu`](mailto:vikas.dhiman@maine.edu)
 
-Office hours: By appointment
-<https://calendar.app.google/VPSRRLpdmaByJvjt5>
+Office hours: Friday 3:30-4:30 PM
 
 ### Teaching assistants 
 
-*  Shihab Ahamad  <shihab.ahamad@maine.edu>
-*  Zafaryab Haider  <zafaryab.haider@maine.edu>
+*  Danila Borodaenko  <danila.borodaenko@maine.edu>
 
 ### Expected time commitment per week
 
@@ -58,7 +56,7 @@ Grading is an unfortunate necessity. Grades are based on the following split. Pl
 
 - Homework: 30%
   + Weekly; 9 homeworks; due at the beginning of the class.
-- 2 mid-terms and final (Oct. 6, Nov. 8, Dec 13): 30% total (10% each).
+- 2 mid-terms and final (Feb. 24, Apr. 7, May 13): 30% total (10% each).
   + Closed book.
 - Labs: 25% 
   + 6-labs; expected to be finished in lab; the deliverable is expected next week.

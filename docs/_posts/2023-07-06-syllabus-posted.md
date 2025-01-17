@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syllabus posted for Fall 2023
-date:   2023-07-06
+title: Syllabus posted for Spring 2025
+date:   2025-01-16
 categories: news
 ---
 
