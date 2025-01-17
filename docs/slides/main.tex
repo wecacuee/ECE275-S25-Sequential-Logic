@@ -30,6 +30,10 @@
 {0831-number-system}
 {0907-boolean-algebra}
 {0916-K-maps}
+{homeworks/hw1}
+{homeworks/hw2}
+{labs/01-quartus-setup/}
+ {labs/02-verilog-mux/}
 {0928-adders-carry-ahead}
 {0928-quine-mccluskey}
 {0930-review}
@@ -46,7 +50,7 @@
 \title{Digital circuit design notes}
 \author{Vikas Dhiman for ECE275\footnote{The notes are from the following books \cite{harris2022digital,stephen2022fundamentals}. Not intended for distribution outside the class.}}
 \newtheorem{example}{Example}
-\newtheorem{prob}{Homework}
+\newtheorem{prob}{Problem}
 \newtheorem{remark}{Remark}
 \newtheorem{definition}{Definition}
 
@@ -65,6 +69,8 @@
 
 \newcommand{\notescol}{white}
 
+\input{labs/01-quartus-setup/lab-preamble.tex}
+
 \begin{document}
 \maketitle
 
@@ -79,16 +85,21 @@
 \newpage
 
 
-\chapter{Number System}
-\input{./0831-number-system/0831-notes.tex}
-\input{./0831-number-system/0902-notes.tex}
 \chapter{Boolean Algebra}
 \input{./0907-boolean-algebra/0907-notes.tex}
 \input{./0907-boolean-algebra/0912-notes.tex}
+\chapter{Verilog and Schematics}
+\input{labs/01-quartus-setup/body.tex}
+\input{labs/02-verilog-mux/body.tex}
 \section{Logic minimization}
 \input{./0916-K-maps/0919-notes.tex}
 \input{./0916-K-maps/0921-notes.tex}
 \input{./0916-K-maps/0923-notes.tex}
+\input{./homeworks/hw2/hw2-contents.tex}
+\chapter{Number System}
+\input{./0831-number-system/0831-notes.tex}
+\input{./0831-number-system/0902-notes.tex}
+\input{./homeworks/hw1/hw1-contents.tex}
 \chapter{Adders, Muxes and Decoders}
 \input{1205-mux-decoder/document.tex}
 % \chapter{Review}
