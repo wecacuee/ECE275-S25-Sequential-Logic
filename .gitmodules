@@ -7,3 +7,27 @@
 [submodule "docs/slides/labs/01-quartus-setup"]
 	path = docs/slides/labs/01-quartus-setup
 	url = https://git@git.overleaf.com/64a7061b17a08caff1ff8df0
+[submodule "docs/slides/labs/02-verilog-mux"]
+	path = docs/slides/labs/02-verilog-mux
+	url = https://git@git.overleaf.com/64a7064db84fb3302221b267
+[submodule "docs/slides/labs/03-verilog-modules"]
+	path = docs/slides/labs/03-verilog-modules
+	url = https://git@git.overleaf.com/64a7065ab84fb3302221b4ef
+[submodule "docs/slides/labs/04-ripple-adder"]
+	path = docs/slides/labs/04-ripple-adder
+	url = https://git@git.overleaf.com/64a7066691c02c22abc79a7a
+[submodule "docs/slides/labs/05-prelab"]
+	path = docs/slides/labs/05-prelab
+	url = https://git@git.overleaf.com/64a706804fd20db915cacdd9
+[submodule "docs/slides/labs/05-always-loop"]
+	path = docs/slides/labs/05-always-loop
+	url = https://git@git.overleaf.com/64a7067391c02c22abc7a0ad
+[submodule "docs/slides/labs/06-binary2bcd"]
+	path = docs/slides/labs/06-binary2bcd
+	url = https://git@git.overleaf.com/64a7069e91c02c22abc7aa9f
+[submodule "docs/slides/labs/07-verilog-modules"]
+	path = docs/slides/labs/07-verilog-modules
+	url = https://git@git.overleaf.com/64a706367ad703c73492aa4c
+[submodule "docs/slides/labs/08-modelsim"]
+	path = docs/slides/labs/08-modelsim
+	url = https://git@git.overleaf.com/64a706284fd20db915cabab5
