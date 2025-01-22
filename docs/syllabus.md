@@ -21,7 +21,7 @@ By the end of this course, a student in this course will be able to:
 
 *Web page*: <https://vikasdhiman.info/ECE275-25-Sequential-Logic>
 
-*Text*: David M. Harris, Sarah L. Harris - Digital Design and Computer Architecture, (Publisher: Morgan Kaufmann). [You can download textbooks from libgen.rs](https://libgen.rs)
+*Text*: David M. Harris, Sarah L. Harris - Digital Design and Computer Architecture, (Publisher: Morgan Kaufmann). [You can download textbooks from annas-archive.org](https://annas-archive.org/)
 
 *Additional books*:
 
@@ -36,7 +36,8 @@ By the end of this course, a student in this course will be able to:
 
 Barrows Hall Rm 279, [`vikas.dhiman@maine.edu`](mailto:vikas.dhiman@maine.edu)
 
-Office hours: Friday 3:30-4:30 PM
+Office hours: Friday 3:30-5:30 PM
+By appointment: https://calendar.app.google/dDYMEbxvX7q12GEK7
 
 ### Teaching assistants 
 
@@ -100,9 +101,7 @@ Here are some examples from what students did last year:
 
 ### Approximate Course Schedule
 
-Please click [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjyw0_zWfPbG3yFm_hv6XIx2Q4hWhC7oQSIYzZ2Y3aEvE9G4f0CxxkdAaydcUVv24xyfUpCf-ldWKQ/pubhtml?gid=0&single=true)
-
-{% include_relative schedule-table.md %}
+Please click <https://docs.google.com/spreadsheets/d/e/2PACX-1vT_z0AyQfbKGDzBrqQ3i3uDthFGjRWNkxjb5cYGLC5Mc8aSBXfjiU4gfk5jp1u1Co-Tjw4EoadyDKg5/pubhtml?gid=1765543150&single=true>
 
 ### Mask policy
 
