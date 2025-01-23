@@ -19,8 +19,6 @@ By the end of this course, a student in this course will be able to:
 
 *Credits*: 3 credits
 
-*Web page*: <https://vikasdhiman.info/ECE275-25-Sequential-Logic>
-
 *Text*: David M. Harris, Sarah L. Harris - Digital Design and Computer Architecture, (Publisher: Morgan Kaufmann). [You can download textbooks from annas-archive.org](https://annas-archive.org/)
 
 *Additional books*:

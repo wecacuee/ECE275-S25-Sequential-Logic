@@ -1,3 +1,5 @@
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins
+# https://jekyllrb.com/docs/configuration/
 url: https://vikasdhiman.info
 baseurl: /ECE275-S25-Sequential-Logic
 remote_theme:  samarsault/plainwhite-jekyll
@@ -5,6 +7,20 @@ title: Sequential Logic Systems (ECE275) at the University of Maine
 author: Vikas Dhiman
 description: Sequential Logic Systems (ECE275) at the University of Maine
 show_excerpts: true
+
+
+# Some configuration settings cannot be changed for GitHub Pages sites.
+lsi: false
+safe: true
+# source: [your repo's top level directory]
+# incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+# Some configuration settings cannot be changed for GitHub Pages sites.
 
 # Build settings
 markdown: kramdown
@@ -16,13 +32,6 @@ header_pages:
   - syllabus.md
   - labnotes.md
   - category/lecture
-
-
-plugins:
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-remote-theme
 
 plainwhite:
   name: Sequential Logic Systems (ECE275)
@@ -53,3 +62,20 @@ plainwhite:
     - home
     - post
     - page
+
+# GitHub Pages uses plugins that are enabled by default and cannot be disabled:
+plugins:
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-remote-theme
+
