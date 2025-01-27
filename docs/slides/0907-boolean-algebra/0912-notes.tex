@@ -1,9 +1,10 @@
 \section{Karnaugh maps}
 
-\subsection{Two input K-maps}
-\begin{Karnaughquatre}
-  \phminterms{0,1,2,3}
-\end{Karnaughquatre}
+\textbf{Two input K-maps}
+\vspace{10em}
+%\begin{Karnaughquatre}
+%  \phminterms{0,1,2,3}
+%\end{Karnaughquatre}
 
 % \begin{example}
 %   Convert the following truth table into a K-map.
@@ -29,21 +30,23 @@
 % \end{prob}
 % \vspace{10em}
   
-\subsection{Three input K-maps}
+\textbf{Three input K-maps}
+\vspace{10em}
 
-\begin{Karnaughvuit}
-  \phminterms{0,1,2,3,4,5,6,7}
-\end{Karnaughvuit}
+%\begin{Karnaughvuit}
+%  \phminterms{0,1,2,3,4,5,6,7}
+%\end{Karnaughvuit}
 
 % \begin{prob}
 %   Draw a K-map for the function $f = \bar{A}\bar{B}C + AB\bar{C}$.
 % \end{prob}
 % \vspace{10em}
 
-\subsection{Four input K-maps}
-\begin{Karnaugh}{AB}{CD}
-  \phminterms{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
-\end{Karnaugh}
+\textbf{Four input K-maps}
+\vspace{10em}
+%\begin{Karnaugh}{AB}{CD}
+%  \phminterms{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+%\end{Karnaugh}
 
 
 % \begin{prob}
@@ -51,16 +54,17 @@
 % \end{prob}
 % \vspace{10em}
 
-\subsection{Five input K-maps}
+\textbf{Five input K-maps}
+\vspace{10em}
 
-A = 0
-\begin{Karnaugh}{BC}{DE}
-  \phminterms{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
-\end{Karnaugh} \hfill
-A = 1
-\begin{Karnaugh}{BC}{DE}
-  \phmintermssixt{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
-\end{Karnaugh}
+%A = 0
+%\begin{Karnaugh}{BC}{DE}
+%  \phminterms{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+%\end{Karnaugh} \hfill
+%A = 1
+%\begin{Karnaugh}{BC}{DE}
+%  \phmintermssixt{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+%\end{Karnaugh}
 
 % \begin{prob}
 %   Draw a K-map for a 5-input function $f = M_1 M_2 M_7 $.
@@ -279,6 +283,8 @@ $ Q = \overline{x_1 \oplus x_2}$
   \end{enumerate}
 \end{enumerate}
 
+
+
 \begin{example}[Multiplexer]
   Multiplexer is a circuit used to select one of the input lines $x_1$ and $x_2$
   based only select input $s$. When $s=0$, $x_1$ is selected, $x_2$ is selected otherwise.
@@ -293,7 +299,34 @@ $ Q = \overline{x_1 \oplus x_2}$
 \end{example}
 \vspace{10em}
 
+\begin{prob}[30 marks, Exercise 2.14~\cite{harris2022digital}]
+Simplify the following Boolean equations using Boolean theorems.
+\begin{align}
+ Y &= \bA BC + \bA B\bC\\
+Y &= \bar{ABC} + A\bB\\
+Y &= ABC\bD + A\bar{BCD} + (\bar{A + B + C + D})
+\end{align}
+\end{prob}
+
 \begin{example}
   Simplify $f = \bA\bA\bC + \bA\bB C $ using K-maps.
 \end{example}
 \vspace{10em}
+
+
+\begin{example}
+  Assume that a large room has three doors and that a switch near each door controls a light in the room. It has to be possible to turn the light on or off by changing the state of any one
+  of the switches.\\
+  \includegraphics[width=\linewidth]{figures/design-a-3-way-light-switch.pdf}
+\end{example}
+\vspace{10em}
+
+\begin{prob}[20 marks, Exercise 2.38~\cite{harris2022digital}]
+An M-bit thermometer code for the number k consists of k 1’s in the
+least significant bit positions and M – k 0’s in all the more significant bit positions.
+A binary-to-thermometer code converter has N inputs and $2^{N–1}$ outputs. It
+produces a $2^N–1$ bit thermometer code for the number specified by the input.
+For example, if the input is 110, the output should be 0111111. Design a 3:7
+binary-to-thermometer code converter. Give a simplified Boolean equation for
+each output.
+\end{prob}
