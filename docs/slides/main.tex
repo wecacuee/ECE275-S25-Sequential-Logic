@@ -1,4 +1,4 @@
-\documentclass{book}
+\documentclass[oneside]{book}
 \usepackage[utf8]{inputenc}
 \usepackage[top=1in]{geometry}
 \usepackage{graphicx}
@@ -9,11 +9,14 @@
 \usepackage{tikz}
 \usepackage{verbatim}
 \usetikzlibrary{circuits.logic.US,positioning,calc} 
+\usetikzlibrary{matrix,shapes,arrows,fit,tikzmark}
 \usepackage[american]{circuitikz}
 \usepackage{enumitem,amssymb}
 \usepackage{url}
 \usepackage{wrapfig}
 \usepackage[disable]{easy-todo}
+\usepackage{multirow}
+%\usepackage{todonotes}
 
 % \newlist{todolist}{itemize}{2}
 % \setlist[todolist]{label=$\square$}
@@ -67,6 +70,49 @@
 \newcommand{\bC}{\bar{C}}
 \newcommand{\bD}{\bar{D}}
 
+\newcommand{\cred}{\color{red}}
+\newcommand{\cg}{\color{green!60!black}}
+\newcommand{\cb}{\color{blue}}
+% Some options common to all the nodes and paths
+\tikzset{   
+  every picture/.style={remember picture,baseline},
+  every node/.style={anchor=base,align=center,outer sep=1.5pt},
+  every path/.style={thick},
+}
+
+\newcommand\marktopleft[1]{%
+  \tikz[overlay,remember picture] 
+  \node (marker-#1-a) at (.3em,.3em) {};%
+}
+\newcommand\markbottomright[2]{%
+  \tikz[overlay,remember picture] 
+  \node (marker-#1-b) at (.1em,.3em) {};%
+  \tikz[overlay,remember picture,inner sep=1pt]
+  \node[draw={#2},rounded corners,fit=(marker-#1-a.north west) (marker-#1-b.south east)] {};%
+}
+\newcommand\markpolytopleft[1]{%
+  \tikz[overlay,remember picture]%
+  \node (marker-#1-tl) at (.3em,.3em) {};%
+}
+\newcommand\markpolytopright[1]{%
+  \tikz[overlay,remember picture]%
+  \node (marker-#1-tr) at (.3em,.3em) {};%
+}
+\newcommand\markpolybottomright[1]{%
+  \tikz[overlay,remember picture] 
+  \node (marker-#1-br) at (.3em,.3em) {};%
+  }
+\newcommand\markpolybottomleft[2]{%
+  \tikz[overlay,remember picture]
+  \node (marker-#1-bl) at (.3em,.3em) {};%
+  \tikz[overlay,remember picture,inner sep=1pt]
+  \path [draw={#2},rounded corners]
+  (marker-#1-tl.north west) --
+  (marker-#1-tl.north east) --
+  (marker-#1-bl.south east) --
+  (marker-#1-br.south west);%
+}
+
 \newcommand{\notescol}{black}
 
 \input{labs/01-quartus-setup/lab-preamble.tex}
@@ -99,16 +145,14 @@
 \input{./homeworks/hw2/hw2-contents.tex}
 % \chapter{Adders, Muxes and Decoders}
 % \input{1205-mux-decoder/document.tex}
-% \chapter{Number System}
-% \input{./0831-number-system/0831-notes.tex}
-% \input{./0831-number-system/0902-notes.tex}
-% \input{./homeworks/hw1/hw1-contents.tex}
-% % \chapter{Review}
-% % \input{./0930-review/0919-notes.tex}
-% % \input{./0930-review/0921-notes.tex}
-% % \input{./0930-review/0923-notes.tex}
-% % \input{./0930-review/0928-syllabus-covered.tex}
-% % \input{./0930-review/0930-sample-exam.tex}
+\chapter{Review}
+\input{./0930-review/0928-syllabus-covered.tex}
+\chapter{Sample midterm exam}
+\input{./0930-review/0930-sample-exam.tex}
+\chapter{Number System}
+\input{./0831-number-system/0831-notes.tex}
+\input{./0831-number-system/0902-notes.tex}
+\input{./homeworks/hw1/hw1-contents.tex}
 % \chapter{Sequential Logic}
 % \input{1026-sequential-logic/document.tex}
 % %\chapter{Review 2}

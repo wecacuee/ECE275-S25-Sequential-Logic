@@ -4,26 +4,26 @@
 Student Name: \hfill Student Email: \hspace{10em}
 \section{Instructions}
 \begin{itemize}
-  \item Time allowed is 50 minutes. (This sample exam might be lengthier than the actual exam. )
+  \item Time allowed is 50 minutes. (This sample exam might be lengthier than the actual exam.  Same instruction will apply to the midterm.)
   \item In order to minimize distraction to your fellow students, you may not leave
   during the last 10 minutes of the examination.
   \item The examination is closed-book. One 8x11in cheatsheet is allowed.
   \item Non-programmable calculators are permitted.
-  \item The maximum number of marks is 100, as indicated; the midterm examination
+  \item The maximum number of marks is 80, as indicated; the midterm examination
   amounts 10\% toward the final grade.
-  \item Please use a pen or heavy pencil to ensure legibility.
+  \item Please colored pen/pencils for K-maps, use a pen or heavy pencil to ensure legibility.
   \item Please show your work; where appropriate, marks will be awarded for proper and well-reasoned explanations.
 \end{itemize}
 
-\begin{prob}
-  Number conversions:
-  \begin{enumerate}
-    \item Use repeated division to convert $230_{10}$ to octal representation (5 marks).
-    \item What is the value of $19D_{16}$ in base 10 (5 marks).
-    \item A 6-bit two's complement number is $100011_{2}$. Convert it to (signed) decimal (5 marks).
-    \item Represent $-23_{10}$ in two's complement binary notation (5 marks).
-  \end{enumerate}
-\end{prob}
+%\begin{prob}
+%  Number conversions:
+%  \begin{enumerate}
+%    \item Use repeated division to convert $230_{10}$ to octal representation (5 marks).
+%    \item What is the value of $19D_{16}$ in base 10 (5 marks).
+%    \item A 6-bit two's complement number is $100011_{2}$. Convert it to (signed) decimal (5 marks).
+%    \item Represent $-23_{10}$ in two's complement binary notation (5 marks).
+%  \end{enumerate}
+%\end{prob}
 
 \begin{prob}
   Consider the circuit below\\
@@ -48,27 +48,28 @@ Student Name: \hfill Student Email: \hspace{10em}
 \end{prob}
 
 \begin{prob}
-Use the following 5-variable K-map for F (A, B, C, D, E), and find
-  a minimal SOP expression for F (15 marks)\\
+Use the following 4-variable K-map for F (A, B, C, D), and find
+  a minimal sum of products (SOP) expression for F (15 marks)\\
 \begin{minipage}{0.5\linewidth}
   \centering
-  \begin{Karnaugh}{BC}{DE}
+  \begin{Karnaugh}{AB}{CD}
     \minterms{0,1,5,6,7,8,9,14}
+    \maxterms{2,3,4,10,11,12,13,15}
   \end{Karnaugh}\\
-  A=0
+  %A=0
 \end{minipage}%
-\begin{minipage}{0.5\linewidth}
-  \centering
-  \begin{Karnaugh}{BC}{DE}
-    \minterms{1,4,5,6,7,9,12,14}
-  \end{Karnaugh}\\
-  A=1
-\end{minipage}
+%\begin{minipage}{0.5\linewidth}
+%  \centering
+%  \begin{Karnaugh}{BC}{DE}
+%    \minterms{1,4,5,6,7,9,12,14}
+%  \end{Karnaugh}\\
+%  A=1
+%\end{minipage}
 \end{prob}
 
 \begin{prob}
-  Use bubble-pushing and/or algebra to find an SOP expression
-for Y in the circuit below. If you use bubble-pushing, draw an equivalent
+  Use boolean algebra to find an SOP expression
+for Y in the circuit below. Draw an equivalent
   circuit beside the given circuit (5 marks).\\
   \includegraphics[width=0.4\linewidth]{figures/bubble-pushing-circuit.png}
 \end{prob}
