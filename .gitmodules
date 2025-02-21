@@ -31,3 +31,6 @@
 [submodule "docs/slides/labs/08-modelsim"]
 	path = labs/08-modelsim
 	url = https://git@git.overleaf.com/64a706284fd20db915cabab5
+[submodule "quartus_installation_notes/docker-quartus-web-13"]
+	path = quartus_installation_notes/docker-quartus-web-13
+	url = https://github.com/wecacuee/docker-quartus-web-13.git
