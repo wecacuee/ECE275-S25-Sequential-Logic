@@ -55,6 +55,33 @@
 \end{example}
 \vspace{10em}
 
+
+\begin{example}[Ex~2.43~\cite{harris2022digital}]
+Determine the propagation delay and contamination delay of the
+circuit in Figure~\ref{fig:2.83}. Use the gate delays given in Table~\ref{tab:2.8}.
+\end{example}
+\begin{figure}[h!]
+  \includegraphics[width=0.5\linewidth]{fig/fig-2.83.png}
+  \caption{Circuit}
+  \label{fig:2.83}
+\end{figure}
+\begin{figure}[h!]
+  \includegraphics[width=0.5\linewidth]{fig/table-2.8.png}
+  \caption{Delays}
+  \label{tab:2.8}
+\end{figure}
+\vspace{10em}
+
+\begin{prob}[10 marks, Ex~2.44~\cite{harris2022digital}]
+Determine the propagation delay and contamination delay of the
+circuit in Figure~\ref{fig:2.84}. Use the gate delays given in Figure~\ref{tab:2.8}.
+\end{prob}
+\begin{figure}[h!]
+  \includegraphics[width=0.5\linewidth]{fig/fig-2.84.png}
+  \caption{Circuit}
+  \label{fig:2.84}
+\end{figure}
+
 \section{Glitches or Hazards}
 \includegraphics[width=0.6\linewidth]{fig/fig2.76-timing-of-a-glitch.png}
 \begin{definition}[Glitch or Hazard]
@@ -68,6 +95,18 @@
 \end{example}
 \vspace{10em}
 
+
+\begin{prob}
+  Find a minimal Boolean equation for the function in Figure 2.85.
+  Remember to take advantage of the don’t care entries (marked X) (10 marks).\\
+  \includegraphics[width=0.3\linewidth]{homeworks/hw3.5/fig/fig2.85-truth-table.png}
+  \begin{enumerate}
+  \item Sketch a circuit for the function (10 marks).
+  \item Does your circuit from have any potential glitches
+    when one of the inputs changes? If not, explain why not. If so, show how to
+    modify the circuit to eliminate the glitches (10 marks).
+  \end{enumerate}
+\end{prob}
 
 \section{How to create memory element from circuits}
 
@@ -157,6 +196,29 @@ Draw the characteristic or state table for the following circuit\\
   \end{enumerate}
 \end{definition}
 \vspace{20em}
+
+\begin{prob}
+  Consider the timing diagram in Figure~\ref{fig:p51}. Assuming that the D and Clock inputs shown
+  are applied to the circuit in Figure~\ref{fig:5.10}, draw waveforms for the
+  $Q_a$ , $Q_b$ , and $Q_c$ signals. (10 marks)~\cite[Prob 5.1]{brown2013fundamentals}
+  \label{prob:1}
+\end{prob}
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{homeworks/hw7/fig-p5.1.png}
+  \caption{Inputs for Prob~\ref{prob:1}}
+  \label{fig:p51}
+\end{figure}
+\begin{figure}[ht!]
+  \includegraphics[width=0.7\linewidth]{homeworks/hw7/fig-5.10.png}
+  \caption{Circuit for Prob~\ref{prob:1}.
+    Recall that $Clk$ with a ``$\triangleright$'' symbol
+    indicates rising-edge (positive-edge) triggered flip-flop. $Clk$ without
+    ``$\triangleright$'' symbol indicates a level-triggered latch.
+    $Clk$ with ``$\circ\triangleright$'' symbol
+    indicates a falling-edge (negative-edge) triggered flip-flop. 
+  }
+  \label{fig:5.10}
+\end{figure}
 
 \subsection{D flip-flop \cite[Sec~3.2.2]{harris2022digital}}
 
