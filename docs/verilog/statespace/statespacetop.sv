@@ -3,11 +3,15 @@
 // Example:
 // 	X= 0 1 1 1 0 1 0 1 0 1 1 0
 // 	Z= 0 0 0 0 0 1 1 1 1 1 1 1
+// Always need clock. Good to have Reset signal
+// I : Input
+// O : Output
 module statespacetop (Clock, Resetn, I, O);
 
 input Clock, Resetn, I;
 output logic O = 'b0;
 
+// Similar to C constants
 parameter [3:0]
       S0 = 4'b0000, S1 = 4'b0001, 
 		S2 = 4'b0010, S3 = 4'b0011,
@@ -18,11 +22,11 @@ parameter [3:0]
 logic [3:0] D = S0;
 logic [3:0] Q = S0;
 
-// Define the next state combinational circuit
+// Define the next state logic combinational circuit
 always_comb
 	case (Q)
 	S0: begin
-		D = ~I ? S1 : S2;
+		D = ~I ? S1 : S2; // conditional statement
 		O = 'b0;
 	end
 	S1: begin
@@ -55,19 +59,19 @@ always_comb
 	end
 	S10: begin
 		D = S10;
-		O = 'b0;
+		O = 'b1;
 	end
 	default: 
 	begin 
-		D = 2'bxx;
+		D = 4'bxxxx;
 		// Define output
 		O = 'bx;
 	end
 	endcase
 
 	
-	// Define the sequential block
-always @(negedge Resetn, posedge Clock)
+// Define the sequential block
+always_ff @(negedge Resetn, posedge Clock)
 	if (Resetn == 0) Q <= S0;
 	else Q <= D;
 endmodule
