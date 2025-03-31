@@ -18,14 +18,19 @@
 \usepackage{multirow}
 %\usepackage{todonotes}
 
-% \newlist{todolist}{itemize}{2}
-% \setlist[todolist]{label=$\square$}
-% \usepackage{pifont}
-% \newcommand{\cmark}{\ding{51}}%
-% \newcommand{\xmark}{\ding{55}}%
-% \newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
-%   \hspace{-2.5pt}}
-% \newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+\newcommand{\hilight}[1]{\setlength{\fboxsep}{1pt}\colorbox{red}{#1}}
+
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+  \hspace{-2.5pt}}
+%\newcommand{\important}{\hilight{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}}%
+%  \hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
 
 \input{0928-quine-mccluskey/karnaugh}
 \input{0907-boolean-algebra/sym}
@@ -145,7 +150,7 @@
 \input{./0916-K-maps/0921-notes.tex}
 \input{./0916-K-maps/0923-notes.tex}
 \input{./homeworks/hw2/hw2-contents.tex}
-\chapter{Review}
+\chapter*{Review}
 \input{./0930-review/0928-syllabus-covered.tex}
 \chapter{Sample midterm exam}
 \input{./0930-review/0930-sample-exam.tex}
@@ -160,18 +165,22 @@
 %\chapter{Review 2}
 %\input{./1031-review/1031-syllabus-covered.tex}
 %\input{./1031-review/20221109-midterm.tex}
-\chapter{Mealy Moore Sequence detector}
-\input{1121-mealy-moore-seq-detector/document.tex}
+%\chapter{Mealy Moore Sequence detector}
+%\input{1121-mealy-moore-seq-detector/document.tex}
 \chapter{Finite State Machine Optimization}
 \input{1130-FSM-optimization/document}
+\chapter*{Review}
+\input{./1026-sequential-logic/1208-syllabus-covered.tex}
+\chapter{Sample Midterm 2}
+\input{20250407-midterm2/20231215-final.tex}
 % %\input{./1205-mux-decoder/2023-12-01-syllabus-covered.tex}
 % \chapter{More definitions}
 % \input{1207-more-definitions/document.tex}
 % \chapter{Quine McCluskey}
 % \input{./0928-quine-mccluskey/0928-nand-nor-gates.tex}
 % \input{./0928-quine-mccluskey/0928-quine-mccluskey.tex}
-\chapter{Analog details}
-\input{1014-analog-details/document.tex}
+%\chapter{Analog details}
+%\input{1014-analog-details/document.tex}
 
 \bibliography{1130-FSM-optimization/main.bib}
 \bibliographystyle{plain}

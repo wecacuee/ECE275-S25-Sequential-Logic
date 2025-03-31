@@ -17,16 +17,16 @@
 
 \section{Mealy vs Moore Finite State Machines}
 \begin{definition}[Finite State Machines (FSM)]~\cite[Sec~3.4]{harris2022digital}
+  A FSM has M inputs, N outputs and k bits of unique states ($2^k$ states).
 \end{definition}
-\vspace{5em}
 
 \begin{definition}[Mealy FSM]~\cite[Sec~3.4.3]{harris2022digital}
+  Named after George M. Mealy, in Mealy FSM the output depends both on inputs and the states.
 \end{definition}
-\vspace{5em}
 
 \begin{definition}[Moore FSM]~\cite[Sec~3.4.3]{harris2022digital}
+  Named after Edward F. Moore, in Moore FSM the output depends only on the states.
 \end{definition}
-\vspace{5em}
 
 
 \begin{example}
@@ -37,12 +37,12 @@
 \end{example}
 \vspace{20em}
 
-\begin{prob}
+\begin{example}
   A sequential circuit has one input (X) and one output (Z). The circuit
   examines groups of four consecutive inputs and produces an output Z=1 if the
   input sequence 0101 or 1001 occurs. The circuit resets after every four
   inputs. Draw both Mealy and Moore timing diagrams. Find the Mealy and Moore state graph.
-\end{prob}
+\end{example}
 \vspace{20em}
 
 \section{Full procedure for designing sequential logic circuit}
