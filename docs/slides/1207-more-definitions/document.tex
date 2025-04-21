@@ -1,22 +1,22 @@
 
-\section{FPGA~\cite[Section~B.6.5]{stephen2022fundamentals}}
-
-\includegraphics[width=0.5\linewidth]{./media/FPGA.png}
-\includegraphics[width=0.5\linewidth]{./media/LUT.png}\\
-\includegraphics[width=0.5\linewidth]{./media/FF-LUT.png}
-\includegraphics[width=0.5\linewidth]{./media/programmed-FPGA.png}
-
-
-\begin{definition}[Random Access Memory (RAM)] Structure of a RAM is as follows:\\
-  \includegraphics[width=0.3\linewidth]{./media/memory-array.png}
-  \includegraphics[width=0.3\linewidth]{./media/memory-array-32kb.png}
-  \includegraphics[width=0.3\linewidth]{./media/SRAM-cell.png}\\
-  \includegraphics[width=0.7\linewidth]{./media/SRAM.png}
-\end{definition}
-
-\begin{definition}[Read Only Memory (ROM)] Structure of a ROM is as follows:\\
-  \includegraphics[width=\linewidth]{./media/rom.png}
-\end{definition}
+% \section{FPGA~\cite[Section~B.6.5]{stephen2022fundamentals}}
+% 
+% \includegraphics[width=0.5\linewidth]{./media/FPGA.png}
+% \includegraphics[width=0.5\linewidth]{./media/LUT.png}\\
+% \includegraphics[width=0.5\linewidth]{./media/FF-LUT.png}
+% \includegraphics[width=0.5\linewidth]{./media/programmed-FPGA.png}
+% 
+% 
+% \begin{definition}[Random Access Memory (RAM)] Structure of a RAM is as follows:\\
+%   \includegraphics[width=0.3\linewidth]{./media/memory-array.png}
+%   \includegraphics[width=0.3\linewidth]{./media/memory-array-32kb.png}
+%   \includegraphics[width=0.3\linewidth]{./media/SRAM-cell.png}\\
+%   \includegraphics[width=0.7\linewidth]{./media/SRAM.png}
+% \end{definition}
+% 
+% \begin{definition}[Read Only Memory (ROM)] Structure of a ROM is as follows:\\
+%   \includegraphics[width=\linewidth]{./media/rom.png}
+% \end{definition}
 
 
 \begin{definition}[Fan-in]
@@ -42,23 +42,23 @@
 \end{definition}
 \includegraphics[width=0.5\linewidth]{./media/fan-out.png}
 
-\begin{definition}[Programmable Logic Array (PLA) ] Structure of a PLA:\\
-  \includegraphics[width=0.7\linewidth]{./media/AND-OR-PLA.png}~\cite[Section~B.6.1]{stephen2022fundamentals}
-  %\includegraphics[width=0.7\linewidth]{./media/NOR-NOR-PLA.png}
-\end{definition}
-
-\begin{definition}[Programmable Array Logic (PAL)] Structure of a PAL:\\
-  \includegraphics[width=0.7\linewidth]{./media/AND-OR-PAL.png}~\cite[Section~B.6.2]{stephen2022fundamentals}
-\end{definition}
-
-\begin{example}
-  What is the difference between PLA and PAL?
-\end{example}
-\vspace{5em}
+% \begin{definition}[Programmable Logic Array (PLA) ] Structure of a PLA:\\
+%   \includegraphics[width=0.7\linewidth]{./media/AND-OR-PLA.png}~\cite[Section~B.6.1]{stephen2022fundamentals}
+%   %\includegraphics[width=0.7\linewidth]{./media/NOR-NOR-PLA.png}
+% \end{definition}
+% 
+% \begin{definition}[Programmable Array Logic (PAL)] Structure of a PAL:\\
+%   \includegraphics[width=0.7\linewidth]{./media/AND-OR-PAL.png}~\cite[Section~B.6.2]{stephen2022fundamentals}
+% \end{definition}
+% 
+% \begin{example}
+%   What is the difference between PLA and PAL?
+% \end{example}
+% \vspace{5em}
 
 \section{Timing parameters for sequential circuit~\cite[Section~3.5]{harris2022digital}}
 
-\includegraphics[width=0.6\linewidth]{./media/ff-timings.png}
+\includegraphics[width=0.6\linewidth]{./media/ff-timings.png}\\
 \begin{definition}[Setup time $t_{su}$ of a latch/flip-flop]
   Time for which input must be stable before the clock edge.
 \end{definition}
@@ -73,5 +73,16 @@
 
 \begin{definition}[Clock-to-Q propagation delay $t_{ccq}$ of a latch/flip-flop]
   Time taken for Q output to stabalize  after the clock edge.
+\end{definition}
+\includegraphics[width=0.8\linewidth]{./media/fig3.38.png}
+
+\begin{definition}[Setup Time Constraint]
+  $T_c > t_{pcq} + t_{pd} + t_{setup}$\\
+\includegraphics[width=0.8\linewidth]{./media/fig3.39.png}
+\end{definition}
+
+\begin{definition}[Hold Time Constraint]
+  $t_{ccq} + t_{cd} \ge t_{hold}$\\
+\includegraphics[width=0.8\linewidth]{./media/fig3.40.png}
 \end{definition}
 
