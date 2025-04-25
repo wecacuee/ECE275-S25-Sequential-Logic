@@ -1,6 +1,8 @@
 \section{PI Table reduction and Petrick's method}
-This is not in the text-book. For additional reading, please refer to the linked
-resources on the website.
+This is not in the text-book. For additional reading, please refer to the linked resources on the website.
+\\
+\includegraphics[width=0.7\linewidth]{1952-quine.png}\\
+\includegraphics[width=0.7\linewidth]{1956-mccluskey.png}
 
 
 \begin{definition}[Implicant]
@@ -34,10 +36,12 @@ There are 4 main steps in the Quine-McCluskey algorithm/PI Table reduction and P
 \subsection{Generate Prime Implicants}
 
 \begin{example}
-  Generate prime implicants of the function $F (A, B, C, D) = \sum m(0, 2, 5, 6, 7,
-  8, 10, 12, 13, 14, 15)$  using Quine-McCluskey method
+  Generate prime implicants of the function 
+  \[ F (A, B, C, D) = \sum m(0, 2, 4, 6, 7,
+  8, 10, 12, 13, 14, 16, 18, 19, 29, 30)\]
+  using Quine-McCluskey method
 \end{example}
-\vspace{20em}
+\includegraphics[width=0.9\linewidth]{1956-mccluskey-table-2.png}
 
 Steps:
 \begin{enumerate}
@@ -50,10 +54,10 @@ Steps:
   \item Repeat the grouping process with n-1 literal implicants.
 \end{enumerate}
 
-\begin{prob}
-  Generate PIs for the function $ F(A, B, C, D) = \sum m(0, 2, 3, 4, 5, 6, 7, 8,
-  9, 10, 11, 12, 13)$.
-\end{prob}
+% \begin{prob}
+%   Generate PIs for the function $ F(A, B, C, D) = \sum m(0, 2, 3, 4, 5, 6, 7, 8,
+%   9, 10, 11, 12, 13)$.
+% \end{prob}
 
 \subsection{Prime Implicants table and reduction}
 
@@ -112,6 +116,9 @@ Steps:
   \end{tabular}
 \end{example}
 \vspace{20em}
+\begin{example}
+  \includegraphics[width=\linewidth]{1956-mccluskey-table-4.png}
+\end{example}
 
 \subsection{Petrick's method}
 
@@ -133,7 +140,7 @@ Steps:
 \vspace{20em}
 
 
-\begin{example}
-  Find the minimum SOP expression for the function $F (A, B, C, D) = \sum m(2, 3, 7,
-  9, 11, 13) + \sum d(1, 10, 15)$ using Quine-McCluskey method.
-\end{example}
+% \begin{example}
+%   Find the minimum SOP expression for the function $F (A, B, C, D) = \sum m(2, 3, 7,
+%   9, 11, 13) + \sum d(1, 10, 15)$ using Quine-McCluskey method.
+% \end{example}
