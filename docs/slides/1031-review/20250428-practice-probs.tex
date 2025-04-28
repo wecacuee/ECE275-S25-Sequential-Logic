@@ -9,17 +9,17 @@ Student Name: \hfill Student Email: \hspace{10em}
   during the last 10 minutes of the examination.
   \item The examination is closed-book. One $8\times11$ in two-sided cheatsheet is allowed.
   \item Non-programmable calculators are permitted.
-  \item The maximum number of marks is 160, as indicated; the midterm examination
+  \item The maximum number of marks is XXX, as indicated; the final examination
   amounts 10\% toward the final grade.
   \item Please use a pen or heavy pencil to ensure legibility. Colored
     pens/pencils are recommended for K-map grouping.
   \item Please show your work; where appropriate, marks will be awarded for proper and well-reasoned explanations.
-  \item If you are behind on grades, you may submit the solutions to this on brightspace before the Dec 13th exam for (makeup) grades. If you are already ahead, then these grades won't push you beyond hundred in homework+midterm grades.
+  \item If you are behind on grades, you may submit the solutions to this on brightspace before the May 5th exam for (makeup) grades. If you are already ahead, then these grades won't push you beyond hundred in homework+midterm grades.
 \end{itemize}
 %\newpage
 
 \begin{prob}
-Use the following 5-variable K-map for F (A, B, C, D, E), and find
+Use the following 5-variable K-map for F (B, C, D, E), and find
   a minimal SOP expression for F (15 marks)\\
 \begin{minipage}{0.5\linewidth}
   \centering
@@ -53,42 +53,42 @@ Find a Mealy state table for the circuit (minimum number of states, including st
 \end{tabular}
 %\newpage
 
-\begin{prob}
-  % 15.15
-  Reduce the following state table to minimum number of states (30 marks)\\
-  \begin{tabular}{c|cc|cc}
-  \end{tabular}
-  \includegraphics[width=0.3\linewidth]{./fig/15.15-state-table.png}
-  \label{p:state-reduction}
-\end{prob}
-%\newpage
-
-\begin{prob}
-  % Reduce the following state table to a minimum number of states using
-  % implication charts (20 marks).
-  \begin{enumerate}
-  \item
-    Use the guideline method (Highest priority and Medium priority only) to determine a suitable \textbf{state assignment} for the state table (20 marks).
-  % % \item
-  % % Realize the table using D flip-flops.
-  \item Realize the least significant bit of the encoding table using J-K flip-flops (30 marks).
-  \end{enumerate} 
-
-  \begin{tabular}{c|cc|c}
-    \toprule
-    Present State & \multicolumn{2}{c|}{Next State} & Output (Z)\\
-                  & X = 0 & 1 & \\
-                  \midrule
-    A & A & B & 1\\
-    B & C & E & 0\\
-    C & F & G & 1\\
-    D & C & A & 0\\
-    E & B & G & 1\\
-    F & F & B & 1\\
-    G & C & F & 0\\
-    \bottomrule
-  \end{tabular}
-\end{prob}
+% \begin{prob}
+%   % 15.15
+%   Reduce the following state table to minimum number of states (30 marks)\\
+%   \begin{tabular}{c|cc|cc}
+%   \end{tabular}
+%   \includegraphics[width=0.3\linewidth]{./fig/15.15-state-table.png}
+%   \label{p:state-reduction}
+% \end{prob}
+% %\newpage
+% 
+% \begin{prob}
+%   % Reduce the following state table to a minimum number of states using
+%   % implication charts (20 marks).
+%   \begin{enumerate}
+%   \item
+%     Use the guideline method (Highest priority and Medium priority only) to determine a suitable \textbf{state assignment} for the state table (20 marks).
+%   % % \item
+%   % % Realize the table using D flip-flops.
+%   \item Realize the least significant bit of the encoding table using J-K flip-flops (30 marks).
+%   \end{enumerate} 
+% 
+%   \begin{tabular}{c|cc|c}
+%     \toprule
+%     Present State & \multicolumn{2}{c|}{Next State} & Output (Z)\\
+%                   & X = 0 & 1 & \\
+%                   \midrule
+%     A & A & B & 1\\
+%     B & C & E & 0\\
+%     C & F & G & 1\\
+%     D & C & A & 0\\
+%     E & B & G & 1\\
+%     F & F & B & 1\\
+%     G & C & F & 0\\
+%     \bottomrule
+%   \end{tabular}
+% \end{prob}
 %\newpage
 
 \begin{prob}
@@ -110,7 +110,7 @@ Find a Mealy state table for the circuit (minimum number of states, including st
 
 \begin{prob}
   % 9 study guide 5
-  (Optional for extra credit) The following diagram shows the pattern of 0’s and 1’s stored in a ROM
+  The following diagram shows the pattern of 0’s and 1’s stored in a ROM
   with eight words and four bits per word. What will be the values of $F_1 , F_2 ,
   F_3 , and F_4$ if $A= B = 0$ and $C = 1$?
   Also give the minterm expansions for $F_1$ and $F_2$ (20 marks).\\
@@ -281,10 +281,45 @@ considered as don't care.
 %\newpage
 
 \begin{prob}
-  Design a 3-bit modulo 8 Gray counter that counts from 000, to 111 and then loops back
+  Design a 3-bit modulo 8 counter that counts from 000, to 111 and then loops back
   to 0000. (A modulo N counter counts from 0 to $N-1$) (20 marks).\\
   \begin{enumerate}
   \item Draw its state transition table
   \item Design the circuit using a D flip-flop.
   \end{enumerate}
+\end{prob}
+
+
+\begin{prob}
+Draw Mealy state transition diagram which investigates an input sequence
+$X$ and will produce an output of $Z=1$ for any input sequence ending in 0011 or 110.\\
+Example:\\
+\begin{tabular}{c c c c c c c c c c c c c c c c}
+$X=$&1&1&0&0&1&0&0&1&0&1&0&0&1&0&1\\
+$Z=$&0&0&0&1&0&1&1&0&1&0&0&1&0&1&0
+\end{tabular}\\
+Notice that the circuit does not reset to the start state when an output of $Z = 1$
+occurs. A minimum solution requires six states. Assign 000 to the start state. (20 marks).
+\end{prob}
+
+\begin{prob}
+  Find the expression for $J_0$ and $K_0$ assuming that $J_0$ and $K_0$ are inputs to the J-K flip flop that capture the state of the second most significant bit $Q_0$ of the following state encoded table. The state encoding table given with state encoding denoted as $Q_2 Q_1 Q_0$. (20 marks).
+%\\\includegraphics[width=0.6\linewidth]{./media/Roth13.13-state-assigned-table.png}
+\\
+\begin{tabular}{ccccc}
+  \toprule
+  Present State & \multicolumn{2}{c}{Next State} & \multicolumn{2}{c}{Output}\\
+                & $X=0$ & $X=1$ & $X=0$ & $X=1$ \\
+  $Q_2 Q_1 Q_0$ & $Q_2^+ Q_1^+ Q_0^+$ & $Q_2^+ Q_1^+ Q_0^+$ & $Z$ & $Z$ \\
+  \midrule
+  000 & 100 & 101 & 1 & 0 \\
+  001 & 100 & 101 & 0 & 1 \\
+  010 & 000 & 000 & 1 & 0 \\
+  011 & 000 & 000 & 0 & 1 \\
+  100 & 111 & 110 & 1 & 0 \\
+  101 & 110 & 110 & 0 & 1 \\
+  110 & 011 & 010 & 1 & 0 \\
+  111 & 011 & 011 & 0 & 1 \\
+  \bottomrule
+\end{tabular}
 \end{prob}
